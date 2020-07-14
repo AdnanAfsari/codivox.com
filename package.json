@@ -19,6 +19,8 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "prettier": "2.0.5"
   },
   "keywords": [
@@ -33,6 +35,14 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+      "src/**/*.{js,jsx,ts,tsx,json,md}": ["prettier --write"]
   },
   "repository": {
     "type": "git",
