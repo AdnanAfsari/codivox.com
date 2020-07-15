@@ -42,7 +42,9 @@
     }
   },
   "lint-staged": {
-      "src/**/*.{js,jsx,ts,tsx,json,md}": ["prettier --write"]
+    "src/**/*.{js,jsx,ts,tsx,json,md}": [
+      "prettier --write"
+    ]
   },
   "repository": {
     "type": "git",
