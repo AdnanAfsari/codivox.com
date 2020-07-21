@@ -1,7 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
+import Footer from './Main/Footer';
 import './layout.css';
 
 interface LayoutProps {
@@ -29,9 +30,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, {data.site.siteMetadata.title}
-        </footer>
+        <Footer />
       </div>
     </>
   );
