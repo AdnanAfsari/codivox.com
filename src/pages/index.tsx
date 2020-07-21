@@ -3,6 +3,12 @@ import { graphql, PageProps } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import Hero from '../components/Main/Hero';
+import Services from '../components/Main/Services';
+import Process from '../components/Main/Process';
+import Tech from '../components/Main/Tech';
+import About from '../components/Main/About';
+import Hi from '../components/Main/Hi';
 
 type IndexPageProps = {
   site: {
@@ -17,6 +23,12 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <h1>Hello {data.site.siteMetadata.title}!</h1>
+      <Hero />
+      <Services />
+      <Process />
+      <Tech />
+      <About />
+      <Hi />
     </Layout>
   );
 };
