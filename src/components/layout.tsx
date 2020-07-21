@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -24,7 +26,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
-        style={{
+        {...props}
+        sx={{
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
