@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx, Styled } from 'theme-ui';
 import React from 'react';
 import { Link } from 'gatsby';
 
@@ -7,29 +9,29 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
   <header
-    style={{
-      background: `#2496ED`,
+    sx={{
+      background: (theme) => `${theme.colors.background}`,
       marginBottom: `1.45rem`,
     }}
   >
     <div
-      style={{
+      sx={{
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <Styled.h1>
         <Link
           to="/"
-          style={{
-            color: `white`,
+          sx={{
+            color: (theme) => `${theme.colors.main}`,
             textDecoration: `none`,
           }}
         >
           {siteTitle}
         </Link>
-      </h1>
+      </Styled.h1>
     </div>
   </header>
 );

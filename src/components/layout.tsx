@@ -1,9 +1,10 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
 import Footer from './Main/Footer';
-import './layout.css';
 
 interface LayoutProps {
   children?: React.ReactNode;
@@ -21,10 +22,10 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   `);
 
   return (
-    <>
+    <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
-        style={{
+        sx={{
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
@@ -33,7 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <main>{children}</main>
         <Footer />
       </div>
-    </>
+    </React.Fragment>
   );
 };
 
