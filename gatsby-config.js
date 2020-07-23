@@ -18,13 +18,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `codivox`,
+        short_name: `codivox`,
         start_url: `/`,
-        background_color: `#2496ED`,
-        theme_color: `#2496ED`,
+        background_color: `#2A85C1`,
+        theme_color: `#2A85C1`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-theme-ui`,
+      options: {
+        preset: "@theme-ui/preset-tailwind",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
