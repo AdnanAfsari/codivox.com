@@ -4,7 +4,7 @@ import { tailwind } from '@theme-ui/presets';
 export default {
   ...tailwind,
   colors: {
-    main: '#2a84c1',
+    main: '#6670FD',
     background: 'white',
   },
 };
