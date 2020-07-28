@@ -33,6 +33,14 @@ module.exports = {
         preset: "@theme-ui/preset-tailwind",
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Josefin Sans:bold', 'Lato:400,700']
+        }
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

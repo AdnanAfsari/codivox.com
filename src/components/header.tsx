@@ -2,6 +2,7 @@
 import { jsx, Styled } from 'theme-ui';
 import React from 'react';
 import { Link } from 'gatsby';
+import Codivox from '../images/codivox';
 
 interface HeaderProps {
   siteTitle?: string;
@@ -17,11 +18,11 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
     <div
       sx={{
         margin: `0 auto`,
-        maxWidth: 960,
+        maxWidth: 1110,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <Styled.h1>
+      <Styled.h4>
         <Link
           to="/"
           sx={{
@@ -29,9 +30,10 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
+          <Codivox />
           {siteTitle}
         </Link>
-      </Styled.h1>
+      </Styled.h4>
     </div>
   </header>
 );
