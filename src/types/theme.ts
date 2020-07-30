@@ -12,6 +12,12 @@ export type Fonts = {
   body: string;
 };
 
+export type Styles = {
+  headerLinks: {
+    textDecoration: string;
+  };
+};
+
 export type Buttons = {
   outlined: {
     border: string;
@@ -34,5 +40,5 @@ export type Theme = {
   colors: Colors;
   buttons: Buttons;
   fonts: Fonts;
-  // fontWeights: FontWeights;
+  styles: Styles;
 };

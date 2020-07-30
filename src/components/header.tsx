@@ -8,42 +8,62 @@ interface HeaderProps {
   siteTitle?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ siteTitle }) => (
-  <header
-    sx={{
-      background: (theme) => `${theme.colors.background}`,
-      marginBottom: `1.45rem`,
-      maxWidth: 1110,
-      margin: `0 auto`,
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-    }}
-  >
-    <Box py={4} bg="background" sx={{ width: '100%' }}>
-      <Flex
-        sx={{
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}
-      >
-        <Link to="/" sx={{ textDecoration: 'none' }}>
-          <Heading sx={{ display: 'flex', alignItems: 'flex-end' }}>
-            <Codivox />
-            <span sx={{ ml: 2, color: 'text' }}>{siteTitle}</span>
-            <span sx={{ color: (theme) => `${theme.colors.main}` }}>.</span>
-          </Heading>
-        </Link>
-        <nav>
-          <span sx={{ margin: '0 25px' }}>Services</span>
-          <span sx={{ margin: '0 25px' }}>Work process</span>
-          <span sx={{ margin: '0 25px' }}>Blog</span>
-          <button sx={{ variant: 'buttons.outlined' }}>Let's Talk</button>
-        </nav>
-      </Flex>
-    </Box>
-  </header>
-);
+const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
+  const tabs = [
+    {
+      content: 'Services',
+      href: 'services',
+    },
+    {
+      content: 'Work process',
+      href: 'work-process',
+    },
+    {
+      content: 'Blog',
+      href: 'blog',
+    },
+  ];
+  return (
+    <header
+      sx={{
+        background: (theme) => `${theme.colors.background}`,
+      }}
+    >
+      <Box p={3} bg="background">
+        <Flex
+          as={'nav'}
+          sx={{
+            maxWidth: 1110,
+            margin: `0 auto`,
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+        >
+          <Link to="/" sx={{ textDecoration: 'none', mb: 10 }}>
+            <Heading sx={{ display: 'flex', alignItems: 'flex-end' }}>
+              <Codivox />
+              <span sx={{ ml: 2, color: 'text' }}>{siteTitle}</span>
+              <span sx={{ color: (theme) => `${theme.colors.main}` }}>.</span>
+            </Heading>
+          </Link>
+          <ul sx={{ listStyle: 'none', display: 'flex', alignItems: 'center' }}>
+            {tabs.map((tab, i) => {
+              const { href, content } = tab;
+              return (
+                <li className="nav-item" key={href}>
+                  <Link sx={{ variant: 'styles.headerLinks' }} to={`#${href}`}>
+                    {content}
+                  </Link>
+                </li>
+              );
+            })}
+            <button sx={{ variant: 'buttons.outlined' }}>Let's Talk</button>
+          </ul>
+        </Flex>
+      </Box>
+    </header>
+  );
+};
 
 Header.defaultProps = {
   siteTitle: '',
