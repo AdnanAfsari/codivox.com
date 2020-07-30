@@ -32,8 +32,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Footer />
       </div>
+      <Footer />
     </React.Fragment>
   );
 };
