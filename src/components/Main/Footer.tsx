@@ -1,11 +1,87 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
+
 import { Link } from 'gatsby';
-import Codivox from '../../images/codivox';
+import CodivoxWhite from '../../images/codivox-white';
+import Linkedin from '../../images/linkedin';
+import Fb from '../../images/fb';
+import Twitter from '../../images/twitter';
+import Insta from '../../images/insta';
 
 const Footer: React.FC = () => {
+  const footerSubtitle =
+    'We’re team of developers and designers specialized in building quality web and mobile apps';
+  const services = [
+    {
+      content: 'Web Application',
+      link: 'home',
+    },
+    {
+      content: 'Development Teams',
+      link: 'home',
+    },
+    {
+      content: 'MVP',
+      link: 'home',
+    },
+    {
+      content: 'Development',
+      link: 'home',
+    },
+  ];
+  const aboutUs = [
+    {
+      content: 'What can we do?',
+      link: 'home',
+    },
+    {
+      content: 'How we work',
+      link: 'home',
+    },
+    {
+      content: 'Careers',
+      link: 'home',
+    },
+    {
+      content: 'Contact',
+      link: 'home',
+    },
+  ];
+  const blog = [
+    {
+      content: 'News',
+      link: 'home',
+    },
+    {
+      content: 'Technology',
+      link: 'home',
+    },
+    {
+      content: 'Case Study',
+      link: 'home',
+    },
+  ];
+
+  const estimate = [
+    {
+      content: 'Testimonials',
+      link: 'home',
+    },
+    {
+      content: 'Solutions',
+      link: 'home',
+    },
+    {
+      content: 'Price',
+      link: 'home',
+    },
+    {
+      content: 'Contact Us',
+      link: 'home',
+    },
+  ];
+
   return (
     <footer
       sx={{
@@ -37,188 +113,163 @@ const Footer: React.FC = () => {
           >
             <Link to="/" sx={{ textDecoration: 'none' }}>
               <Heading sx={{ display: 'flex', alignItems: 'flex-end' }}>
-                <Codivox />
+                <CodivoxWhite />
                 <span sx={{ ml: 2, color: 'text' }}>codivox</span>
                 <span sx={{ color: (theme) => `${theme.colors.main}` }}>.</span>
               </Heading>
             </Link>
-            <p>
-              Lorem ipsum dolor sit amet, at affert labitur signiferumque nec.
-              Ea ius choro albucius appareat.
-            </p>
+            <p>{footerSubtitle}</p>
 
             <Link
-              to="/"
-              sx={{ variant: 'styles.navlink', p: 2, textDecoration: 'none' }}
+              to="https://facebook.com/codivox"
+              target="_blank"
+              rel="noreferrer"
+              sx={{ p: 2, textDecoration: 'none' }}
             >
-              f
+              <Fb />
             </Link>
             <Link
-              to="/"
-              sx={{ variant: 'styles.navlink', p: 2, textDecoration: 'none' }}
+              to="https://twitter.com/codivox"
+              target="_blank"
+              rel="noreferrer"
+              sx={{ p: 2, textDecoration: 'none' }}
             >
-              In
+              <Twitter />
             </Link>
             <Link
-              to="/"
-              sx={{ variant: 'styles.navlink', p: 2, textDecoration: 'none' }}
+              to="https://instagram.com/codivox"
+              target="_blank"
+              rel="noreferrer"
+              sx={{ p: 2, textDecoration: 'none' }}
             >
-              tw
+              <Insta />
             </Link>
             <Link
-              to="/"
-              sx={{ variant: 'styles.navlink', p: 2, textDecoration: 'none' }}
+              to="https://linkedin.com/company/codivox"
+              target="_blank"
+              rel="noreferrer"
+              sx={{ p: 2, textDecoration: 'none' }}
             >
-              li
+              <Linkedin />
             </Link>
           </div>
-          <div
-          // sx={{
-          //   ml: '3em',
-          // }}
-          >
-            <h4>Services</h4>
+          <div>
+            <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
+              Services
+            </Heading>
             <div
               sx={{
                 display: 'grid',
                 gap: 2,
               }}
             >
-              <Link
-                to="/"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Web Application
-              </Link>
-              <Link
-                to="/work"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Development Teams
-              </Link>
-              <Link
-                to="/blog"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                MVP
-              </Link>
-              <Link
-                to="/about"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Development
-              </Link>
+              {services.map((service) => {
+                const { content, link } = service;
+                return (
+                  <Link
+                    to={link}
+                    target="_blank"
+                    rel="noreferrer"
+                    sx={{
+                      textDecoration: 'none',
+                      color: 'text',
+                      opacity: '0.5',
+                    }}
+                  >
+                    {content}
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
           <div>
-            <h4>About Us</h4>
+            <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
+              About Us
+            </Heading>
             <div
               sx={{
                 display: 'grid',
                 gap: 2,
               }}
             >
-              <Link
-                to="/"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                What we can do?
-              </Link>
-              <Link
-                to="/work"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Team
-              </Link>
-              <Link
-                to="/blog"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                FAQ
-              </Link>
-              <Link
-                to="/about"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                How we work
-              </Link>
-              <Link
-                to="/products"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Careers
-              </Link>
-              <Link
-                to="/community"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Contact
-              </Link>
+              {aboutUs.map((about) => {
+                const { content, link } = about;
+                return (
+                  <Link
+                    to={link}
+                    target="_blank"
+                    rel="noreferrer"
+                    sx={{
+                      textDecoration: 'none',
+                      color: 'text',
+                      opacity: '0.5',
+                    }}
+                  >
+                    {content}
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
           <div>
-            <h4>Blog</h4>
+            <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
+              Blog
+            </Heading>
             <div
               sx={{
                 display: 'grid',
                 gap: 2,
               }}
             >
-              <Link
-                to="/"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                News
-              </Link>
-              <Link
-                to="/work"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Technology
-              </Link>
-              <Link
-                to="/blog"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Case Study
-              </Link>
+              {blog.map((blog) => {
+                const { content, link } = blog;
+                return (
+                  <Link
+                    to={link}
+                    target="_blank"
+                    rel="noreferrer"
+                    sx={{
+                      textDecoration: 'none',
+                      color: 'text',
+                      opacity: '0.5',
+                    }}
+                  >
+                    {content}
+                  </Link>
+                );
+              })}
             </div>
           </div>
 
           <div>
-            <h4>Get Estimate</h4>
+            <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
+              Get Estimate
+            </Heading>
             <div
               sx={{
                 display: 'grid',
                 gap: 2,
               }}
             >
-              <Link
-                to="/"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Testimonials
-              </Link>
-              <Link
-                to="/work"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Solutions
-              </Link>
-              <Link
-                to="/blog"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Price
-              </Link>
-              <Link
-                to="/about"
-                sx={{ variant: 'styles.navlink', textDecoration: 'none' }}
-              >
-                Contact Us
-              </Link>
+              {estimate.map((est) => {
+                const { content, link } = est;
+                return (
+                  <Link
+                    to={link}
+                    target="_blank"
+                    rel="noreferrer"
+                    sx={{
+                      textDecoration: 'none',
+                      color: 'text',
+                      opacity: '0.5',
+                    }}
+                  >
+                    {content}
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </Box>
@@ -227,9 +278,10 @@ const Footer: React.FC = () => {
         sx={{
           textAlign: 'center',
           mt: '80px',
+          opacity: '0.5',
         }}
       >
-        All rights reserved by ©Codivox {new Date().getFullYear()}
+        all rights reserved by © codivox {new Date().getFullYear()}
       </div>
     </footer>
   );
