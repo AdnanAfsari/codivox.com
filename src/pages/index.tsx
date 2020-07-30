@@ -21,8 +21,7 @@ type IndexPageProps = {
 const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Home" />
-      <h1>Hello {data.site.siteMetadata.title}!</h1>
+      <SEO title="codivox" />
       <Hero />
       <Services />
       <Process />

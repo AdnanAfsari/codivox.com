@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Codivox`,
+    title: `codivox`,
     description: ``,
     author: `@codivox`,
   },
@@ -21,10 +21,10 @@ module.exports = {
         name: `codivox`,
         short_name: `codivox`,
         start_url: `/`,
-        background_color: `#2A85C1`,
-        theme_color: `#2A85C1`,
+        background_color: `#6670FD`,
+        theme_color: `#6670FD`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/codivox.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -33,6 +33,14 @@ module.exports = {
         preset: "@theme-ui/preset-tailwind",
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Josefin Sans:bold', 'Lato:400,700']
+        }
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -27,13 +27,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <div
         sx={{
           margin: `0 auto`,
-          maxWidth: 960,
+          maxWidth: 1110,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
-        <Footer />
       </div>
+      <Footer />
     </React.Fragment>
   );
 };
