@@ -29,9 +29,10 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
         background: (theme) => `${theme.colors.background}`,
       }}
     >
-      <Box p={3} bg="background">
+      <Box bg="background">
         <Flex
           as={'nav'}
+          p={3}
           sx={{
             maxWidth: 1110,
             margin: `0 auto`,
