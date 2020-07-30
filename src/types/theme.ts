@@ -1,7 +1,3 @@
-import { number, string } from 'prop-types';
-
-type SystemStyleObject = Record<string, any>;
-
 export type Colors = {
   background: string;
   main: string;
@@ -14,7 +10,26 @@ export type Fonts = {
 
 export type Styles = {
   headerLinks: {
+    '&:hover:after': { transform: string; transformOrigin: string };
+    color: string;
+    '::after': {
+      transform: string;
+      backgroundColor: string;
+      left: number;
+      bottom: number;
+      width: string;
+      position: string;
+      transformOrigin: string;
+      content: string;
+      transition: string;
+      height: string;
+    };
+    display: string;
     textDecoration: string;
+    mx: (theme: { space: string[] }) => string;
+    position: string;
+    '&:hover': { color: string; opacity: string; transition: string };
+    opacity: string;
   };
 };
 
@@ -32,7 +47,7 @@ export type Buttons = {
       transition: string;
     };
     height: number;
-    ml: number;
+    ml: (theme: { space: string[] }) => string;
   };
 };
 
