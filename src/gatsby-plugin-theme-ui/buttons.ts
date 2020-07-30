@@ -22,8 +22,9 @@ export default {
       border: `1px solid #6670FD`,
       borderRadius: 5,
       color: 'background',
-      fontSize: (theme) => `${theme.fontSizes[1]}`,
-      fontWeight: (theme) => `${theme.fontWeights.bold}`,
+      fontSize: (theme: { fontSizes: any[] }) => `${theme.fontSizes[1]}`,
+      fontWeight: (theme: { fontWeights: string }) =>
+        `${theme.fontWeights.bold}`,
       '&:hover': {
         bg: 'background',
         color: 'main',
