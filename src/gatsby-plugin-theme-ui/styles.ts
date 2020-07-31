@@ -1,5 +1,9 @@
 export default {
   styles: {
+    root: {
+      '-webkit-font-smoothing': 'antialiased',
+      '-moz-osx-font-smoothing': 'grayscale',
+    },
     headerLinks: {
       textDecoration: 'none',
       mx: (theme: { space: string[] }) => `${theme.space[4]}`,
@@ -8,7 +12,7 @@ export default {
       display: 'inline-block',
       position: 'relative',
       '&:hover': {
-        color: 'main',
+        color: 'mainDark',
         opacity: '1',
         transition: 'opacity 1s',
       },
@@ -20,7 +24,7 @@ export default {
         height: '2px',
         bottom: 0,
         left: 0,
-        backgroundColor: 'main',
+        backgroundColor: 'mainDark',
         transformOrigin: 'bottom right',
         transition: 'transform 0.25s ease-out',
       },

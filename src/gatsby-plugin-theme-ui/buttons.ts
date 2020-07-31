@@ -6,10 +6,10 @@ export default {
       bg: 'transparent',
       border: `1px solid #6670FD`,
       borderRadius: 5,
-      color: 'main',
+      color: 'mainDark',
       ml: (theme: { space: string[] }) => `${theme.space[4]}`,
       '&:hover': {
-        bg: 'main',
+        bg: 'mainDark',
         color: 'white',
         cursor: 'pointer',
         transition: 'background 0.5s',
@@ -18,7 +18,7 @@ export default {
     prime: {
       width: 210,
       height: 55,
-      bg: 'main',
+      bg: 'mainDark',
       border: `1px solid #6670FD`,
       borderRadius: 5,
       color: 'background',
@@ -27,7 +27,7 @@ export default {
         `${theme.fontWeights.bold}`,
       '&:hover': {
         bg: 'background',
-        color: 'main',
+        color: 'mainDark',
         cursor: 'pointer',
         transition: 'background 0.5s',
       },

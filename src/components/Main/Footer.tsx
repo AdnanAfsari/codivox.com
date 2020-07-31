@@ -62,7 +62,6 @@ const Footer: React.FC = () => {
       link: 'home',
     },
   ];
-
   const estimate = [
     {
       content: 'Testimonials',
@@ -118,15 +117,24 @@ const Footer: React.FC = () => {
                 <span sx={{ color: (theme) => `${theme.colors.main}` }}>.</span>
               </Heading>
             </Link>
-            <p>{footerSubtitle}</p>
+            <p sx={{ opacity: '0.85' }}>{footerSubtitle}</p>
 
             <Link
               to="https://facebook.com/codivox"
               target="_blank"
               rel="noreferrer"
-              sx={{ p: 2, textDecoration: 'none' }}
+              sx={{ p: 2, pl: 0, textDecoration: 'none' }}
             >
               <Fb />
+              <span
+                sx={{
+                  fontSize: '0 !important',
+                  height: 1,
+                  overflow: 'hidden',
+                }}
+              >
+                Facebook
+              </span>
             </Link>
             <Link
               to="https://twitter.com/codivox"
@@ -135,6 +143,15 @@ const Footer: React.FC = () => {
               sx={{ p: 2, textDecoration: 'none' }}
             >
               <Twitter />
+              <span
+                sx={{
+                  fontSize: '0 !important',
+                  height: 1,
+                  overflow: 'hidden',
+                }}
+              >
+                Twitter
+              </span>
             </Link>
             <Link
               to="https://instagram.com/codivox"
@@ -143,6 +160,15 @@ const Footer: React.FC = () => {
               sx={{ p: 2, textDecoration: 'none' }}
             >
               <Insta />
+              <span
+                sx={{
+                  fontSize: '0 !important',
+                  height: 1,
+                  overflow: 'hidden',
+                }}
+              >
+                Instagram
+              </span>
             </Link>
             <Link
               to="https://linkedin.com/company/codivox"
@@ -151,6 +177,15 @@ const Footer: React.FC = () => {
               sx={{ p: 2, textDecoration: 'none' }}
             >
               <Linkedin />
+              <span
+                sx={{
+                  fontSize: '0 !important',
+                  height: 1,
+                  overflow: 'hidden',
+                }}
+              >
+                Linkedin
+              </span>
             </Link>
           </div>
           <div>
@@ -173,7 +208,8 @@ const Footer: React.FC = () => {
                     sx={{
                       textDecoration: 'none',
                       color: 'text',
-                      opacity: '0.5',
+                      opacity: '0.85',
+                      fontSize: '14px',
                     }}
                   >
                     {content}
@@ -203,7 +239,8 @@ const Footer: React.FC = () => {
                     sx={{
                       textDecoration: 'none',
                       color: 'text',
-                      opacity: '0.5',
+                      opacity: '0.85',
+                      fontSize: '14px',
                     }}
                   >
                     {content}
@@ -233,7 +270,8 @@ const Footer: React.FC = () => {
                     sx={{
                       textDecoration: 'none',
                       color: 'text',
-                      opacity: '0.5',
+                      opacity: '0.85',
+                      fontSize: '14px',
                     }}
                   >
                     {content}
@@ -263,7 +301,8 @@ const Footer: React.FC = () => {
                     sx={{
                       textDecoration: 'none',
                       color: 'text',
-                      opacity: '0.5',
+                      opacity: '0.85',
+                      fontSize: '14px',
                     }}
                   >
                     {content}
@@ -278,7 +317,8 @@ const Footer: React.FC = () => {
         sx={{
           textAlign: 'center',
           mt: '80px',
-          opacity: '0.5',
+          opacity: '0.8',
+          fontSize: '12px',
         }}
       >
         all rights reserved by © codivox {new Date().getFullYear()}

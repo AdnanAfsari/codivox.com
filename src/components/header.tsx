@@ -47,19 +47,26 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
               <span sx={{ color: (theme) => `${theme.colors.main}` }}>.</span>
             </Heading>
           </Link>
-          <ul sx={{ listStyle: 'none', display: 'flex', alignItems: 'center' }}>
-            {tabs.map((tab, i) => {
-              const { href, content } = tab;
-              return (
-                <li className="nav-item" key={href}>
-                  <Link sx={{ variant: 'styles.headerLinks' }} to={`#${href}`}>
-                    {content}
-                  </Link>
-                </li>
-              );
-            })}
+          <Flex sx={{ alignItems: 'center' }}>
+            <ul
+              sx={{ listStyle: 'none', display: 'flex', alignItems: 'center' }}
+            >
+              {tabs.map((tab, i) => {
+                const { href, content } = tab;
+                return (
+                  <li key={href}>
+                    <Link
+                      sx={{ variant: 'styles.headerLinks' }}
+                      to={`#${href}`}
+                    >
+                      {content}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
             <button sx={{ variant: 'buttons.outlined' }}>Let's Talk</button>
-          </ul>
+          </Flex>
         </Flex>
       </Box>
     </header>
