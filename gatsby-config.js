@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `codivox`,
-    description: ``,
+    description: `We’re developers and designers specialized in building quality web and mobile apps`,
     author: `@codivox`,
   },
   plugins: [

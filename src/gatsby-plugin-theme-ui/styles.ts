@@ -1,5 +1,9 @@
 export default {
   styles: {
+    root: {
+      '-webkit-font-smoothing': 'antialiased',
+      '-moz-osx-font-smoothing': 'grayscale',
+    },
     headerLinks: {
       textDecoration: 'none',
       mx: (theme: { space: string[] }) => `${theme.space[4]}`,
@@ -8,9 +12,9 @@ export default {
       display: 'inline-block',
       position: 'relative',
       '&:hover': {
-        color: 'main',
+        color: 'mainDark',
         opacity: '1',
-        transition: 'opacity 1s',
+        transition: 'all 0.25s',
       },
       '::after': {
         content: '""',
@@ -20,11 +24,14 @@ export default {
         height: '2px',
         bottom: 0,
         left: 0,
-        backgroundColor: 'main',
+        backgroundColor: '#141633',
+        opacity: 0.7,
+
         transformOrigin: 'bottom right',
         transition: 'transform 0.25s ease-out',
       },
       '&:hover:after': {
+        backgroundColor: 'mainDark',
         transform: 'scaleX(1)',
         transformOrigin: 'bottom left',
       },

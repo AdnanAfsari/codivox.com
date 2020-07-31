@@ -8,11 +8,13 @@ import buttons from './buttons';
 import colors from './colors';
 import font from './font';
 import styles from './styles';
+import flex from './flex';
 
 const theme: Theme = {
   ...buttons,
   ...colors,
   ...font,
+  ...flex,
   ...styles,
 };
 

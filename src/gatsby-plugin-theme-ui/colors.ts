@@ -3,5 +3,6 @@ export default {
     main: '#6670FD',
     background: 'white',
     footer: '#F4F5FF',
+    mainDark: '#5954ff',
   },
 };

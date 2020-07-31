@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
         }}
       >
         <Heading sx={{ fontSize: '38px' }}>{heroTitle}</Heading>
-        <p sx={{ maxWidth: '370px', opacity: '0.65' }}>{heroSubtitle}</p>
+        <p sx={{ maxWidth: '370px', opacity: '0.85' }}>{heroSubtitle}</p>
         <button sx={{ variant: 'buttons.prime' }}>Get a free estimate</button>
       </Flex>
       <HeroSVG />
