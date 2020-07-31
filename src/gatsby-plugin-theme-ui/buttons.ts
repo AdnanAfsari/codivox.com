@@ -12,7 +12,7 @@ export default {
         bg: 'mainDark',
         color: 'white',
         cursor: 'pointer',
-        transition: 'background 0.5s',
+        transition: 'all 0.5s',
       },
     },
     prime: {
@@ -29,7 +29,7 @@ export default {
         bg: 'background',
         color: 'mainDark',
         cursor: 'pointer',
-        transition: 'background 0.5s',
+        transition: 'all 0.5s',
       },
     },
   },

@@ -27,12 +27,16 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
     <header
       sx={{
         background: (theme) => `${theme.colors.background}`,
+        position: 'sticky',
+        top: 0,
+        zIndex: 10,
       }}
     >
       <Box bg="background">
         <Flex
           as={'nav'}
-          p={3}
+          px={3}
+          py={1}
           sx={{
             maxWidth: 1110,
             margin: `0 auto`,
@@ -40,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
             justifyContent: 'space-between',
           }}
         >
-          <Link to="/" sx={{ textDecoration: 'none', mb: 10 }}>
+          <Link to="/" sx={{ textDecoration: 'none' }}>
             <Heading sx={{ display: 'flex', alignItems: 'flex-end' }}>
               <Codivox />
               <span sx={{ ml: 2, color: 'text' }}>{siteTitle}</span>

@@ -14,7 +14,7 @@ export default {
       '&:hover': {
         color: 'mainDark',
         opacity: '1',
-        transition: 'opacity 1s',
+        transition: 'all 0.25s',
       },
       '::after': {
         content: '""',
@@ -24,11 +24,14 @@ export default {
         height: '2px',
         bottom: 0,
         left: 0,
-        backgroundColor: 'mainDark',
+        backgroundColor: '#141633',
+        opacity: 0.7,
+
         transformOrigin: 'bottom right',
         transition: 'transform 0.25s ease-out',
       },
       '&:hover:after': {
+        backgroundColor: 'mainDark',
         transform: 'scaleX(1)',
         transformOrigin: 'bottom left',
       },
