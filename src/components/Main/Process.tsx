@@ -7,7 +7,7 @@ const Process: React.FC = () => {
   const processSubtitle =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
   return (
-    <Box sx={{ textAlign: 'center' }}>
+    <Box sx={{ textAlign: 'center', my: '6rem' }}>
       <Heading sx={{ fontSize: '38px', width: 480, m: '0 auto' }}>
         {processTitle}
       </Heading>

@@ -7,7 +7,7 @@ const Tech: React.FC = () => {
   const techSubtitle =
     'State-of-the-art communication tools to grow your business.';
   return (
-    <Box sx={{ textAlign: 'center' }}>
+    <Box sx={{ textAlign: 'center', my: '6rem' }}>
       <Heading sx={{ fontSize: '38px', width: 480, m: '0 auto' }}>
         {techTitle}
       </Heading>

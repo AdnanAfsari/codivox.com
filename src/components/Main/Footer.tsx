@@ -8,6 +8,7 @@ import Linkedin from '../../images/linkedin';
 import Fb from '../../images/fb';
 import Twitter from '../../images/twitter';
 import Insta from '../../images/insta';
+import Dots from '../../images/dots';
 
 const Footer: React.FC = () => {
   const footerSubtitle =
@@ -87,8 +88,13 @@ const Footer: React.FC = () => {
         background: (theme) => `${theme.colors.footer}`,
         minHeight: '424px',
         display: 'block',
+        position: 'absolute',
+        width: '100%',
       }}
     >
+      <div sx={{ position: 'absolute', right: 10, bottom: 10 }}>
+        <Dots />
+      </div>
       <div
         sx={{
           display: 'flex',
@@ -318,10 +324,10 @@ const Footer: React.FC = () => {
           textAlign: 'center',
           mt: '80px',
           opacity: '0.8',
-          fontSize: '12px',
+          fontSize: '14px',
         }}
       >
-        all rights reserved by © codivox {new Date().getFullYear()}
+        All rights reserved by © codivox {new Date().getFullYear()}
       </div>
     </footer>
   );
