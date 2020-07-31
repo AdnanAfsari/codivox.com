@@ -8,6 +8,7 @@ import Linkedin from '../../images/linkedin';
 import Fb from '../../images/fb';
 import Twitter from '../../images/twitter';
 import Insta from '../../images/insta';
+import Dots from '../../images/dots';
 
 const Footer: React.FC = () => {
   const footerSubtitle =
@@ -62,7 +63,6 @@ const Footer: React.FC = () => {
       link: 'home',
     },
   ];
-
   const estimate = [
     {
       content: 'Testimonials',
@@ -88,8 +88,13 @@ const Footer: React.FC = () => {
         background: (theme) => `${theme.colors.footer}`,
         minHeight: '424px',
         display: 'block',
+        position: 'absolute',
+        width: '100%',
       }}
     >
+      <div sx={{ position: 'absolute', right: 10, bottom: 10 }}>
+        <Dots />
+      </div>
       <div
         sx={{
           display: 'flex',
@@ -118,15 +123,24 @@ const Footer: React.FC = () => {
                 <span sx={{ color: (theme) => `${theme.colors.main}` }}>.</span>
               </Heading>
             </Link>
-            <p>{footerSubtitle}</p>
+            <p sx={{ opacity: '0.85' }}>{footerSubtitle}</p>
 
             <Link
               to="https://facebook.com/codivox"
               target="_blank"
               rel="noreferrer"
-              sx={{ p: 2, textDecoration: 'none' }}
+              sx={{ p: 2, pl: 0, textDecoration: 'none' }}
             >
               <Fb />
+              <span
+                sx={{
+                  fontSize: '0 !important',
+                  height: 1,
+                  overflow: 'hidden',
+                }}
+              >
+                Facebook
+              </span>
             </Link>
             <Link
               to="https://twitter.com/codivox"
@@ -135,6 +149,15 @@ const Footer: React.FC = () => {
               sx={{ p: 2, textDecoration: 'none' }}
             >
               <Twitter />
+              <span
+                sx={{
+                  fontSize: '0 !important',
+                  height: 1,
+                  overflow: 'hidden',
+                }}
+              >
+                Twitter
+              </span>
             </Link>
             <Link
               to="https://instagram.com/codivox"
@@ -143,6 +166,15 @@ const Footer: React.FC = () => {
               sx={{ p: 2, textDecoration: 'none' }}
             >
               <Insta />
+              <span
+                sx={{
+                  fontSize: '0 !important',
+                  height: 1,
+                  overflow: 'hidden',
+                }}
+              >
+                Instagram
+              </span>
             </Link>
             <Link
               to="https://linkedin.com/company/codivox"
@@ -151,6 +183,15 @@ const Footer: React.FC = () => {
               sx={{ p: 2, textDecoration: 'none' }}
             >
               <Linkedin />
+              <span
+                sx={{
+                  fontSize: '0 !important',
+                  height: 1,
+                  overflow: 'hidden',
+                }}
+              >
+                Linkedin
+              </span>
             </Link>
           </div>
           <div>
@@ -173,7 +214,8 @@ const Footer: React.FC = () => {
                     sx={{
                       textDecoration: 'none',
                       color: 'text',
-                      opacity: '0.5',
+                      opacity: '0.85',
+                      fontSize: '14px',
                     }}
                   >
                     {content}
@@ -203,7 +245,8 @@ const Footer: React.FC = () => {
                     sx={{
                       textDecoration: 'none',
                       color: 'text',
-                      opacity: '0.5',
+                      opacity: '0.85',
+                      fontSize: '14px',
                     }}
                   >
                     {content}
@@ -233,7 +276,8 @@ const Footer: React.FC = () => {
                     sx={{
                       textDecoration: 'none',
                       color: 'text',
-                      opacity: '0.5',
+                      opacity: '0.85',
+                      fontSize: '14px',
                     }}
                   >
                     {content}
@@ -263,7 +307,8 @@ const Footer: React.FC = () => {
                     sx={{
                       textDecoration: 'none',
                       color: 'text',
-                      opacity: '0.5',
+                      opacity: '0.85',
+                      fontSize: '14px',
                     }}
                   >
                     {content}
@@ -278,10 +323,11 @@ const Footer: React.FC = () => {
         sx={{
           textAlign: 'center',
           mt: '80px',
-          opacity: '0.5',
+          opacity: '0.8',
+          fontSize: '14px',
         }}
       >
-        all rights reserved by © codivox {new Date().getFullYear()}
+        All rights reserved by © codivox {new Date().getFullYear()}
       </div>
     </footer>
   );
