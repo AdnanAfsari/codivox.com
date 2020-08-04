@@ -10,7 +10,7 @@ interface SEOProps {
 }
 
 const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
-  const { site } = useStaticQuery(
+  const { site, ogImageDefault } = useStaticQuery(
     graphql`
       query {
         site {
@@ -18,6 +18,7 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
             title
             description
             author
+            siteUrl
           }
         }
         ogImageDefault: file(absolutePath: { regex: "/src/images/meta-img/" }) {
