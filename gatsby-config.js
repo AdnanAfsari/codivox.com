@@ -3,6 +3,7 @@ module.exports = {
     title: `codivox`,
     description: `We’re developers and designers specialized in building quality web and mobile apps`,
     author: `@codivox`,
+    siteUrl: `https://codivox.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
