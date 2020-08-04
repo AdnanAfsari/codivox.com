@@ -20,11 +20,21 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
             author
           }
         }
+        ogImageDefault: file(absolutePath: { regex: "/src/images/meta-img/" }) {
+          childImageSharp {
+            fixed(height: 627, width: 1200) {
+              src
+            }
+          }
+        }
       }
     `,
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const ogImage = site.siteMetadata.siteUrl.concat(
+    ogImageDefault.childImageSharp.fixed.src,
+  );
 
   return (
     <Helmet
@@ -39,6 +49,10 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
+          name: `keywords`,
+          content: `software development,react,react native,gatsbyjs,graphql,nodejs,serverless,consulting,contracting,software engineering,engineering leadership,product development,software as a service, saas,reactjs,software architecture,consultants,contractors`,
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -49,6 +63,18 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
+          property: `og:image`,
+          content: ogImage,
+        },
+        {
+          name: `twitter:card`,
+          content: `summary_large_image`,
         },
         {
           name: `twitter:card`,
@@ -65,6 +91,10 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: ogImage,
         },
       ].concat(meta)}
     />
