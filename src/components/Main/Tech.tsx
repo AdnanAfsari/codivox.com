@@ -3,18 +3,29 @@ import { Box, Heading, jsx } from 'theme-ui';
 import React from 'react';
 import { Link } from 'gatsby';
 import Js from '../../images/js';
-import Linkedin from '../../images/linkedin';
-import Fb from '../../images/fb';
-import Twitter from '../../images/twitter';
-import Insta from '../../images/insta';
-import Dots from '../../images/dots';
+import React1 from '../../images/react';
+import Nextjs from '../../images/nextjs';
+import Plus from '../../images/plus';
+import Node from '../../images/node';
+import Mondodb from '../../images/mongoDB';
+import Post from '../../images/post';
+import Graphql from '../../images/graphQL';
+import Aws from '../../images/aws';
+import Map from '../../images/map';
+import Stripe from '../../images/stripe';
+import Wordpress from '../../images/wordpress';
+import Shopify from '../../images/shopify';
+import Slack from '../../images/slack';
+import Twilio from '../../images/twilio';
+import Sendgrid from '../../images/sendgrid';
+import Gatsby from '../../images/gatsby';
 
 const Tech: React.FC = () => {
   const techTitle = 'Our Technology';
   const techSubtitle =
     'State-of-the-art communication tools to grow your business.';
   return (
-    <React.Fragment>
+    <div>
       <Box sx={{ textAlign: 'center', my: '6rem' }}>
         <Heading sx={{ fontSize: '38px', width: 480, m: '0 auto' }}>
           {techTitle}
@@ -29,29 +40,43 @@ const Tech: React.FC = () => {
           display: 'grid',
           gridTemplateColumns: ['1fr 1.5fr'],
           gridTtemplateRrows: ['1fr 1fr 1fr'],
+          alignContent: 'center',
+          justifyItems: 'center',
         }}
       >
-        <div>
-          <h4>hahahhah</h4>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolorem
-            ratione
-          </p>
+        <div sx={{ width: '35%' }}>
+          <Heading as={'h4'} sx={{ mb: '1rem' }}>
+            Client
+          </Heading>
+          <p>Introducing the client to go beyond</p>
         </div>
 
-        <div
-          sx={{
-            display: 'flex',
-            flexDirection: 'row',
-          }}
-        >
+        <div sx={{ ml: '60px' }}>
           <Js />
-          <Js />
-          <Js />
-          <Js />
+          <React1 />
+          <Gatsby />
+          <Nextjs />
+          <React1 />
+          <Plus />
+        </div>
+
+        <div sx={{ width: '35%' }}>
+          <Heading as={'h4'} sx={{ mb: '1rem' }}>
+            Client
+          </Heading>
+          <p>Introducing the client to go beyond</p>
+        </div>
+
+        <div sx={{ ml: '60px' }}>
+          <Node />
+          <Mondodb />
+          <Post />
+          <Graphql />
+          <Aws />
+          <Plus />
         </div>
       </Box>
-    </React.Fragment>
+    </div>
   );
 };
 
