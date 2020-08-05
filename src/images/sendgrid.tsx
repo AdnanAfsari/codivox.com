@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function SendgridSvg(props: React.SVGProps<SVGSVGElement>) {
+function Sendgrid(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={40} height={39} viewBox="0 0 40 39" fill="none" {...props}>
       <g clipPath="url(#prefix__clip0)">
@@ -21,4 +21,4 @@ function SendgridSvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default SendgridSvg;
+export default Sendgrid;

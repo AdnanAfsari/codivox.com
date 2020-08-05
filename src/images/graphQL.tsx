@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function GraphqlSvg(props: React.SVGProps<SVGSVGElement>) {
+function Graphql(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={38} height={41} viewBox="0 0 38 41" fill="none" {...props}>
       <path
@@ -13,4 +13,4 @@ function GraphqlSvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default GraphqlSvg;
+export default Graphql;

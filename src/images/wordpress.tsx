@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function WordpressSvg(props: React.SVGProps<SVGSVGElement>) {
+function Wordpress(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={28} height={27} viewBox="0 0 28 27" fill="none" {...props}>
       <path
@@ -15,4 +15,4 @@ function WordpressSvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default WordpressSvg;
+export default Wordpress;

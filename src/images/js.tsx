@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function JsSvg(props: React.SVGProps<SVGSVGElement>) {
+function Js(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={33} height={34} viewBox="0 0 33 34" fill="none" {...props}>
       <path d="M0 0h33v34H0V0z" fill="#F7DF1E" />
@@ -12,4 +12,4 @@ function JsSvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default JsSvg;
+export default Js;

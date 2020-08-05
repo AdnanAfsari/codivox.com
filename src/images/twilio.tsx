@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function TwilioSvg(props: React.SVGProps<SVGSVGElement>) {
+function Twilio(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={43} height={41} viewBox="0 0 43 41" fill="none" {...props}>
       <path
@@ -15,4 +15,4 @@ function TwilioSvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default TwilioSvg;
+export default Twilio;

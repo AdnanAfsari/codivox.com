@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function AwsSvg(props: React.SVGProps<SVGSVGElement>) {
+function Aws(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={47} height={25} viewBox="0 0 47 25" fill="none" {...props}>
       <g clipPath="url(#prefix__clip0)">
@@ -30,4 +30,4 @@ function AwsSvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default AwsSvg;
+export default Aws;

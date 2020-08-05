@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function MongodbSvg(props: React.SVGProps<SVGSVGElement>) {
+function Mongodb(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={49} height={38} viewBox="0 0 49 38" fill="none" {...props}>
       <path
@@ -55,4 +55,4 @@ function MongodbSvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default MongodbSvg;
+export default Mongodb;

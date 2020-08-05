@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function MapSvg(props: React.SVGProps<SVGSVGElement>) {
+function Map(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={31} height={43} viewBox="0 0 31 43" fill="none" {...props}>
       <path
@@ -27,4 +27,4 @@ function MapSvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default MapSvg;
+export default Map;

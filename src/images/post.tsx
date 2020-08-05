@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function postSvg(props: React.SVGProps<SVGSVGElement>) {
+function Post(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={39} height={40} viewBox="0 0 39 40" fill="none" {...props}>
       <path
@@ -13,4 +13,4 @@ function postSvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default postSvg;
+export default Post;

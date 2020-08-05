@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function SlackSvg(props: React.SVGProps<SVGSVGElement>) {
+function Slack(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={41} height={39} viewBox="0 0 41 39" fill="none" {...props}>
       <path
@@ -31,4 +31,4 @@ function SlackSvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default SlackSvg;
+export default Slack;

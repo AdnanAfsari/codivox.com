@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function StripeSvg(props: React.SVGProps<SVGSVGElement>) {
+function Stripe(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={43} height={17} viewBox="0 0 43 17" fill="none" {...props}>
       <path
@@ -11,4 +11,4 @@ function StripeSvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default StripeSvg;
+export default Stripe;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function GatsbySvg(props: React.SVGProps<SVGSVGElement>) {
+function Gatsby(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={43} height={41} viewBox="0 0 43 41" fill="none" {...props}>
       <path
@@ -11,4 +11,4 @@ function GatsbySvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default GatsbySvg;
+export default Gatsby;

@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-function ShopifySvg(props: React.SVGProps<SVGSVGElement>) {
+function Shopify(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg width={37} height={41} viewBox="0 0 37 41" fill="none" {...props}>
       <path
@@ -19,4 +19,4 @@ function ShopifySvg(props: React.SVGProps<SVGSVGElement>) {
   );
 }
 
-export default ShopifySvg;
+export default Shopify;
