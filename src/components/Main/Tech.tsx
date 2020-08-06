@@ -38,20 +38,37 @@ const Tech: React.FC = () => {
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: ['1fr 1.5fr'],
+          gridTemplateColumns: ['1fr 2fr'],
           gridTtemplateRrows: ['1fr 1fr 1fr'],
           alignContent: 'center',
-          justifyItems: 'center',
+          // justifyItems: 'center',
+          gap: '25px 0px',
+          padding: '0px 80px',
         }}
       >
-        <div sx={{ width: '35%' }}>
-          <Heading as={'h4'} sx={{ mb: '1rem' }}>
+        <div sx={{ width: '55%' }}>
+          <Heading
+            as={'h4'}
+            sx={{
+              mb: '-1rem',
+              fontWeight: 600,
+              fontSize: 36,
+              color: '#6670FD',
+            }}
+          >
             Client
           </Heading>
-          <p>Introducing the client to go beyond</p>
+          <p sx={{ fontWeight: 600 }}>Introducing the client to go beyond</p>
         </div>
 
-        <div sx={{ ml: '60px' }}>
+        <div
+          sx={{
+            justifySelf: 'end',
+            '& > *': {
+              mr: '-.5rem',
+            },
+          }}
+        >
           <Js />
           <React1 />
           <Gatsby />
@@ -60,19 +77,67 @@ const Tech: React.FC = () => {
           <Plus />
         </div>
 
-        <div sx={{ width: '35%' }}>
-          <Heading as={'h4'} sx={{ mb: '1rem' }}>
-            Client
+        <div sx={{ width: '60%' }}>
+          <Heading
+            as={'h4'}
+            sx={{
+              mb: '-1rem',
+              fontWeight: 600,
+              fontSize: 36,
+              color: '#6670FD',
+            }}
+          >
+            Backend
           </Heading>
-          <p>Introducing the client to go beyond</p>
+          <p sx={{ fontWeight: 600 }}>Introducing the Backend to go beyond</p>
         </div>
 
-        <div sx={{ ml: '60px' }}>
+        <div
+          sx={{
+            justifySelf: 'end',
+            '& > *': {
+              mr: '-.5rem',
+            },
+          }}
+        >
           <Node />
           <Mondodb />
           <Post />
           <Graphql />
           <Aws />
+          <Plus />
+        </div>
+
+        <div sx={{ width: '50%' }}>
+          <Heading
+            as={'h4'}
+            sx={{
+              mb: '-1rem',
+              fontWeight: 600,
+              fontSize: 36,
+              color: '#6670FD',
+            }}
+          >
+            API
+          </Heading>
+          <p sx={{ fontWeight: 600 }}>Introducing the API to go beyond</p>
+        </div>
+
+        <div
+          sx={{
+            justifySelf: 'end',
+            '& > *': {
+              mr: '-.5rem',
+            },
+          }}
+        >
+          <Map />
+          <Stripe />
+          <Wordpress />
+          <Shopify />
+          <Slack />
+          <Twilio />
+          <Sendgrid />
           <Plus />
         </div>
       </Box>

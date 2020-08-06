@@ -2,21 +2,21 @@ import * as React from 'react';
 
 function Sendgrid(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg width={40} height={39} viewBox="0 0 40 39" fill="none" {...props}>
-      <g clipPath="url(#prefix__clip0)">
-        <path d="M13.333 13H0v26h26.667V13H13.333z" fill="#9DE1F3" />
-        <path d="M13.334 0v26H40V0H13.334z" fill="#27B4E1" />
-        <path
-          d="M0 39h13.333V26H0v13zm26.667-26H40V0H26.667v13z"
-          fill="#1A82E2"
-        />
-        <path d="M13.334 26h13.333V13H13.333v13z" fill="#239FD7" />
-      </g>
-      <defs>
-        <clipPath id="prefix__clip0">
-          <path fill="#fff" d="M0 0h40v39H0z" />
-        </clipPath>
-      </defs>
+    <svg width={71} height={69} viewBox="0 0 71 69" fill="none" {...props}>
+      <ellipse cx={35.5} cy={34.5} rx={35.5} ry={34.5} fill="#F4F5FF" />
+      <path
+        d="M70 34.5C70 52.975 54.581 68 35.5 68S1 52.975 1 34.5 16.419 1 35.5 1 70 16.025 70 34.5z"
+        stroke="#6670FD"
+        strokeOpacity={0.1}
+        strokeWidth={2}
+      />
+      <path d="M28.333 28H15v26h26.667V28H28.333z" fill="#9DE1F3" />
+      <path d="M28.334 15v26H55V15H28.334z" fill="#27B4E1" />
+      <path
+        d="M15 54h13.333V41H15v13zm26.667-26H55V15H41.667v13z"
+        fill="#1A82E2"
+      />
+      <path d="M28.334 41h13.333V28H28.333v13z" fill="#239FD7" />
     </svg>
   );
 }
