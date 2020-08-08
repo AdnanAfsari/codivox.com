@@ -2,7 +2,17 @@ import * as React from 'react';
 
 function Plus(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg width={72} height={69} viewBox="0 0 110 109" fill="none" {...props}>
+    <svg
+      width={107}
+      height={105}
+      viewBox="0 0 110 109"
+      fill="none"
+      style={{
+        marginBottom: '-19px',
+        marginLeft: '-25px',
+      }}
+      {...props}
+    >
       <g filter="url(#prefix__filter0_d)">
         <ellipse cx={55} cy={54.5} rx={35} ry={34.5} fill="#FAFAFF" />
         <path
