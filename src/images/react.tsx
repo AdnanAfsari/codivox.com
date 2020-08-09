@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function React1(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg width={72} height={69} viewBox="0 0 72 69" fill="none" {...props}>
+    <svg width={57} height={54} viewBox="0 0 72 69" fill="none" {...props}>
       <ellipse cx={36} cy={34.5} rx={36} ry={34.5} fill="#F4F5FF" />
       <path
         d="M71 34.5C71 52.962 55.37 68 36 68 16.63 68 1 52.962 1 34.5S16.63 1 36 1c19.37 0 35 15.038 35 33.5z"
