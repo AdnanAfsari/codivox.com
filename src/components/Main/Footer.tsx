@@ -92,21 +92,24 @@ const Footer: React.FC = () => {
         width: '100%',
       }}
     >
-      <div sx={{ position: 'absolute', right: 10, bottom: 10 }}>
+      {/* <div sx={{ position: 'absolute', right: 10, bottom: 10 }}>
         <Dots />
-      </div>
+      </div> */}
+
       <div
         sx={{
           display: 'flex',
           justifyContent: 'center',
+          // textAlign: 'center',
         }}
       >
         <Box
           sx={{
             width: 1110,
             display: 'grid',
-            gridTemplateColumns: ['2fr 1fr 1fr 1fr 1fr'],
-            gridTemplateRows: '1fr',
+            gridTemplateColumns: ['1fr', '2fr 1fr 1fr 1fr 1fr'],
+            gridTemplateRows: ['1fr 1fr 1fr', '1fr'],
+            // justifyItems: 'center',
             gap: 5,
             mt: '4em',
           }}
@@ -114,6 +117,14 @@ const Footer: React.FC = () => {
           <div
             sx={{
               mt: '1em',
+              display: 'grid',
+              gridTemplateColumns: ['1fr'],
+              gridTemplateRows: ['1fr'],
+              '@media screen and (max-width: 40rem)': {
+                justifyItems: 'center',
+                textAlign: 'center',
+                px: 11,
+              },
             }}
           >
             <Link to="/" sx={{ textDecoration: 'none' }}>
@@ -125,74 +136,76 @@ const Footer: React.FC = () => {
             </Link>
             <p sx={{ opacity: '0.85' }}>{footerSubtitle}</p>
 
-            <Link
-              to="https://facebook.com/codivox"
-              target="_blank"
-              rel="noreferrer"
-              sx={{ p: 2, pl: 0, textDecoration: 'none' }}
-            >
-              <Fb />
-              <span
-                sx={{
-                  fontSize: '0 !important',
-                  height: 1,
-                  overflow: 'hidden',
-                }}
+            <div>
+              <Link
+                to="https://facebook.com/codivox"
+                target="_blank"
+                rel="noreferrer"
+                sx={{ p: 2, pl: 0, textDecoration: 'none' }}
               >
-                Facebook
-              </span>
-            </Link>
-            <Link
-              to="https://twitter.com/codivox"
-              target="_blank"
-              rel="noreferrer"
-              sx={{ p: 2, textDecoration: 'none' }}
-            >
-              <Twitter />
-              <span
-                sx={{
-                  fontSize: '0 !important',
-                  height: 1,
-                  overflow: 'hidden',
-                }}
+                <Fb />
+                <span
+                  sx={{
+                    fontSize: '0 !important',
+                    height: 1,
+                    overflow: 'hidden',
+                  }}
+                >
+                  Facebook
+                </span>
+              </Link>
+              <Link
+                to="https://twitter.com/codivox"
+                target="_blank"
+                rel="noreferrer"
+                sx={{ p: 2, textDecoration: 'none' }}
               >
-                Twitter
-              </span>
-            </Link>
-            <Link
-              to="https://instagram.com/codivox"
-              target="_blank"
-              rel="noreferrer"
-              sx={{ p: 2, textDecoration: 'none' }}
-            >
-              <Insta />
-              <span
-                sx={{
-                  fontSize: '0 !important',
-                  height: 1,
-                  overflow: 'hidden',
-                }}
+                <Twitter />
+                <span
+                  sx={{
+                    fontSize: '0 !important',
+                    height: 1,
+                    overflow: 'hidden',
+                  }}
+                >
+                  Twitter
+                </span>
+              </Link>
+              <Link
+                to="https://instagram.com/codivox"
+                target="_blank"
+                rel="noreferrer"
+                sx={{ p: 2, textDecoration: 'none' }}
               >
-                Instagram
-              </span>
-            </Link>
-            <Link
-              to="https://linkedin.com/company/codivox"
-              target="_blank"
-              rel="noreferrer"
-              sx={{ p: 2, textDecoration: 'none' }}
-            >
-              <Linkedin />
-              <span
-                sx={{
-                  fontSize: '0 !important',
-                  height: 1,
-                  overflow: 'hidden',
-                }}
+                <Insta />
+                <span
+                  sx={{
+                    fontSize: '0 !important',
+                    height: 1,
+                    overflow: 'hidden',
+                  }}
+                >
+                  Instagram
+                </span>
+              </Link>
+              <Link
+                to="https://linkedin.com/company/codivox"
+                target="_blank"
+                rel="noreferrer"
+                sx={{ p: 2, textDecoration: 'none' }}
               >
-                Linkedin
-              </span>
-            </Link>
+                <Linkedin />
+                <span
+                  sx={{
+                    fontSize: '0 !important',
+                    height: 1,
+                    overflow: 'hidden',
+                  }}
+                >
+                  Linkedin
+                </span>
+              </Link>
+            </div>
           </div>
           <div>
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
