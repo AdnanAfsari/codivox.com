@@ -12,9 +12,10 @@ const Hero: React.FC = () => {
     <Box
       sx={{
         display: 'grid',
-        gridTemplateColumns: '55% 45%',
+        gridTemplateColumns: ['55% 45%'],
         height: '635px',
         alignItems: 'center',
+        // justifyItems: 'center',
       }}
     >
       <Flex
@@ -22,6 +23,7 @@ const Hero: React.FC = () => {
           display: 'grid',
           gridTemplateRows: 'auto auto auto',
           height: 'calc( 400px )',
+          gridTemplateColumns: ['100%'],
         }}
       >
         <Heading sx={{ fontSize: '38px' }}>{heroTitle}</Heading>

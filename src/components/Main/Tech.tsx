@@ -27,18 +27,14 @@ const Tech: React.FC = () => {
   return (
     <div>
       <Box sx={{ textAlign: 'center', my: '6rem' }}>
-        <Heading sx={{ fontSize: '38px', width: 480, m: '0 auto' }}>
-          {techTitle}
-        </Heading>
-        <p sx={{ opacity: '0.85', width: '500px', m: '0 auto' }}>
-          {techSubtitle}
-        </p>
+        <Heading sx={{ fontSize: '38px', m: '0 auto' }}>{techTitle}</Heading>
+        <p sx={{ opacity: '0.85', m: '0 auto' }}>{techSubtitle}</p>
       </Box>
 
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: ['1fr 2fr'],
+          gridTemplateColumns: ['1fr'],
           gridTtemplateRrows: ['1fr 1fr 1fr'],
           alignContent: 'center',
           // justifyItems: 'center',
