@@ -97,9 +97,7 @@ const Footer: React.FC = () => {
           position: 'absolute',
           right: 10,
           bottom: 10,
-          '@media screen and (max-width: 40rem)': {
-            display: 'none',
-          },
+          display: ['none', 'block', 'block', 'block'],
         }}
       >
         <Dots />
@@ -129,11 +127,9 @@ const Footer: React.FC = () => {
               display: 'grid',
               gridTemplateColumns: ['1fr'],
               gridTemplateRows: ['1fr'],
-              '@media screen and (max-width: 40rem)': {
-                justifyItems: 'center',
-                textAlign: 'center',
-                px: 11,
-              },
+              justifyItems: ['center', 'left', 'left', 'left'],
+              textAlign: ['center', 'left', 'left', 'left'],
+              px: [11, 0, 0, 0],
             }}
           >
             <Link to="/" sx={{ textDecoration: 'none' }}>
@@ -151,9 +147,7 @@ const Footer: React.FC = () => {
                 fontWeight: '600',
                 mt: '20px',
                 mb: '25px',
-                '@media screen and (min-width: 40rem)': {
-                  display: 'none',
-                },
+                display: ['inline-block', 'none', 'none', 'none'],
               }}
             >
               <Link
@@ -266,9 +260,7 @@ const Footer: React.FC = () => {
           </div>
           <div
             sx={{
-              '@media screen and (max-width: 40rem)': {
-                display: 'none',
-              },
+              display: ['none', 'block', 'block'],
             }}
           >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
@@ -303,9 +295,7 @@ const Footer: React.FC = () => {
 
           <div
             sx={{
-              '@media screen and (max-width: 40rem)': {
-                display: 'none',
-              },
+              display: ['none', 'block', 'block'],
             }}
           >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
@@ -340,9 +330,7 @@ const Footer: React.FC = () => {
 
           <div
             sx={{
-              '@media screen and (max-width: 40rem)': {
-                display: 'none',
-              },
+              display: ['none', 'block', 'block'],
             }}
           >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
@@ -377,9 +365,7 @@ const Footer: React.FC = () => {
 
           <div
             sx={{
-              '@media screen and (max-width: 40rem)': {
-                display: 'none',
-              },
+              display: ['none', 'block', 'block'],
             }}
           >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
@@ -416,12 +402,9 @@ const Footer: React.FC = () => {
       <div
         sx={{
           textAlign: 'center',
-          mt: '80px',
           opacity: '0.8',
           fontSize: '14px',
-          '@media screen and (max-width: 40rem)': {
-            mt: '22px',
-          },
+          mt: ['22px', '80px', '80px', '80px'],
         }}
       >
         All rights reserved by © codivox {new Date().getFullYear()}
