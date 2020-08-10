@@ -22,7 +22,7 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
   return (
     <Layout>
       <SEO title="codivox" />
-      {/* <Hero /> */}
+      <Hero />
       <Services />
       <Process />
       <Tech />
