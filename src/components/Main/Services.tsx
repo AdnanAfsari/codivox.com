@@ -10,7 +10,7 @@ const Services: React.FC = () => {
   const servicesSubtitle =
     'Here are some of the many ways that we can help you out.';
   return (
-    <Box>
+    <Box sx={{ minHeight: ['630px', '500px'] }}>
       <Box sx={{ textAlign: 'center' }}>
         <Heading sx={{ fontSize: '38px', width: 480, m: '0 auto' }}>
           {servicesTitle}
@@ -20,7 +20,7 @@ const Services: React.FC = () => {
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
+          gridTemplateColumns: ['1fr 1fr 1fr'],
           columnGap: '60px',
           height: 330,
           my: '4rem',

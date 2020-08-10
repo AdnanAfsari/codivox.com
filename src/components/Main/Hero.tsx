@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
       sx={{
         display: 'grid',
         gridTemplateColumns: ['55% 45%'],
-        height: '635px',
+        minHeight: '635px',
         alignItems: 'center',
         // justifyItems: 'center',
       }}
