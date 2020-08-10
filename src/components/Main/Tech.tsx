@@ -39,19 +39,13 @@ const Tech: React.FC = () => {
           alignContent: 'center',
           // justifyItems: 'center',
           gap: '25px 0px',
-          padding: '0px 80px',
-          '@media screen and (max-width: 40rem)': {
-            padding: '0px 0px',
-          },
+          padding: ['0px 0px', '0px 80px'],
         }}
       >
         <div
           sx={{
-            width: '55%',
-            '@media screen and (max-width: 40rem)': {
-              width: '100%',
-              textAlign: 'center',
-            },
+            width: ['100%', '55%'],
+            textAlign: ['center', 'left'],
           }}
         >
           <Heading
@@ -70,10 +64,7 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            justifySelf: 'end',
-            '@media screen and (max-width: 40rem)': {
-              justifySelf: 'center',
-            },
+            justifySelf: ['center', 'end'],
             '& > *': {
               mr: '-.5rem',
             },
@@ -89,11 +80,8 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            width: '60%',
-            '@media screen and (max-width: 40rem)': {
-              width: '100%',
-              textAlign: 'center',
-            },
+            width: ['100%', '55%'],
+            textAlign: ['center', 'left'],
           }}
         >
           <Heading
@@ -112,10 +100,7 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            justifySelf: 'end',
-            '@media screen and (max-width: 40rem)': {
-              justifySelf: 'center',
-            },
+            justifySelf: ['center', 'end'],
             '& > *': {
               mr: '-.5rem',
             },
@@ -131,11 +116,8 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            width: '50%',
-            '@media screen and (max-width: 40rem)': {
-              width: '100%',
-              textAlign: 'center',
-            },
+            width: ['100%', '55%'],
+            textAlign: ['center', 'left'],
           }}
         >
           <Heading
@@ -154,10 +136,7 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            justifySelf: 'end',
-            '@media screen and (max-width: 40rem)': {
-              justifySelf: 'center',
-            },
+            justifySelf: ['center', 'end'],
             '& > *': {
               mr: '-.5rem',
             },
