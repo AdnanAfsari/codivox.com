@@ -12,7 +12,9 @@ const Services: React.FC = () => {
   return (
     <Box sx={{ minHeight: ['630px', '500px'] }}>
       <Box sx={{ textAlign: 'center' }}>
-        <Heading sx={{ fontSize: '38px', width: ['100%', 480], m: '0 auto' }}>
+        <Heading
+          sx={{ fontSize: ['26px', '38px'], width: ['100%', 480], m: '0 auto' }}
+        >
           {servicesTitle}
         </Heading>
         <p sx={{ opacity: '0.85' }}>{servicesSubtitle}</p>

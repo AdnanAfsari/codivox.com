@@ -27,7 +27,9 @@ const Tech: React.FC = () => {
   return (
     <div>
       <Box sx={{ textAlign: 'center', my: '6rem' }}>
-        <Heading sx={{ fontSize: '38px', m: '0 auto' }}>{techTitle}</Heading>
+        <Heading sx={{ fontSize: ['26px', '38px'], m: '0 auto' }}>
+          {techTitle}
+        </Heading>
         <p sx={{ opacity: '0.85', m: '0 auto' }}>{techSubtitle}</p>
       </Box>
 
