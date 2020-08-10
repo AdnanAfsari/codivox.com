@@ -108,7 +108,7 @@ const Footer: React.FC = () => {
             width: 1110,
             display: 'grid',
             gridTemplateColumns: ['1fr', '2fr 1fr 1fr 1fr 1fr'],
-            gridTemplateRows: ['1fr 1fr 1fr', '1fr'],
+            gridTemplateRows: ['1fr'],
             // justifyItems: 'center',
             gap: 5,
             mt: '4em',
@@ -136,6 +136,54 @@ const Footer: React.FC = () => {
             </Link>
             <p sx={{ opacity: '0.85' }}>{footerSubtitle}</p>
 
+            <div
+              sx={{
+                fontSize: '14px',
+                fontWeight: '600',
+                mt: '20px',
+                mb: '25px',
+                '@media screen and (min-width: 40rem)': {
+                  display: 'none',
+                },
+              }}
+            >
+              <Link
+                to="/"
+                target="_blank"
+                rel="noreferrer"
+                sx={{
+                  textDecoration: 'none',
+                  px: 10,
+                  color: 'text',
+                }}
+              >
+                Services
+              </Link>
+              <Link
+                to="/"
+                target="_blank"
+                rel="noreferrer"
+                sx={{
+                  textDecoration: 'none',
+                  px: 10,
+                  color: 'text',
+                }}
+              >
+                Blog
+              </Link>
+              <Link
+                to="/"
+                target="_blank"
+                rel="noreferrer"
+                sx={{
+                  textDecoration: 'none',
+                  px: 10,
+                  color: 'text',
+                }}
+              >
+                Get Estimate
+              </Link>
+            </div>
             <div>
               <Link
                 to="https://facebook.com/codivox"
@@ -207,7 +255,13 @@ const Footer: React.FC = () => {
               </Link>
             </div>
           </div>
-          <div>
+          <div
+            sx={{
+              '@media screen and (max-width: 40rem)': {
+                display: 'none',
+              },
+            }}
+          >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
               Services
             </Heading>
@@ -238,7 +292,13 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div>
+          <div
+            sx={{
+              '@media screen and (max-width: 40rem)': {
+                display: 'none',
+              },
+            }}
+          >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
               About Us
             </Heading>
@@ -269,7 +329,13 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div>
+          <div
+            sx={{
+              '@media screen and (max-width: 40rem)': {
+                display: 'none',
+              },
+            }}
+          >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
               Blog
             </Heading>
@@ -300,7 +366,13 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div>
+          <div
+            sx={{
+              '@media screen and (max-width: 40rem)': {
+                display: 'none',
+              },
+            }}
+          >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
               Get Estimate
             </Heading>
@@ -338,6 +410,9 @@ const Footer: React.FC = () => {
           mt: '80px',
           opacity: '0.8',
           fontSize: '14px',
+          '@media screen and (max-width: 40rem)': {
+            mt: '22px',
+          },
         }}
       >
         All rights reserved by © codivox {new Date().getFullYear()}
