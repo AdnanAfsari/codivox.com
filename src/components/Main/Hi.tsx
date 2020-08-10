@@ -14,7 +14,7 @@ const Hi: React.FC = () => {
       sx={{
         width: '100%',
         m: '0 auto',
-        background: '#6670FD',
+        background: [null, '#6670FD'],
         height: 400,
         my: '5rem',
         borderRadius: 30,
@@ -28,7 +28,7 @@ const Hi: React.FC = () => {
           justifyContent: 'center',
         }}
       >
-        <Heading sx={{ color: 'background', fontSize: '36px' }}>
+        <Heading sx={{ color: ['#141633', 'background'], fontSize: '36px' }}>
           Say Hi!
         </Heading>
         <p
@@ -38,7 +38,7 @@ const Hi: React.FC = () => {
             pb: '2rem',
             pt: '0.5rem',
             textAlign: 'center',
-            color: '#fff',
+            color: ['#141633', '#fff'],
           }}
         >
           {hiText}
@@ -61,7 +61,8 @@ const Hi: React.FC = () => {
           <button
             sx={{
               variant: 'buttons.prime',
-              background: '#6670FD',
+              background: ['#6670FD', '#fff'],
+              color: ['#fff', '#6670FD'],
               width: 140,
               height: 50,
               ml: 10,
