@@ -37,8 +37,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       </div>
       <Footer />
       <MessengerCustomerChat
-        pageId={process.env.PAGE_ID}
-        appId={process.env.APP_ID}
+        pageId={process.env.GATSBY_PAGE_ID}
+        appId={process.env.GATSBY_APP_ID}
         themeColor="#6670FD"
       />
     </React.Fragment>
