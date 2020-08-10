@@ -92,9 +92,18 @@ const Footer: React.FC = () => {
         width: '100%',
       }}
     >
-      {/* <div sx={{ position: 'absolute', right: 10, bottom: 10 }}>
+      <div
+        sx={{
+          position: 'absolute',
+          right: 10,
+          bottom: 10,
+          '@media screen and (max-width: 40rem)': {
+            display: 'none',
+          },
+        }}
+      >
         <Dots />
-      </div> */}
+      </div>
 
       <div
         sx={{
