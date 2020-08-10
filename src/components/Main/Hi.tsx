@@ -14,7 +14,7 @@ const Hi: React.FC = () => {
       sx={{
         width: '100%',
         m: '0 auto',
-        background: ' #6670FD',
+        background: '#6670FD',
         height: 400,
         my: '5rem',
         borderRadius: 30,
@@ -71,7 +71,7 @@ const Hi: React.FC = () => {
           </button>
         </Flex>
       </Flex>
-      <Flex sx={{ position: 'absolute' }}>
+      <Flex sx={{ position: 'absolute', display: ['none', 'block'] }}>
         <Box sx={{ position: 'relative', top: -400 }}>
           <span sx={{ position: 'relative', top: -150, left: -30 }}>
             <SCircle />
