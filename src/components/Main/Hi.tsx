@@ -53,6 +53,7 @@ const Hi: React.FC = () => {
               width: 140,
               height: 50,
               mr: 10,
+              ml: 0,
               fontSize: '1rem',
             }}
           >

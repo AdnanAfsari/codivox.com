@@ -1,8 +1,8 @@
 export default {
   styles: {
     root: {
-      '-webkit-font-smoothing': 'antialiased',
-      '-moz-osx-font-smoothing': 'grayscale',
+      WebkitFontSmoothing: 'antialiased',
+      MozOsxFontSmoothing: 'grayscale',
     },
     headerLinks: {
       textDecoration: 'none',
