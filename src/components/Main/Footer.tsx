@@ -188,8 +188,8 @@ const Footer: React.FC = () => {
               </Link>
             </div>
             <div>
-              <Link
-                to="https://facebook.com/codivox"
+              <a
+                href="https://facebook.com/codivox"
                 target="_blank"
                 rel="noreferrer"
                 sx={{ p: 2, pl: 0, textDecoration: 'none' }}
@@ -204,9 +204,9 @@ const Footer: React.FC = () => {
                 >
                   Facebook
                 </span>
-              </Link>
-              <Link
-                to="https://twitter.com/codivox"
+              </a>
+              <a
+                href="https://twitter.com/codivox"
                 target="_blank"
                 rel="noreferrer"
                 sx={{ p: 2, textDecoration: 'none' }}
@@ -221,9 +221,9 @@ const Footer: React.FC = () => {
                 >
                   Twitter
                 </span>
-              </Link>
-              <Link
-                to="https://instagram.com/codivox"
+              </a>
+              <a
+                href="https://instagram.com/codivox"
                 target="_blank"
                 rel="noreferrer"
                 sx={{ p: 2, textDecoration: 'none' }}
@@ -238,9 +238,9 @@ const Footer: React.FC = () => {
                 >
                   Instagram
                 </span>
-              </Link>
-              <Link
-                to="https://linkedin.com/company/codivox"
+              </a>
+              <a
+                href="https://linkedin.com/company/codivox"
                 target="_blank"
                 rel="noreferrer"
                 sx={{ p: 2, textDecoration: 'none' }}
@@ -255,8 +255,7 @@ const Footer: React.FC = () => {
                 >
                   Linkedin
                 </span>
-              </Link>
-            </div>
+              </a>
           </div>
           <div
             sx={{
@@ -276,6 +275,7 @@ const Footer: React.FC = () => {
                 const { content, link } = service;
                 return (
                   <Link
+                    key={content}
                     to={link}
                     target="_blank"
                     rel="noreferrer"
@@ -312,6 +312,7 @@ const Footer: React.FC = () => {
                 return (
                   <Link
                     to={link}
+                    key={content}
                     target="_blank"
                     rel="noreferrer"
                     sx={{
@@ -347,6 +348,7 @@ const Footer: React.FC = () => {
                 return (
                   <Link
                     to={link}
+                    key={content}
                     target="_blank"
                     rel="noreferrer"
                     sx={{
@@ -382,6 +384,7 @@ const Footer: React.FC = () => {
                 return (
                   <Link
                     to={link}
+                    key={content}
                     target="_blank"
                     rel="noreferrer"
                     sx={{
