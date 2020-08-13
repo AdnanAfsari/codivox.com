@@ -256,6 +256,7 @@ const Footer: React.FC = () => {
                   Linkedin
                 </span>
               </a>
+            </div>
           </div>
           <div
             sx={{
