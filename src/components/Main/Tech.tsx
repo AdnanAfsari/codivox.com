@@ -27,26 +27,29 @@ const Tech: React.FC = () => {
   return (
     <div>
       <Box sx={{ textAlign: 'center', my: '6rem' }}>
-        <Heading sx={{ fontSize: '38px', width: 480, m: '0 auto' }}>
+        <Heading sx={{ fontSize: ['26px', '38px'], m: '0 auto' }}>
           {techTitle}
         </Heading>
-        <p sx={{ opacity: '0.85', width: '500px', m: '0 auto' }}>
-          {techSubtitle}
-        </p>
+        <p sx={{ opacity: '0.85', m: '0 auto' }}>{techSubtitle}</p>
       </Box>
 
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: ['1fr 2fr'],
+          gridTemplateColumns: ['1fr', '1fr 2fr'],
           gridTtemplateRrows: ['1fr 1fr 1fr'],
           alignContent: 'center',
           // justifyItems: 'center',
           gap: '25px 0px',
-          padding: '0px 80px',
+          padding: ['0px 0px', '0px 80px'],
         }}
       >
-        <div sx={{ width: '55%' }}>
+        <div
+          sx={{
+            width: ['100%', '55%'],
+            textAlign: ['center', 'left'],
+          }}
+        >
           <Heading
             as={'h4'}
             sx={{
@@ -63,7 +66,7 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            justifySelf: 'end',
+            justifySelf: ['center', 'end'],
             '& > *': {
               mr: '-.5rem',
             },
@@ -77,7 +80,12 @@ const Tech: React.FC = () => {
           <Plus />
         </div>
 
-        <div sx={{ width: '60%' }}>
+        <div
+          sx={{
+            width: ['100%', '55%'],
+            textAlign: ['center', 'left'],
+          }}
+        >
           <Heading
             as={'h4'}
             sx={{
@@ -94,7 +102,7 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            justifySelf: 'end',
+            justifySelf: ['center', 'end'],
             '& > *': {
               mr: '-.5rem',
             },
@@ -108,7 +116,12 @@ const Tech: React.FC = () => {
           <Plus />
         </div>
 
-        <div sx={{ width: '50%' }}>
+        <div
+          sx={{
+            width: ['100%', '55%'],
+            textAlign: ['center', 'left'],
+          }}
+        >
           <Heading
             as={'h4'}
             sx={{
@@ -125,7 +138,7 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            justifySelf: 'end',
+            justifySelf: ['center', 'end'],
             '& > *': {
               mr: '-.5rem',
             },

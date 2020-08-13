@@ -2,7 +2,7 @@ import * as React from 'react';
 
 function Stripe(props: React.SVGProps<SVGSVGElement>) {
   return (
-    <svg width={70} height={69} viewBox="0 0 70 69" fill="none" {...props}>
+    <svg width={55} height={54} viewBox="0 0 70 69" fill="none" {...props}>
       <ellipse cx={35} cy={34.5} rx={35} ry={34.5} fill="#F4F5FF" />
       <path
         d="M69 34.5C69 52.988 53.791 68 35 68S1 52.988 1 34.5 16.209 1 35 1s34 15.012 34 33.5z"
