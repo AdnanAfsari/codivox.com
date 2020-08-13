@@ -10,9 +10,11 @@ const Services: React.FC = () => {
   const servicesSubtitle =
     'Here are some of the many ways that we can help you out.';
   return (
-    <Box>
+    <Box sx={{ minHeight: ['630px', '500px'] }}>
       <Box sx={{ textAlign: 'center' }}>
-        <Heading sx={{ fontSize: '38px', width: 480, m: '0 auto' }}>
+        <Heading
+          sx={{ fontSize: ['26px', '38px'], width: ['100%', 480], m: '0 auto' }}
+        >
           {servicesTitle}
         </Heading>
         <p sx={{ opacity: '0.85' }}>{servicesSubtitle}</p>
@@ -20,7 +22,7 @@ const Services: React.FC = () => {
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
+          gridTemplateColumns: ['1fr', '1fr 1fr 1fr'],
           columnGap: '60px',
           height: 330,
           my: '4rem',
@@ -29,6 +31,9 @@ const Services: React.FC = () => {
         <Flex
           sx={{
             variant: 'flex.card',
+            mb: ['20px', '0px'],
+            flexDirection: ['row', 'column'],
+            py: ['15px', '0px'],
           }}
         >
           <DesignSVG />
@@ -37,6 +42,7 @@ const Services: React.FC = () => {
               fontSize: '20px',
               mt: '2rem',
               opacity: 0.8,
+              ml: ['10px', '0px'],
             }}
           >
             Design
@@ -45,6 +51,9 @@ const Services: React.FC = () => {
         <Flex
           sx={{
             variant: 'flex.card',
+            mb: ['20px', '0px'],
+            flexDirection: ['row', 'column'],
+            py: ['15px', '0px'],
           }}
         >
           <WebDevSVG />
@@ -53,6 +62,7 @@ const Services: React.FC = () => {
               fontSize: '20px',
               mt: '2rem',
               opacity: 0.8,
+              ml: ['10px', '0px'],
             }}
           >
             Web Development
@@ -61,6 +71,8 @@ const Services: React.FC = () => {
         <Flex
           sx={{
             variant: 'flex.card',
+            flexDirection: ['row', 'column'],
+            py: ['15px', '0px'],
           }}
         >
           <AppDevSVG />
@@ -69,6 +81,7 @@ const Services: React.FC = () => {
               fontSize: '20px',
               mt: '2rem',
               opacity: 0.8,
+              ml: ['10px', '0px'],
             }}
           >
             App Development

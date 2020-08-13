@@ -92,21 +92,31 @@ const Footer: React.FC = () => {
         width: '100%',
       }}
     >
-      <div sx={{ position: 'absolute', right: 10, bottom: 10 }}>
+      <div
+        sx={{
+          position: 'absolute',
+          right: 10,
+          bottom: 10,
+          display: ['none', 'block', 'block', 'block'],
+        }}
+      >
         <Dots />
       </div>
+
       <div
         sx={{
           display: 'flex',
           justifyContent: 'center',
+          // textAlign: 'center',
         }}
       >
         <Box
           sx={{
             width: 1110,
             display: 'grid',
-            gridTemplateColumns: ['2fr 1fr 1fr 1fr 1fr'],
-            gridTemplateRows: '1fr',
+            gridTemplateColumns: ['1fr', '2fr 1fr 1fr 1fr 1fr'],
+            gridTemplateRows: ['1fr'],
+            // justifyItems: 'center',
             gap: 5,
             mt: '4em',
           }}
@@ -114,6 +124,12 @@ const Footer: React.FC = () => {
           <div
             sx={{
               mt: '1em',
+              display: 'grid',
+              gridTemplateColumns: ['1fr'],
+              gridTemplateRows: ['1fr'],
+              justifyItems: ['center', 'left', 'left', 'left'],
+              textAlign: ['center', 'left', 'left', 'left'],
+              px: [11, 0, 0, 0],
             }}
           >
             <Link to="/" sx={{ textDecoration: 'none' }}>
@@ -125,76 +141,127 @@ const Footer: React.FC = () => {
             </Link>
             <p sx={{ opacity: '0.85' }}>{footerSubtitle}</p>
 
-            <a
-              href="https://facebook.com/codivox"
-              target="_blank"
-              rel="noreferrer"
-              sx={{ p: 2, pl: 0, textDecoration: 'none' }}
+            <div
+              sx={{
+                fontSize: '14px',
+                fontWeight: '600',
+                mt: '20px',
+                mb: '25px',
+                display: ['inline-block', 'none', 'none', 'none'],
+              }}
             >
-              <Fb />
-              <span
+              <Link
+                to="/"
+                target="_blank"
+                rel="noreferrer"
                 sx={{
-                  fontSize: '0 !important',
-                  height: 1,
-                  overflow: 'hidden',
+                  textDecoration: 'none',
+                  px: 10,
+                  color: 'text',
                 }}
               >
-                Facebook
-              </span>
-            </a>
-            <a
-              href="https://twitter.com/codivox"
-              target="_blank"
-              rel="noreferrer"
-              sx={{ p: 2, textDecoration: 'none' }}
-            >
-              <Twitter />
-              <span
+                Services
+              </Link>
+              <Link
+                to="/"
+                target="_blank"
+                rel="noreferrer"
                 sx={{
-                  fontSize: '0 !important',
-                  height: 1,
-                  overflow: 'hidden',
+                  textDecoration: 'none',
+                  px: 10,
+                  color: 'text',
                 }}
               >
-                Twitter
-              </span>
-            </a>
-            <a
-              href="https://instagram.com/codivox"
-              target="_blank"
-              rel="noreferrer"
-              sx={{ p: 2, textDecoration: 'none' }}
-            >
-              <Insta />
-              <span
+                Blog
+              </Link>
+              <Link
+                to="/"
+                target="_blank"
+                rel="noreferrer"
                 sx={{
-                  fontSize: '0 !important',
-                  height: 1,
-                  overflow: 'hidden',
+                  textDecoration: 'none',
+                  px: 10,
+                  color: 'text',
                 }}
               >
-                Instagram
-              </span>
-            </a>
-            <a
-              href="https://linkedin.com/company/codivox"
-              target="_blank"
-              rel="noreferrer"
-              sx={{ p: 2, textDecoration: 'none' }}
-            >
-              <Linkedin />
-              <span
-                sx={{
-                  fontSize: '0 !important',
-                  height: 1,
-                  overflow: 'hidden',
-                }}
+                Get Estimate
+              </Link>
+            </div>
+            <div>
+              <a
+                href="https://facebook.com/codivox"
+                target="_blank"
+                rel="noreferrer"
+                sx={{ p: 2, pl: 0, textDecoration: 'none' }}
               >
-                Linkedin
-              </span>
-            </a>
+                <Fb />
+                <span
+                  sx={{
+                    fontSize: '0 !important',
+                    height: 1,
+                    overflow: 'hidden',
+                  }}
+                >
+                  Facebook
+                </span>
+              </a>
+              <a
+                href="https://twitter.com/codivox"
+                target="_blank"
+                rel="noreferrer"
+                sx={{ p: 2, textDecoration: 'none' }}
+              >
+                <Twitter />
+                <span
+                  sx={{
+                    fontSize: '0 !important',
+                    height: 1,
+                    overflow: 'hidden',
+                  }}
+                >
+                  Twitter
+                </span>
+              </a>
+              <a
+                href="https://instagram.com/codivox"
+                target="_blank"
+                rel="noreferrer"
+                sx={{ p: 2, textDecoration: 'none' }}
+              >
+                <Insta />
+                <span
+                  sx={{
+                    fontSize: '0 !important',
+                    height: 1,
+                    overflow: 'hidden',
+                  }}
+                >
+                  Instagram
+                </span>
+              </a>
+              <a
+                href="https://linkedin.com/company/codivox"
+                target="_blank"
+                rel="noreferrer"
+                sx={{ p: 2, textDecoration: 'none' }}
+              >
+                <Linkedin />
+                <span
+                  sx={{
+                    fontSize: '0 !important',
+                    height: 1,
+                    overflow: 'hidden',
+                  }}
+                >
+                  Linkedin
+                </span>
+              </a>
           </div>
-          <div>
+          <div
+            sx={{
+              display: ['none', 'block', 'block'],
+            }}
+          >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
               Services
             </Heading>
@@ -226,7 +293,11 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div>
+          <div
+            sx={{
+              display: ['none', 'block', 'block'],
+            }}
+          >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
               About Us
             </Heading>
@@ -258,7 +329,11 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div>
+          <div
+            sx={{
+              display: ['none', 'block', 'block'],
+            }}
+          >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
               Blog
             </Heading>
@@ -290,7 +365,11 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div>
+          <div
+            sx={{
+              display: ['none', 'block', 'block'],
+            }}
+          >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
               Get Estimate
             </Heading>
@@ -326,9 +405,9 @@ const Footer: React.FC = () => {
       <div
         sx={{
           textAlign: 'center',
-          mt: '80px',
           opacity: '0.8',
           fontSize: '14px',
+          mt: ['22px', '80px', '80px', '80px'],
         }}
       >
         All rights reserved by © codivox {new Date().getFullYear()}
