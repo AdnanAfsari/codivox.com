@@ -13,7 +13,7 @@ import flex from '../../gatsby-plugin-theme-ui/flex';
 // Modal.setAppElement('#root');
 
 const ModalCom: React.FC = () => {
-  const [modalIsOpen, setIsOpen] = React.useState(true);
+  const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
     setIsOpen(true);
   }
