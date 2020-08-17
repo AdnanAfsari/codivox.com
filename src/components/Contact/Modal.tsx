@@ -93,8 +93,7 @@ const ModalCom: React.FC = () => {
 
         <Modal
           isOpen={modalIsOpen}
-          // onRequestClose={closeModal}
-          // style={customStyles}
+          onRequestClose={closeModal}
           contentLabel="Example Modal"
           sx={{
             background: '#fff',
