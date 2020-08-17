@@ -6,7 +6,9 @@ import { useStaticQuery, graphql, PageProps } from 'gatsby';
 const Modal: React.FC = () => {
   return (
     <React.Fragment>
-      <div sx={{ backgroundColor: '#6670FD', height: '50px' }}>
+      <div
+        sx={{ backgroundColor: '#6670FD', height: '50px', lineHeight: '100%' }}
+      >
         <div
           sx={{
             display: 'flex',
@@ -19,7 +21,6 @@ const Modal: React.FC = () => {
               display: 'grid',
               gridTemplateColumns: ['1fr 1fr'],
               gridTemplateRows: ['1fr'],
-              lineHeight: '50px',
               px: 3,
             }}
           >
