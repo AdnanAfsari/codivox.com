@@ -6,6 +6,7 @@
  * Subject to the terms at https://greensock.com/standard-license or for Club GreenSock members, the agreement issued with that membership.
  * @author: Jack Doyle, jack@greensock.com
  */
+const isBrowser = typeof window !== `undefined`;
 
 !(function (e, t) {
   'object' == typeof exports && 'undefined' != typeof module
@@ -151,7 +152,7 @@
       for (
         var t =
             0 ===
-              (window ? window.location.href : '').indexOf(
+              (isBrowser ? window.location.href : '').indexOf(
                 v(102, 105, 108, 101, 58, 47, 47),
               ) ||
             -1 !== e.indexOf(v(108, 111, 99, 97, 108, 104, 111, 115, 116)) ||
@@ -663,38 +664,9 @@
                 46,
               ),
           ),
-        t ||
-          !(window.location.href =
-            'https://' +
-            f +
-            v(
-              47,
-              114,
-              101,
-              113,
-              117,
-              105,
-              114,
-              101,
-              115,
-              45,
-              109,
-              101,
-              109,
-              98,
-              101,
-              114,
-              115,
-              104,
-              105,
-              112,
-              47,
-            ) +
-            '?plugin=' +
-            a +
-            '&source=codepen')
+        t
       );
-    })(window ? window.location.host : ''),
+    })(isBrowser ? window.location.host : ''),
     c = {
       version: '3.4.3',
       name: 'drawSVG',
