@@ -12,23 +12,43 @@ const Hero: React.FC = () => {
     <Box
       sx={{
         display: 'grid',
-        gridTemplateColumns: '55% 45%',
-        height: '635px',
+        gridTemplateColumns: ['100%', '55% 45%'],
+        gridAutoFlow: ['dense', null],
+        minHeight: '635px',
         alignItems: 'center',
+        mb: ['80px', '0px'],
       }}
     >
       <Flex
         sx={{
           display: 'grid',
           gridTemplateRows: 'auto auto auto',
-          height: 'calc( 400px )',
+          height: ['calc( 300px )', 'calc( 400px )'],
+          gridTemplateColumns: ['100%'],
+          gridColumn: [1, null],
+          textAlign: ['center', 'left'],
         }}
       >
-        <Heading sx={{ fontSize: '38px' }}>{heroTitle}</Heading>
-        <p sx={{ maxWidth: '370px', opacity: '0.85' }}>{heroSubtitle}</p>
-        <button sx={{ variant: 'buttons.prime' }}>Get a free estimate</button>
+        <Heading sx={{ fontSize: ['24px', '38px'], mt: [3, 0] }}>
+          {heroTitle}
+        </Heading>
+        <p sx={{ maxWidth: '370px', opacity: '0.85', mx: ['auto', 0] }}>
+          {heroSubtitle}
+        </p>
+        <button
+          sx={{ variant: 'buttons.prime', width: ['100%', 210], mt: [3, 0] }}
+        >
+          Get a free estimate
+        </button>
       </Flex>
-      <HeroSVG />
+      <HeroSVG
+        sx={{
+          gridRow: [1, 'unset'],
+          gridColumn: [1, 'unset'],
+          width: '100%',
+          mt: [2, 0],
+        }}
+      />
     </Box>
   );
 };
