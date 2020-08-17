@@ -7,7 +7,7 @@ import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 import Header from '../components/header';
 import Footer from '../components/Main/Footer';
-import Modal from '../components/Contact/Modal';
+import ModalCom from '../components/Contact/Modal';
 
 const ContactPage: React.FC = () => {
   const data = useStaticQuery(graphql`
@@ -23,7 +23,7 @@ const ContactPage: React.FC = () => {
   return (
     <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <Modal />
+      <ModalCom />
       <Footer />
       <MessengerCustomerChat
         pageId={process.env.GATSBY_PAGE_ID}
