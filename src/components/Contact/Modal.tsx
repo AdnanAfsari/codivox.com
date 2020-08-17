@@ -6,6 +6,8 @@ import Modal from 'react-modal';
 import { useStaticQuery, graphql, PageProps } from 'gatsby';
 import Warning from '../../images/warning';
 import Union from '../../images/union';
+import Cross from '../../images/cross';
+import Search from '../../images/search';
 import flex from '../../gatsby-plugin-theme-ui/flex';
 
 // Modal.setAppElement('#root');
@@ -99,10 +101,155 @@ const ModalCom: React.FC = () => {
             height: '508px',
             width: '714px',
             margin: '150px auto 0',
+            borderRadius: '10px',
+            px: 32,
           }}
         >
-          <button onClick={closeModal}>X</button>
-          <div>I am a modal</div>
+          <button
+            sx={{
+              float: 'right',
+              background: 'none',
+              border: 'none',
+              mt: '20px',
+            }}
+            onClick={closeModal}
+          >
+            <Cross />
+          </button>
+          <div>
+            <Flex
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+              }}
+            >
+              <Search />
+              <div
+                sx={{
+                  lineHeight: 0.5,
+                  ml: '20px',
+                }}
+              >
+                <h3
+                  sx={{
+                    fontSize: '2rem',
+                    fontWeight: 'bold',
+                  }}
+                >
+                  Are we a good match?{' '}
+                </h3>
+                <p
+                  sx={{
+                    fontSize: '1rem',
+                  }}
+                >
+                  Before we begin our long journey together, we need to be a
+                  perfect fit
+                </p>
+              </div>
+            </Flex>
+
+            <Box
+              sx={{
+                display: 'grid',
+                gridTemplateColumns: ['1fr 1fr'],
+                gridTtemplateRrows: ['1fr'],
+              }}
+            >
+              <div>
+                <h5
+                  sx={{
+                    ml: '22px',
+                    color: '#00AC52',
+                    fontSize: '18px',
+                  }}
+                >
+                  What we do best:
+                </h5>
+                <ul
+                  sx={{
+                    '& > *': {
+                      pl: '5px',
+                    },
+                  }}
+                >
+                  <li>Complex, long-term apps</li>
+                  <li>Doing things from scratch </li>
+                  <li>React/Gatsby/Next websites</li>
+                  <li>Full-stack & JAM-stack apps</li>
+                  <li>React Native mobile apps</li>
+                </ul>
+              </div>
+              <div>
+                <h5
+                  sx={{
+                    ml: '22px',
+                    color: '#FF003D',
+                    fontSize: '18px',
+                  }}
+                >
+                  What we are not interested in:
+                </h5>
+                <ul
+                  sx={{
+                    '& > *': {
+                      pl: '5px',
+                    },
+                  }}
+                >
+                  <li>Non communicative approach</li>
+                  <li>Getting things done by cutting corners</li>
+                  <li>Doing things with low budget and a hurry</li>
+                  <li>Not valuing our time and expertise </li>
+                </ul>
+              </div>
+            </Box>
+            <p
+              sx={{
+                textAlign: 'center',
+                fontWeight: 'bold',
+                px: 70,
+              }}
+            >
+              Our goal is to be proud of products we build for our clients. If
+              you think we are a good match, you can:
+            </p>
+
+            <Flex
+              sx={{
+                display: 'table',
+                margin: '0 auto',
+              }}
+            >
+              <button
+                sx={{
+                  variant: 'buttons.outlined',
+                  background: '#fff',
+                  fontWeight: 'bold',
+                  color: '#6670FD',
+                  width: 140,
+                  height: 50,
+                  mr: 10,
+                  ml: 0,
+                  fontSize: '1rem',
+                }}
+              >
+                Contact Us
+              </button>
+              <button
+                sx={{
+                  variant: 'buttons.prime',
+                  background: ['#6670FD'],
+                  color: ['#fff'],
+                  width: 140,
+                  height: 50,
+                  ml: 10,
+                }}
+              >
+                How we work
+              </button>
+            </Flex>
+          </div>
         </Modal>
       </div>
     </React.Fragment>
