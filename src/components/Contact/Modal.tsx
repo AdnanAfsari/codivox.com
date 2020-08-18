@@ -8,7 +8,6 @@ import Warning from '../../images/warning';
 import Union from '../../images/union';
 import Cross from '../../images/cross';
 import Search from '../../images/search';
-import flex from '../../gatsby-plugin-theme-ui/flex';
 
 // Modal.setAppElement('#root');
 

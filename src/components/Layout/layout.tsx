@@ -5,9 +5,8 @@ import { useStaticQuery, graphql } from 'gatsby';
 // @ts-ignore
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
-import Header from './header';
-import Footer from './Main/Footer';
-import ModalCom from './Contact/Modal';
+import Header from '../header';
+import Footer from '../Main/Footer';
 
 interface LayoutProps {
   children?: React.ReactNode;

@@ -5,3 +5,11 @@
  */
 
 // You can delete this file if you're not using it
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions;
+
+  if (page.path.match(/contact/)) {
+    page.context.layout = 'contact';
+    createPage(page);
+  }
+};
