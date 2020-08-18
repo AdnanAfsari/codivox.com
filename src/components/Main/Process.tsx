@@ -5,7 +5,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
 // @ts-ignore
-import { DrawSVGPlugin } from '.././DrawSVGPlugin';
+import { DrawSVGPlugin } from '../DrawSVGPlugin.min';
 
 import Enquiry from '../../images/enquiry';
 import Talk from '../../images/talk';
