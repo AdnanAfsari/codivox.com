@@ -1,11 +1,9 @@
 import React from 'react';
-
-import Layout from '../components/Layout/layout';
 import SEO from '../components/seo';
 
 const PrivacyPolicy: React.FC = () => {
   return (
-    <Layout>
+    <React.Fragment>
       <SEO title="Privacy Policy | codivox" />
       <h6>Effective Date​:  Jan 1st, 2020</h6>
       <h2>Privacy Policy</h2>
@@ -96,7 +94,7 @@ const PrivacyPolicy: React.FC = () => {
         this Online Privacy Policy or our use of your personal information
         collected through the Site, please contact us ​hello@codivox.com
       </p>
-    </Layout>
+    </React.Fragment>
   );
 };
 
