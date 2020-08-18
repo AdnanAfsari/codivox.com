@@ -7,6 +7,7 @@ import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 import Header from './header';
 import Footer from './Main/Footer';
+import ModalCom from './Contact/Modal';
 
 interface LayoutProps {
   children?: React.ReactNode;
@@ -26,6 +27,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
+
       <div
         sx={{
           margin: `0 auto`,
