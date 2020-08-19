@@ -2,9 +2,15 @@
 import { Box, Heading, jsx } from 'theme-ui';
 import React from 'react';
 import ModalCom from '../components/Contact/Modal';
+import ContactForm from '../components/Contact/contactForm';
 
 const ContactPage: React.FC = () => {
-  return <ModalCom />;
+  return (
+    <React.Fragment>
+      <ModalCom />
+      <ContactForm />
+    </React.Fragment>
+  );
 };
 
 export default ContactPage;
