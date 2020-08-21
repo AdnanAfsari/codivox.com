@@ -55,10 +55,10 @@ const Process: React.FC = () => {
   return (
     <Box>
       <Box sx={{ textAlign: 'center', mt: '6rem', mb: '4rem' }}>
-        <Heading sx={{ fontSize: '38px', width: 480, m: '0 auto' }}>
+        <Heading sx={{ fontSize: '38px', width: ['100%', 480], m: '0 auto' }}>
           {processTitle}
         </Heading>
-        <p sx={{ opacity: '0.85', width: '500px', m: '0 auto' }}>
+        <p sx={{ opacity: '0.85', width: ['100%', '500px'], m: '0 auto' }}>
           {processSubtitle}
         </p>
       </Box>
@@ -72,7 +72,7 @@ const Process: React.FC = () => {
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: '4fr 2fr 4fr',
+            gridTemplateColumns: ['1fr 4fr', '4fr 2fr 4fr'],
             gridTemplateRows: '250px',
           }}
         >
@@ -87,16 +87,16 @@ const Process: React.FC = () => {
           <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             <LineComponent />
           </Box>
-          <Box></Box>
+          <Box sx={{ display: ['none', 'flex'] }}></Box>
         </Box>
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: '4fr 2fr 4fr',
+            gridTemplateColumns: ['1fr 4fr', '4fr 2fr 4fr'],
             gridTemplateRows: '250px',
           }}
         >
-          <Box></Box>
+          <Box sx={{ display: ['none', 'flex'] }}></Box>
           <Box></Box>
           <Flex sx={{ flexDirection: 'column', ml: 20 }}>
             <Talk />
@@ -110,7 +110,7 @@ const Process: React.FC = () => {
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: '4fr 2fr 4fr',
+            gridTemplateColumns: ['1fr 4fr', '4fr 2fr 4fr'],
             gridTemplateRows: '250px',
           }}
         >
@@ -125,16 +125,16 @@ const Process: React.FC = () => {
             </p>
           </Flex>
           <Box></Box>
-          <Box></Box>
+          <Box sx={{ display: ['none', 'flex'] }}></Box>
         </Box>
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: '4fr 2fr 4fr',
+            gridTemplateColumns: ['1fr 4fr', '4fr 2fr 4fr'],
             gridTemplateRows: '250px',
           }}
         >
-          <Box></Box>
+          <Box sx={{ display: ['none', 'flex'] }}></Box>
           <Box></Box>
           <Flex sx={{ flexDirection: 'column' }}>
             <Team />
