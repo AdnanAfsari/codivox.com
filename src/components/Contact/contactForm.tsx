@@ -11,9 +11,10 @@ import Clock from '../../images/clock';
 const ContactForm: React.FC = () => {
   const { register, handleSubmit, watch, errors } = useForm();
   // @ts-ignore
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
+  };
 
-  console.log(watch('example'));
   return (
     <div
       sx={{
@@ -38,12 +39,12 @@ const ContactForm: React.FC = () => {
           </p>
         </Flex>
         <form
+          onSubmit={handleSubmit(onSubmit)}
           sx={{
             display: 'grid',
             gridTemplateColumns: ['1fr', '1fr 1fr'],
             gridTtemplateRrows: ['1fr 1fr 1fr 1fr'],
           }}
-          onSubmit={handleSubmit(onSubmit)}
         >
           <Box>
             <label sx={{ fontWeight: 'bold', mb: 1, display: 'block' }}>
@@ -60,10 +61,9 @@ const ContactForm: React.FC = () => {
                 display: 'block',
                 mb: '20px',
               }}
-              name="exampleRequired"
-              ref={register({ required: true })}
+              name="fullName"
+              ref={register}
             />
-            {errors.exampleRequired && <span>This field is required</span>}
           </Box>
           <Box>
             <label sx={{ fontWeight: 'bold', mb: 1, display: 'block' }}>
@@ -79,10 +79,9 @@ const ContactForm: React.FC = () => {
                 boxShadow: '0px 0px 10px 0px rgba(20, 22, 51, 0.1)',
                 display: 'block',
               }}
-              name="exampleRequired"
-              ref={register({ required: true })}
+              name="email"
+              ref={register}
             />
-            {errors.exampleRequired && <span>This field is required</span>}
           </Box>
           <Box>
             <label sx={{ fontWeight: 'bold', mb: 1, display: 'block' }}>
@@ -99,10 +98,9 @@ const ContactForm: React.FC = () => {
                 display: 'block',
                 mb: '20px',
               }}
-              name="exampleRequired"
-              ref={register({ required: true })}
+              name="phoneNumber"
+              ref={register}
             />
-            {errors.exampleRequired && <span>This field is required</span>}
           </Box>
           <Box>
             <label sx={{ fontWeight: 'bold', mb: 15, display: 'block' }}>
@@ -110,33 +108,18 @@ const ContactForm: React.FC = () => {
             </label>
 
             <label>
-              <input
-                type="radio"
-                name="exampleRequired"
-                ref={register({ required: true })}
-              />
+              <input type="radio" name="call" ref={register} />
               Call
-              {errors.exampleRequired && <span>This field is required</span>}
             </label>
 
             <label>
-              <input
-                type="radio"
-                name="exampleRequired"
-                ref={register({ required: true })}
-              />
+              <input type="radio" name="email" ref={register} />
               Email
-              {errors.exampleRequired && <span>This field is required</span>}
             </label>
 
             <label>
-              <input
-                type="radio"
-                name="exampleRequired"
-                ref={register({ required: true })}
-              />
+              <input type="checkbox" name="either" ref={register} />
               Either
-              {errors.exampleRequired && <span>This field is required</span>}
             </label>
           </Box>
           <Box>
@@ -154,13 +137,11 @@ const ContactForm: React.FC = () => {
                 display: 'block',
               }}
               type="text"
-              name="exampleRequired"
-              ref={register({ required: true })}
+              name="text"
+              ref={register}
             />
-            {errors.exampleRequired && <span>This field is required</span>}
           </Box>
           <span></span>
-
           <Box sx={{ width: '150%', mt: '30px', mb: '101px' }}>
             <input
               type="submit"
