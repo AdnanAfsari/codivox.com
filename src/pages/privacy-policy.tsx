@@ -255,7 +255,7 @@ const PrivacyPolicy: React.FC = () => {
           contact us ​hello@codivox.com
         </p>
       </div>
-    <React.Fragment>
+    </React.Fragment>
   );
 };
 
