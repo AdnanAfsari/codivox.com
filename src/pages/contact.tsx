@@ -1,13 +1,12 @@
-/** @jsx jsx */
-import { Box, Heading, jsx } from 'theme-ui';
 import React from 'react';
-import ModalCom from '../components/Contact/modal';
-import ContactForm from '../components/Contact/contactForm';
+
+import ModalComp from '../components/Contact/ModalComp';
+import ContactForm from './../components/Contact/contactForm';
 
 const ContactPage: React.FC = () => {
   return (
     <React.Fragment>
-      <ModalCom />
+      <ModalComp />
       <ContactForm />
     </React.Fragment>
   );

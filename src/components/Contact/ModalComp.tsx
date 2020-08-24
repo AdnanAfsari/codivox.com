@@ -1,9 +1,9 @@
 /** @jsx jsx */
-import { Box, Flex, Heading, jsx } from 'theme-ui';
+import { Box, Flex, jsx } from 'theme-ui';
 import React from 'react';
 // @ts-ignore
 import Modal from 'react-modal';
-import { useStaticQuery, graphql, PageProps } from 'gatsby';
+
 import Warning from '../../images/warning';
 import Union from '../../images/union';
 import Cross from '../../images/cross';
@@ -11,7 +11,7 @@ import Search from '../../images/search';
 
 // Modal.setAppElement('#root');
 
-const ModalCom: React.FC = () => {
+const ModalComp: React.FC = () => {
   const [modalIsOpen, setIsOpen] = React.useState(false);
   function openModal() {
     setIsOpen(true);
@@ -253,4 +253,4 @@ const ModalCom: React.FC = () => {
   );
 };
 
-export default ModalCom;
+export default ModalComp;

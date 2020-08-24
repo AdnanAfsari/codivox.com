@@ -3,7 +3,7 @@ import { Box, Flex, Heading, jsx } from 'theme-ui';
 import { Link } from 'gatsby';
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useStaticQuery, graphql, PageProps } from 'gatsby';
+
 import Man from '../../images/man';
 import Conplus from '../../images/conplus';
 import Clock from '../../images/clock';
