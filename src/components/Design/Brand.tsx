@@ -6,12 +6,11 @@ import Oval1x from '../../images/oval1x';
 import Oval2x from '../../images/oval2x';
 
 const Brand: React.FC = () => {
-  const heroTitle =
-    'User-centric design, research, testing and prototyping for web and mobile apps.';
-  const heroSubtitle =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet dui non ex maximus varius. Fusce interdum felis at aliquet maximus.';
+  const brandTitle = 'From logo and branding to print and social media designs';
+  const brandSubtitle =
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet dui non ex maximus varius. Fusce interdum felis at aliquet maximus. Vivamus tempor mauris ut molestie cursusm a.';
   return (
-    <div sx={{ background: 'rgba(244, 245, 255, 0.5)', minHeight: '600px' }}>
+    <div sx={{ background: 'rgba(244, 245, 255, 0.5)', minHeight: '685px' }}>
       <Box
         sx={{
           m: '0 auto',
@@ -35,7 +34,7 @@ const Brand: React.FC = () => {
           </p>
 
           <Flex sx={{ position: 'absolute', display: ['none', 'block'] }}>
-            <Box sx={{ position: 'relative' }}>
+            <Box sx={{ position: 'relative', top: '-150px' }}>
               <span sx={{ position: 'relative', left: '300px', top: '49px' }}>
                 <Oval1x />
               </span>
@@ -44,6 +43,46 @@ const Brand: React.FC = () => {
               </span>
             </Box>
           </Flex>
+        </Box>
+
+        <Box
+          sx={{
+            display: 'grid',
+            gridTemplateColumns: ['100%', '50% 55%'],
+            gap: '5%',
+            gridAutoFlow: ['dense', null],
+            alignItems: 'center',
+            mt: '25px',
+          }}
+        >
+          <Flex
+            sx={{
+              display: 'grid',
+              gridTemplateRows: 'auto auto auto',
+              height: ['calc( 300px )', 'calc( 400px )'],
+              gridTemplateColumns: ['100%'],
+              gridColumn: [1, null],
+              textAlign: ['center', 'left'],
+            }}
+          >
+            <Heading
+              sx={{
+                fontSize: ['27px', '28px'],
+                maxWidth: '450px',
+                mt: '100px',
+              }}
+            >
+              {brandTitle}
+            </Heading>
+            <p sx={{ opacity: '0.85', mt: '-75px' }}>{brandSubtitle}</p>
+          </Flex>
+          <DesingBrandImg
+            sx={{
+              gridRow: [1, 'unset'],
+              gridColumn: [1, 'unset'],
+              width: '100%',
+            }}
+          />
         </Box>
       </Box>
     </div>
