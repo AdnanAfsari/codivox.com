@@ -1,10 +1,11 @@
 import React from 'react';
 import Hi from '../components/Main/Hi';
+import Hero from '../components/Design/Hero';
 
 const DesignPage: React.FC = () => {
   return (
     <React.Fragment>
-      <h1>Hi there I am DesignPage</h1>
+      <Hero />
       <Hi />
     </React.Fragment>
   );
