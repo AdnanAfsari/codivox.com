@@ -17,8 +17,11 @@ const Hero: React.FC = () => {
         gridAutoFlow: ['dense', null],
         minHeight: '635px',
         alignItems: 'center',
-        mb: ['80px', '0px'],
-        mt: ['0px', '34px'],
+        // mb: ['80px', '0px'],
+        // mt: ['0px', '34px'],
+        margin: ['0px auto 80px', '34px auto 0px'],
+        maxWidth: 1110,
+        padding: `0 1.0875rem 1.45rem`,
       }}
     >
       <Flex
