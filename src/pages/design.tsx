@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 import React from 'react';
 import Hi from '../components/Main/Hi';
 import Hero from '../components/Design/Hero';
@@ -12,7 +14,15 @@ const DesignPage: React.FC = () => {
       <Brand />
       <WebDesign />
       <AppDesign />
-      <Hi />
+      <div
+        sx={{
+          m: '0 auto',
+          maxWidth: 1110,
+          padding: `0 1.0875rem 1.45rem`,
+        }}
+      >
+        <Hi />
+      </div>
     </React.Fragment>
   );
 };
