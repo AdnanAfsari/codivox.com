@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
-import DesignHeroSVG from '../../images/DesignHeroSVG';
+import DesignHeroSVG from '../../images/designHeroSVG';
 
 const Hero: React.FC = () => {
   const heroTitle =
