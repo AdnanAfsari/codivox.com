@@ -20,29 +20,43 @@ const Phase: React.FC = () => {
           display: 'grid',
           gridTemplateColumns: ['1fr', '1fr 1fr 1fr'],
           columnGap: '60px',
-          height: 330,
+          height: 556,
           my: '4rem',
         }}
       >
         <Flex
           sx={{
-            variant: 'flex.card',
+            variant: 'flex.phase',
             mb: ['20px', '0px'],
             flexDirection: ['row', 'column'],
-            py: ['15px', '0px'],
+            px: '30px',
+            textAlign: 'center',
           }}
         >
+          <p>Phase 1</p>
           <DesignSVG />
           <Heading
             sx={{
-              fontSize: '20px',
+              fontSize: '28px',
               mt: '2rem',
               opacity: 0.8,
-              ml: ['10px', '0px'],
+              // ml: ['10px', '0px'],
             }}
           >
-            Design
+            Strategy before execution
           </Heading>
+          <p
+            sx={{
+              color: 'rgba(20, 22, 51, 0.5)',
+              lineHeight: '160%',
+            }}
+          >
+            We start with an in-depth discussion of your business goals and
+            challenges. We’ll ask big questions like, What is your vision? Who
+            is your target audience? What keeps you up at night? Papyrus or
+            Comic Sans? (Kidding!) Together, we’ll agree on the problems we’re
+            trying to solve and create a set of goals to measure our success.
+          </p>
         </Flex>
       </Box>
     </Box>
