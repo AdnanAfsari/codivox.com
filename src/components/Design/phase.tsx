@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { Box, Heading, jsx, Flex } from 'theme-ui';
 import React from 'react';
-import DesignSVG from '../../images/design';
-import AppDevSVG from '../../images/appDev';
-import WebDevSVG from '../../images/webdev';
+import Phase1 from '../../images/phase1';
+import Phase2 from '../../images/phase2';
+import Phase3 from '../../images/phase3';
 
 const Phase: React.FC = () => {
   return (
@@ -34,7 +34,7 @@ const Phase: React.FC = () => {
           }}
         >
           <p>Phase 1</p>
-          <DesignSVG />
+          <Phase1 />
           <Heading
             sx={{
               fontSize: '28px',
