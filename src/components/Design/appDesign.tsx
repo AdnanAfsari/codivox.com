@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
-import DesingBrandImg from '../../images/designBrandImg';
+import AppDesignImg from '../../images/appDesignImg';
 import Oval1x from '../../images/oval1x';
 import Oval2x from '../../images/oval2x';
 
@@ -84,7 +84,7 @@ const AppDesign: React.FC = () => {
               {brandSubtitle}
             </p>
           </Flex>
-          <DesingBrandImg
+          <AppDesignImg
             sx={{
               gridRow: [1, 'unset'],
               gridColumn: [1, 'unset'],
