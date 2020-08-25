@@ -27,23 +27,24 @@ const AppDesign: React.FC = () => {
           <Heading
             sx={{
               fontSize: ['26px', '38px'],
-              width: ['100%', 480],
+              width: ['100%', 684],
               m: '0 auto',
               fontWeight: 600,
             }}
           >
-            Make your brands go into the future
+            App design that provides unique experience across platforms
           </Heading>
-          <p sx={{ opacity: '0.85' }}>
-            We offers a rise-above attitude, a holistic approach to branding
+          <p sx={{ opacity: '0.85', width: ['100%', 430], m: '0 auto' }}>
+            We design stunning and exclusive layouts for Android and iOS apps
+            that enhances user experience.
           </p>
 
           <Flex sx={{ position: 'absolute', display: ['none', 'block'] }}>
             <Box sx={{ position: 'relative', top: '-150px' }}>
-              <span sx={{ position: 'relative', left: '300px', top: '49px' }}>
+              <span sx={{ position: 'relative', left: '752px', top: '6px' }}>
                 <Oval1x />
               </span>
-              <span sx={{ position: 'relative', left: '495px' }}>
+              <span sx={{ position: 'relative', left: '148px', top: '-27px' }}>
                 <Oval2x />
               </span>
             </Box>
