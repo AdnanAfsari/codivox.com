@@ -74,12 +74,14 @@ const Brand: React.FC = () => {
               sx={{
                 fontSize: ['27px', '28px'],
                 maxWidth: '450px',
-                mt: '100px',
+                mt: ['10px', '100px'],
               }}
             >
               {brandTitle}
             </Heading>
-            <p sx={{ opacity: '0.85', mt: '-35px' }}>{brandSubtitle}</p>
+            <p sx={{ opacity: '0.85', mt: ['10px', '-35px'] }}>
+              {brandSubtitle}
+            </p>
           </Flex>
           <DesingBrandImg
             sx={{
