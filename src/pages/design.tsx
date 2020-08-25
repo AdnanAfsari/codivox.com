@@ -6,6 +6,7 @@ import Hero from '../components/Design/Hero';
 import Brand from '../components/Design/Brand';
 import WebDesign from '../components/Design/webDesign';
 import AppDesign from '../components/Design/appDesign';
+import Phase from '../components/Design/phase';
 
 const DesignPage: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const DesignPage: React.FC = () => {
       <Brand />
       <WebDesign />
       <AppDesign />
+      <Phase />
       <div
         sx={{
           m: '0 auto',
