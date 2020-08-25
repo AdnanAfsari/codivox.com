@@ -6,7 +6,8 @@ import Oval1x from '../../images/oval1x';
 import Oval2x from '../../images/oval2x';
 
 const AppDesign: React.FC = () => {
-  const brandTitle = 'From logo and branding to print and social media designs';
+  const brandTitle =
+    'App design that’s not just stunning, but a truly engaging product';
   const brandSubtitle =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet dui non ex maximus varius. Fusce interdum felis at aliquet maximus. Vivamus tempor mauris ut molestie cursusm a.';
   return (
@@ -74,7 +75,7 @@ const AppDesign: React.FC = () => {
             <Heading
               sx={{
                 fontSize: ['27px', '28px'],
-                maxWidth: '450px',
+                maxWidth: '520px',
                 mt: ['10px', '100px'],
               }}
             >
