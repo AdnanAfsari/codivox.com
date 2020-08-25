@@ -9,19 +9,21 @@ const Phase: React.FC = () => {
   return (
     <Box
       sx={{
-        minHeight: ['630px', '500px'],
+        minHeight: ['630px', '756px'],
         m: '0 auto',
         maxWidth: 1110,
         padding: `0 1.0875rem 1.45rem`,
+        display: 'flex',
+        alignItems: 'center',
       }}
     >
       <Box
         sx={{
           display: 'grid',
           gridTemplateColumns: ['1fr', '1fr 1fr 1fr'],
-          columnGap: '60px',
+          columnGap: '30px',
           height: 556,
-          my: '4rem',
+          pt: 56,
         }}
       >
         <Flex
@@ -29,18 +31,24 @@ const Phase: React.FC = () => {
             variant: 'flex.phase',
             mb: ['20px', '0px'],
             flexDirection: ['row', 'column'],
-            px: '30px',
+            px: '32px',
             textAlign: 'center',
           }}
         >
-          <p>Phase 1</p>
+          <p
+            sx={{
+              color: 'rgba(20, 22, 51, 0.5)',
+            }}
+          >
+            Phase 1
+          </p>
           <Phase1 />
           <Heading
             sx={{
               fontSize: '28px',
-              mt: '2rem',
+              mt: '20px',
               opacity: 0.8,
-              // ml: ['10px', '0px'],
+              lineHeight: '140%',
             }}
           >
             Strategy before execution
@@ -56,6 +64,87 @@ const Phase: React.FC = () => {
             is your target audience? What keeps you up at night? Papyrus or
             Comic Sans? (Kidding!) Together, we’ll agree on the problems we’re
             trying to solve and create a set of goals to measure our success.
+          </p>
+        </Flex>
+
+        <Flex
+          sx={{
+            variant: 'flex.phase',
+            mb: ['20px', '0px'],
+            flexDirection: ['row', 'column'],
+            px: '32px',
+            textAlign: 'center',
+          }}
+        >
+          <p
+            sx={{
+              color: 'rgba(20, 22, 51, 0.5)',
+            }}
+          >
+            Phase 2
+          </p>
+          <Phase2 />
+          <Heading
+            sx={{
+              fontSize: '28px',
+              mt: '20px',
+              opacity: 0.8,
+              lineHeight: '140%',
+            }}
+          >
+            Rapid, iterative prototyping
+          </Heading>
+          <p
+            sx={{
+              color: 'rgba(20, 22, 51, 0.5)',
+              lineHeight: '160%',
+            }}
+          >
+            Then we move into wireframing and prototyping. If needed, we’ll also
+            conduct user research and testing to ensure that we’re meeting your
+            end users’ needs. Our rapid prototyping process allows us to quickly
+            experiment and iterate, and we’ll keep you involved at every step of
+            the way.
+          </p>
+        </Flex>
+        <Flex
+          sx={{
+            variant: 'flex.phase',
+            mb: ['20px', '0px'],
+            flexDirection: ['row', 'column'],
+            px: '32px',
+            textAlign: 'center',
+          }}
+        >
+          <p
+            sx={{
+              mt: '-33px',
+              color: 'rgba(20, 22, 51, 0.5)',
+            }}
+          >
+            Phase 3
+          </p>
+          <Phase3 />
+          <Heading
+            sx={{
+              fontSize: '28px',
+              mt: '20px',
+              opacity: 0.8,
+              lineHeight: '140%',
+            }}
+          >
+            Pushing pixels to perfection
+          </Heading>
+          <p
+            sx={{
+              color: 'rgba(20, 22, 51, 0.5)',
+              lineHeight: '160%',
+            }}
+          >
+            This is the part where we make your app look good. Really,
+            ridiculously good. Whether we’re sketching a custom icon or fixing
+            that last pixel, we’re committed to exceeding your (and more
+            importantly, your users’) expectations.
           </p>
         </Flex>
       </Box>
