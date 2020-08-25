@@ -18,6 +18,11 @@ const Brand: React.FC = () => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
+        <hr
+          sx={{
+            borderTop: '1px solid #A7ADFF',
+          }}
+        />
         <Box sx={{ textAlign: 'center', pt: '77px' }}>
           <Heading
             sx={{
@@ -74,7 +79,7 @@ const Brand: React.FC = () => {
             >
               {brandTitle}
             </Heading>
-            <p sx={{ opacity: '0.85', mt: '-75px' }}>{brandSubtitle}</p>
+            <p sx={{ opacity: '0.85', mt: '-35px' }}>{brandSubtitle}</p>
           </Flex>
           <DesingBrandImg
             sx={{
@@ -84,6 +89,13 @@ const Brand: React.FC = () => {
             }}
           />
         </Box>
+        <hr
+          sx={{
+            borderBottom: '1px solid #A7ADFF',
+            position: 'relative',
+            bottom: '-31px',
+          }}
+        />
       </Box>
     </div>
   );
