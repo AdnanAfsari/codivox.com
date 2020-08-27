@@ -41,10 +41,12 @@ const ReactNativ: React.FC = () => {
 
           <Flex sx={{ position: 'absolute', display: ['none', 'block'] }}>
             <Box sx={{ position: 'relative', top: '-150px' }}>
-              <span sx={{ position: 'relative', left: '300px', top: '49px' }}>
+              <span sx={{ position: 'relative', left: '281px', top: '34px' }}>
                 <Oval1x />
               </span>
-              <span sx={{ position: 'relative', left: '495px' }}>
+              <span
+                sx={{ position: 'relative', left: '650px', bottom: '25px' }}
+              >
                 <Oval2x />
               </span>
             </Box>
