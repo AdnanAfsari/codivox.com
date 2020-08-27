@@ -82,7 +82,7 @@ const TrustedPartner: React.FC = () => {
                 fontSize: ['27px', '28px'],
                 maxWidth: '520px',
                 mt: ['10px', '100px'],
-                width: 445,
+                width: ['100%', 445],
               }}
             >
               {brandTitle}

@@ -15,7 +15,7 @@ const AppDevelopment: React.FC = () => {
       <ReactNativ />
       <UserExperiance />
       <TrustedPartner />
-      <Phase />
+      {/* <Phase /> */}
       <div
         sx={{
           m: '0 auto',
