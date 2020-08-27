@@ -1,11 +1,11 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
-import WebDesignImg from '../../images/webDesignImg';
+import UserExperianceImg from '../../images/userExperianceImg';
 
 const UserExperiance: React.FC = () => {
   const brandTitle =
-    'We put smart efforts to research and planning to execute amazing experience';
+    'Developed by Facebook, used by big players like Uber, Instagram and Spotify.';
   const brandSubtitle =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet dui non ex maximus varius. Fusce interdum felis at aliquet maximus. Vivamus tempor mauris ut molestie cursusm a.';
   return (
@@ -21,30 +21,30 @@ const UserExperiance: React.FC = () => {
         <Heading
           sx={{
             fontSize: ['26px', '36px'],
-            width: ['100%', '620px'],
+            width: ['100%', '512px'],
             m: '0 auto',
             fontWeight: 600,
           }}
         >
-          Web design services that help you to boost more revenue
+          Seamless user experiences for React Native apss
         </Heading>
         <p sx={{ opacity: '0.85', width: ['100%', '446px'], m: '0 auto' }}>
-          We deliver quality web apps design based on measurable results to get
-          higher conversions.
+          We build high quality, fast and native experience, responsive apps
+          with our agile development process.
         </p>
       </Box>
 
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: ['100%', '45% 55%'],
+          gridTemplateColumns: ['100%', '45% 45%'],
           gridTemplateRows: '1fr',
           gap: '5%',
           alignItems: 'center',
           mt: '25px',
         }}
       >
-        <WebDesignImg
+        <UserExperianceImg
           sx={{
             width: '100%',
           }}
