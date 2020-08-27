@@ -12,6 +12,8 @@ const Phase: React.FC = () => {
         minHeight: ['756px'],
         display: [null, 'flex'],
         alignItems: 'center',
+        mt: [0, '40px'],
+        mb: [0, '55px'],
       }}
     >
       <Box
