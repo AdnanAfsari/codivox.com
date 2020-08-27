@@ -123,7 +123,6 @@ const Phase: React.FC = () => {
           >
             <p
               sx={{
-                mt: '-33px',
                 color: 'rgba(20, 22, 51, 0.5)',
               }}
             >
