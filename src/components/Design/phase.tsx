@@ -9,7 +9,7 @@ const Phase: React.FC = () => {
   return (
     <div
       sx={{
-        minHeight: ['1556px', '756px'],
+        minHeight: ['756px'],
         display: [null, 'flex'],
         alignItems: 'center',
       }}
@@ -27,7 +27,7 @@ const Phase: React.FC = () => {
             gridTemplateColumns: ['1fr', '1fr 1fr 1fr'],
             gridTemplateRows: '1fr',
             columnGap: '30px',
-            height: 556,
+            minHeight: '556px',
             pt: 56,
           }}
         >
