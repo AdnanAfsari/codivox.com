@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
-import DesingBrandImg from '../../images/designBrandImg';
+import ReactNativImg from '../../images/ReactNativImg';
 import Oval1x from '../../images/oval1x';
 import Oval2x from '../../images/oval2x';
 
 const ReactNativ: React.FC = () => {
-  const brandTitle = 'From logo and branding to print and social media designs';
+  const brandTitle =
+    'Pay less, reach more people, get apps without compromises';
   const brandSubtitle =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet dui non ex maximus varius. Fusce interdum felis at aliquet maximus. Vivamus tempor mauris ut molestie cursusm a.';
   return (
@@ -56,7 +57,7 @@ const ReactNativ: React.FC = () => {
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: ['100%', '50% 55%'],
+            gridTemplateColumns: ['100%', '50% 45%'],
             gap: '5%',
             gridAutoFlow: ['dense', null],
             alignItems: 'center',
@@ -86,7 +87,7 @@ const ReactNativ: React.FC = () => {
               {brandSubtitle}
             </p>
           </Flex>
-          <DesingBrandImg
+          <ReactNativImg
             sx={{
               gridRow: [1, 'unset'],
               gridColumn: [1, 'unset'],
