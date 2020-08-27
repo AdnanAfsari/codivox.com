@@ -2,7 +2,7 @@
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
 import TrustedPartnerImg from '../../images/trustedPartnerImg';
-import Oval1xT from '../../images/Oval1xT';
+import Oval1xT from '../../images/oval1xT';
 import Oval2x from '../../images/oval2x';
 
 const TrustedPartner: React.FC = () => {

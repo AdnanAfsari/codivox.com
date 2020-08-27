@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
-import ReactNativImg from '../../images/ReactNativImg';
+import ReactNativImg from '../../images/reactNativImg';
 import Oval1x from '../../images/oval1x';
 import Oval2x from '../../images/oval2x';
 
