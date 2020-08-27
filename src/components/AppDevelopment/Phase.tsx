@@ -10,7 +10,7 @@ const Phase: React.FC = () => {
   return (
     <div
       sx={{
-        minHeight: ['1100px', '666px'],
+        minHeight: '640px',
         display: ['null', 'block'],
         alignItems: 'center',
         pt: 95,
