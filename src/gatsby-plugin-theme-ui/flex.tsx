@@ -1,3 +1,5 @@
+import { Flex } from 'theme-ui';
+
 export default {
   flex: {
     card: {
@@ -32,10 +34,11 @@ export default {
       },
     },
     phaseV2: {
-      display: 'inline-box',
+      display: ['flex', 'flex'],
       justifyContent: 'center',
       alignItems: 'center',
-      flexDirection: 'row',
+      textAlign: ['center', 'left'],
+      flexDirection: ['column', 'row'],
       borderRadius: 16,
       border: '1px solid rgba(20, 22, 51, 0.25)',
       '&:hover': {
