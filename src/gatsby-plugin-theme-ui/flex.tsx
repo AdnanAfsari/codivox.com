@@ -31,5 +31,21 @@ export default {
         px: '32px',
       },
     },
+    phaseV2: {
+      display: 'inline-box',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'row',
+      borderRadius: 16,
+      border: '1px solid rgba(20, 22, 51, 0.25)',
+      '&:hover': {
+        cursor: 'pointer',
+        transition: 'all .3s ease-in',
+        textDecorationLine: 'none',
+        border: '0px solid rgba(20, 22, 51, 0.25)',
+        boxShadow: '-40px 50px 80px 20px rgba(0, 0, 0, 0.05)',
+        // px: '32px',
+      },
+    },
   },
 };

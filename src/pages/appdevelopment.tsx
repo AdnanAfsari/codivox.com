@@ -6,7 +6,7 @@ import Hero from '../components/AppDevelopment/Hero';
 import ReactNativ from '../components/AppDevelopment/ReactNativ';
 import UserExperiance from '../components/AppDevelopment/UserExperiance';
 import TrustedPartner from '../components/AppDevelopment/TrustedPartner';
-import Phase from '../components/Design/phase';
+import Phase from '../components/AppDevelopment/Phase';
 
 const AppDevelopment: React.FC = () => {
   return (
