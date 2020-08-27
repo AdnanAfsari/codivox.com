@@ -5,7 +5,7 @@ import Hi from '../components/Main/Hi';
 import Hero from '../components/AppDevelopment/Hero';
 import ReactNativ from '../components/AppDevelopment/ReactNativ';
 import UserExperiance from '../components/AppDevelopment/UserExperiance';
-import AppDesign from '../components/Design/appDesign';
+import TrustedPartner from '../components/AppDevelopment/TrustedPartner';
 import Phase from '../components/Design/phase';
 
 const AppDevelopment: React.FC = () => {
@@ -14,7 +14,7 @@ const AppDevelopment: React.FC = () => {
       <Hero />
       <ReactNativ />
       <UserExperiance />
-      <AppDesign />
+      <TrustedPartner />
       <Phase />
       <div
         sx={{
