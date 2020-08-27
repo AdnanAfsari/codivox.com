@@ -55,7 +55,7 @@ const AppDesign: React.FC = () => {
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: ['100%', '50% 55%'],
+            gridTemplateColumns: ['100%', '45% 45%'],
             gap: '5%',
             gridAutoFlow: ['dense', null],
             alignItems: 'center',

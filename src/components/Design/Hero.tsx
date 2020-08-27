@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
     <Box
       sx={{
         display: 'grid',
-        gridTemplateColumns: ['100%', '50% 55%'],
+        gridTemplateColumns: ['100%', '50% 45%'],
         gap: '5%',
         gridAutoFlow: ['dense', null],
         minHeight: '635px',

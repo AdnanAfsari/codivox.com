@@ -37,7 +37,7 @@ const WebDesign: React.FC = () => {
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: ['100%', '45% 55%'],
+          gridTemplateColumns: ['100%', '45% 45%'],
           gridTemplateRows: '1fr',
           gap: '5%',
           alignItems: 'center',
