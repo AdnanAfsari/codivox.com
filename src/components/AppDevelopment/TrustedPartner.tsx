@@ -1,13 +1,12 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
-import AppDesignImg from '../../images/appDesignImg';
+import TrustedPartnerImg from '../../images/trustedPartnerImg';
 import Oval1xT from '../../images/Oval1xT';
 import Oval2x from '../../images/oval2x';
 
 const TrustedPartner: React.FC = () => {
-  const brandTitle =
-    'App design that’s not just stunning, but a truly engaging product';
+  const brandTitle = 'We’re trusted to provide all services in our agency';
   const brandSubtitle =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet dui non ex maximus varius. Fusce interdum felis at aliquet maximus. Vivamus tempor mauris ut molestie cursusm a.';
   return (
@@ -61,7 +60,7 @@ const TrustedPartner: React.FC = () => {
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: ['100%', '50% 55%'],
+            gridTemplateColumns: ['100%', '45% 45%'],
             gap: '5%',
             gridAutoFlow: ['dense', null],
             alignItems: 'center',
@@ -83,6 +82,7 @@ const TrustedPartner: React.FC = () => {
                 fontSize: ['27px', '28px'],
                 maxWidth: '520px',
                 mt: ['10px', '100px'],
+                width: 445,
               }}
             >
               {brandTitle}
@@ -91,7 +91,7 @@ const TrustedPartner: React.FC = () => {
               {brandSubtitle}
             </p>
           </Flex>
-          <AppDesignImg
+          <TrustedPartnerImg
             sx={{
               gridRow: [1, 'unset'],
               gridColumn: [1, 'unset'],
