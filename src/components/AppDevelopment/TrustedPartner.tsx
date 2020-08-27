@@ -2,7 +2,7 @@
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
 import AppDesignImg from '../../images/appDesignImg';
-import Oval1x from '../../images/oval1x';
+import Oval1xT from '../../images/Oval1xT';
 import Oval2x from '../../images/oval2x';
 
 const TrustedPartner: React.FC = () => {
@@ -33,19 +33,25 @@ const TrustedPartner: React.FC = () => {
               fontWeight: 600,
             }}
           >
-            App design that provides unique experience across platforms
+            Your Trusted Partner
           </Heading>
-          <p sx={{ opacity: '0.85', width: ['100%', 430], m: '0 auto' }}>
-            We design stunning and exclusive layouts for Android and iOS apps
-            that enhances user experience.
+          <p sx={{ opacity: '0.85', width: ['100%', 464], m: '0 auto' }}>
+            We’ll monitor, maintain and support your app for the life of the
+            app.
           </p>
 
           <Flex sx={{ position: 'absolute', display: ['none', 'block'] }}>
             <Box sx={{ position: 'relative', top: '-150px' }}>
-              <span sx={{ position: 'relative', left: '752px', top: '6px' }}>
-                <Oval1x />
+              <span sx={{ position: 'relative', left: '747px', top: '59px' }}>
+                <Oval1xT />
               </span>
-              <span sx={{ position: 'relative', left: '148px', top: '-27px' }}>
+              <span
+                sx={{
+                  position: 'relative',
+                  left: '226px',
+                  top: '36px',
+                }}
+              >
                 <Oval2x />
               </span>
             </Box>
