@@ -4,6 +4,7 @@ import React from 'react';
 import ReactNativImg from '../../images/reactNativImg';
 import Oval1x from '../../images/oval1x';
 import Oval2x from '../../images/oval2x';
+import Ovalx from '../../images/Ovalx';
 
 const Modernize: React.FC = () => {
   const brandTitle =
@@ -33,11 +34,11 @@ const Modernize: React.FC = () => {
               fontWeight: 600,
             }}
           >
-            React Native for maximum efficiency
+            Modernize your wordpress site using Gatsby
           </Heading>
           <p sx={{ opacity: '0.85', width: ['100%', 492], m: '0 auto' }}>
-            Maximize code reuse between platforms while keeping the UI native,
-            cutting costs in half.
+            We build high performance front end forheadless Wordpress which will
+            provide you goog of both worlds.
           </p>
 
           <Flex sx={{ position: 'absolute', display: ['none', 'block'] }}>
@@ -46,9 +47,15 @@ const Modernize: React.FC = () => {
                 <Oval1x />
               </span>
               <span
-                sx={{ position: 'relative', left: '650px', bottom: '25px' }}
+                sx={{ position: 'relative', left: '632px', bottom: '12px' }}
               >
                 <Oval2x />
+              </span>
+
+              <span
+                sx={{ position: 'relative', left: '265px', bottom: '64px' }}
+              >
+                <Ovalx />
               </span>
             </Box>
           </Flex>
