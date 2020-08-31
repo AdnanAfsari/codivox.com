@@ -20,4 +20,8 @@ exports.onCreatePage = ({ page, actions }) => {
     page.context.layout = 'appdevelopment';
     createPage(page);
   }
+  if (page.path.match(/webdevelopment/)) {
+    page.context.layout = 'webdevelopment';
+    createPage(page);
+  }
 };
