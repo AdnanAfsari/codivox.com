@@ -1,6 +1,6 @@
-require("dotenv").config({
+require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 module.exports = {
   siteMetadata: {
@@ -35,7 +35,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-theme-ui`,
       options: {
-        preset: "@theme-ui/preset-tailwind",
+        preset: '@theme-ui/preset-tailwind',
       },
     },
     {
@@ -45,9 +45,23 @@ module.exports = {
           families: ['Josefin Sans:bold', 'Lato:400,700']
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-176005700-1",
+        head: false,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/Layout/index.tsx`),
+      },
+    },
   ],
-}
+};

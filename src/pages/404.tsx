@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Heading, Flex, Button, Grid } from 'theme-ui';
-import Layout from '../components/layout';
+
 import SEO from '../components/seo';
 import ErrorIlustration from './../images/ErrorIlustration';
 import Ellipse from './../images/Ellipse';
@@ -9,7 +9,7 @@ import EllipsesRotated from './../images/EllipsesRotated';
 import EllipseHalf from './../images/EllipseHalf';
 
 const NotFoundPage = () => (
-  <Layout>
+  <React.Fragment>
     <SEO title="404: Not found" />
     <Flex
       sx={{
@@ -78,7 +78,7 @@ const NotFoundPage = () => (
         <EllipseHalf />
       </span>
     </Flex>
-  </Layout>
+  </React.Fragment>
 );
 
 export default NotFoundPage;

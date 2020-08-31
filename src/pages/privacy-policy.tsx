@@ -1,14 +1,12 @@
 /** @jsx jsx */
 import { jsx, Box, Flex } from 'theme-ui';
 import React from 'react';
-/* import { Link } from 'gatsby'; */
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PFiveDots from './../images/PFiveDots';
 
 const PrivacyPolicy: React.FC = () => {
   return (
-    <Layout>
+    <React.Fragment>
       <SEO title="Privacy Policy | codivox" />
       <div>
         <Box
@@ -257,7 +255,7 @@ const PrivacyPolicy: React.FC = () => {
           contact us ​hello@codivox.com
         </p>
       </div>
-    </Layout>
+    </React.Fragment>
   );
 };
 

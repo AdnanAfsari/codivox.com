@@ -1,7 +1,5 @@
 import React from 'react';
 import { graphql, PageProps } from 'gatsby';
-
-import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Hero from '../components/Main/Hero';
 import Services from '../components/Main/Services';
@@ -20,7 +18,7 @@ type IndexPageProps = {
 
 const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
   return (
-    <Layout>
+    <React.Fragment>
       <SEO title="codivox" />
       <Hero />
       <Services />
@@ -28,7 +26,7 @@ const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
       <Tech />
       <About />
       <Hi />
-    </Layout>
+    </React.Fragment>
   );
 };
 
