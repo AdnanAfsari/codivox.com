@@ -1,14 +1,13 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
-import ReactNativImg from '../../images/reactNativImg';
+import ModernizeImg from '../../images/ModernizeImg';
 import Oval1x from '../../images/oval1x';
 import Oval2x from '../../images/oval2x';
 import Ovalx from '../../images/Ovalx';
 
 const Modernize: React.FC = () => {
-  const brandTitle =
-    'Pay less, reach more people, get apps without compromises';
+  const brandTitle = 'Make your users amazed with blazing fast Wordpress site';
   const brandSubtitle =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet dui non ex maximus varius. Fusce interdum felis at aliquet maximus. Vivamus tempor mauris ut molestie cursusm a.';
   return (
@@ -94,7 +93,7 @@ const Modernize: React.FC = () => {
               {brandSubtitle}
             </p>
           </Flex>
-          <ReactNativImg
+          <ModernizeImg
             sx={{
               gridRow: [1, 'unset'],
               gridColumn: [1, 'unset'],
