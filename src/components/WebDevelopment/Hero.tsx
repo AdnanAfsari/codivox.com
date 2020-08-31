@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
-import AppDevelopmentHero from '../../images/appDevelopmentHero';
+import WebDevelopmentHero from '../../images/webDevelopmentHero';
 
 const Hero: React.FC = () => {
   const heroTitle =
@@ -12,8 +12,8 @@ const Hero: React.FC = () => {
     <Box
       sx={{
         display: 'grid',
-        gridTemplateColumns: ['100%', '50% 45%'],
-        gap: '5%',
+        gridTemplateColumns: ['100%', '55% 45%'],
+        gap: '0%',
         gridAutoFlow: ['dense', null],
         minHeight: '635px',
         alignItems: 'center',
@@ -32,7 +32,9 @@ const Hero: React.FC = () => {
           textAlign: ['center', 'left'],
         }}
       >
-        <Heading sx={{ fontSize: ['27px', '36px'] }}>{heroTitle}</Heading>
+        <Heading sx={{ fontSize: ['27px', '36px'], mt: ['0px', '55px'] }}>
+          {heroTitle}
+        </Heading>
         <p sx={{ maxWidth: '370px', opacity: '0.85', mx: ['auto', 0] }}>
           {heroSubtitle}
         </p>
@@ -42,12 +44,12 @@ const Hero: React.FC = () => {
           Get a free estimate
         </button>
       </Flex>
-      <AppDevelopmentHero
+      <WebDevelopmentHero
         sx={{
           gridRow: [1, 'unset'],
           gridColumn: [1, 'unset'],
           width: '100%',
-          mt: 2,
+          mt: '-64px',
         }}
       />
     </Box>
