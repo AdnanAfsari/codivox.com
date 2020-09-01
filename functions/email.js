@@ -10,7 +10,6 @@ app.post("/.netlify/functions/email", async (req, res, next) => {
  
   const {email,fullName,phoneNumber,call,e_mail,either,text,} = JSON.parse(req.body)
   try {
-    // https://hooks.slack.com/services/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
     await axios.post(process.env.GATSBY_SLACK_URL, {
       "text": "New Message",
       "blocks": [
