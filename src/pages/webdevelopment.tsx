@@ -6,7 +6,7 @@ import Hero from '../components/WebDevelopment/Hero';
 import Modernize from '../components/WebDevelopment/Modernize';
 import Idea from '../components/WebDevelopment/Idea';
 import Integration from '../components/WebDevelopment/Integration';
-import Phase from '../components/Design/phase';
+import Phase from '../components/WebDevelopment/Phase';
 
 const WebDevelopment: React.FC = () => {
   return (
