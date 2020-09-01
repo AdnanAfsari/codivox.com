@@ -26,11 +26,11 @@ const Idea: React.FC = () => {
             fontWeight: 600,
           }}
         >
-          Seamless user experiences for React Native apss
+          Let’s turn your idea into stuning web app
         </Heading>
         <p sx={{ opacity: '0.85', width: ['100%', '446px'], m: '0 auto' }}>
-          We build high quality, fast and native experience, responsive apps
-          with our agile development process.
+          We provide good user experience, high performance, SEO friendly
+          websites with modern technology.
         </p>
       </Box>
 
