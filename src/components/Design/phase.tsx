@@ -9,9 +9,11 @@ const Phase: React.FC = () => {
   return (
     <div
       sx={{
-        minHeight: ['1556px', '756px'],
+        minHeight: ['756px'],
         display: [null, 'flex'],
         alignItems: 'center',
+        mt: [0, '40px'],
+        mb: [0, '55px'],
       }}
     >
       <Box
@@ -27,7 +29,7 @@ const Phase: React.FC = () => {
             gridTemplateColumns: ['1fr', '1fr 1fr 1fr'],
             gridTemplateRows: '1fr',
             columnGap: '30px',
-            height: 556,
+            minHeight: '556px',
             pt: 56,
           }}
         >
@@ -123,7 +125,6 @@ const Phase: React.FC = () => {
           >
             <p
               sx={{
-                mt: '-33px',
                 color: 'rgba(20, 22, 51, 0.5)',
               }}
             >

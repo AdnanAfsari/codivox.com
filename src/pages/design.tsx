@@ -21,6 +21,7 @@ const DesignPage: React.FC = () => {
           m: '0 auto',
           maxWidth: 1110,
           padding: `0 1.0875rem 1.45rem`,
+          mb: [0, '54px'],
         }}
       >
         <Hi />

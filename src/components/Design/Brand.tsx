@@ -20,7 +20,7 @@ const Brand: React.FC = () => {
       >
         <hr
           sx={{
-            borderTop: '1px solid #A7ADFF',
+            border: '1px solid #A7ADFF',
           }}
         />
         <Box sx={{ textAlign: 'center', pt: '77px' }}>
@@ -53,7 +53,7 @@ const Brand: React.FC = () => {
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: ['100%', '50% 55%'],
+            gridTemplateColumns: ['100%', '45% 45%'],
             gap: '5%',
             gridAutoFlow: ['dense', null],
             alignItems: 'center',
@@ -93,9 +93,9 @@ const Brand: React.FC = () => {
         </Box>
         <hr
           sx={{
-            borderBottom: '1px solid #A7ADFF',
+            border: '1px solid #A7ADFF',
             position: 'relative',
-            bottom: '-31px',
+            bottom: '-33px',
           }}
         />
       </Box>
