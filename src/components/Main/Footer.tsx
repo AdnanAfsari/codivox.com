@@ -16,69 +16,69 @@ const Footer: React.FC = () => {
   const services = [
     {
       content: 'Web Application',
-      link: 'home',
+      link: '/home',
     },
     {
       content: 'Development Teams',
-      link: 'home',
+      link: '/home',
     },
     {
       content: 'MVP',
-      link: 'home',
+      link: '/home',
     },
     {
       content: 'Development',
-      link: 'home',
+      link: '/home',
     },
   ];
   const aboutUs = [
     {
       content: 'What can we do?',
-      link: 'home',
+      link: '/home',
     },
     {
       content: 'How we work',
-      link: 'home',
+      link: '/home',
     },
     {
       content: 'Careers',
-      link: 'home',
+      link: '/home',
     },
     {
       content: 'Contact',
-      link: 'home',
+      link: '/home',
     },
   ];
   const blog = [
     {
       content: 'News',
-      link: 'home',
+      link: '/home',
     },
     {
       content: 'Technology',
-      link: 'home',
+      link: '/home',
     },
     {
       content: 'Case Study',
-      link: 'home',
+      link: '/home',
     },
   ];
   const estimate = [
     {
       content: 'Testimonials',
-      link: 'home',
+      link: '/home',
     },
     {
       content: 'Solutions',
-      link: 'home',
+      link: '/home',
     },
     {
       content: 'Price',
-      link: 'home',
+      link: '/home',
     },
     {
       content: 'Contact Us',
-      link: 'home',
+      link: '/contact',
     },
   ];
 
