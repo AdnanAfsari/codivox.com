@@ -9,26 +9,42 @@ const Phase: React.FC = () => {
   return (
     <div
       sx={{
-        minHeight: ['1556px', '756px'],
-        display: [null, 'flex'],
-        alignItems: 'center',
+        minHeight: '1168px',
+        maxWidth: 1110,
+        padding: `0 1.0875rem 1.45rem`,
+        m: '0 auto',
       }}
     >
-      <Box
+      <Box sx={{ textAlign: 'center', pt: '147px' }}>
+        <Heading
+          sx={{
+            fontSize: ['26px', '38px'],
+            width: ['100%', 577],
+            m: '0 auto',
+            fontWeight: 600,
+          }}
+        >
+          Performance-Tuned Websites
+        </Heading>
+        <p sx={{ opacity: '0.85', width: ['100%', 533], m: '0 auto' }}>
+          We craft each website to achieve clear objectives and create
+          meaningful user experiences that drive business forward.
+        </p>
+      </Box>
+
+      <div
         sx={{
-          m: '0 auto',
-          maxWidth: 1110,
-          padding: `0 1.0875rem 1.45rem`,
+          minHeight: '699px',
+          display: [null, 'flex'],
+          alignItems: 'center',
+          mt: '102px',
         }}
       >
         <Box
           sx={{
             display: 'grid',
             gridTemplateColumns: ['1fr', '1fr 1fr 1fr'],
-            gridTemplateRows: '1fr',
             columnGap: '30px',
-            height: 556,
-            pt: 56,
           }}
         >
           <Flex
@@ -56,7 +72,7 @@ const Phase: React.FC = () => {
                 lineHeight: '140%',
               }}
             >
-              Strategy before execution
+              Evaluate & Strategize
             </Heading>
             <p
               sx={{
@@ -64,11 +80,12 @@ const Phase: React.FC = () => {
                 lineHeight: '160%',
               }}
             >
-              We start with an in-depth discussion of your business goals and
-              challenges. We’ll ask big questions like, What is your vision? Who
-              is your target audience? What keeps you up at night? Papyrus or
-              Comic Sans? (Kidding!) Together, we’ll agree on the problems we’re
-              trying to solve and create a set of goals to measure our success.
+              We’ll work together to uncover clear business objectives for your
+              site. Because our success is so dependent on engaging your website
+              audience, we take a user-centric approach. We analyze on-site
+              interaction and behavior patterns to develop a clear picture of
+              your customers’ needs and identify the best strategies to achieve
+              them.
             </p>
           </Flex>
 
@@ -88,7 +105,7 @@ const Phase: React.FC = () => {
             >
               Phase 2
             </p>
-            <Phase2 />
+            <Phase3 />
             <Heading
               sx={{
                 fontSize: '28px',
@@ -97,7 +114,7 @@ const Phase: React.FC = () => {
                 lineHeight: '140%',
               }}
             >
-              Rapid, iterative prototyping
+              Design & Develop
             </Heading>
             <p
               sx={{
@@ -105,11 +122,13 @@ const Phase: React.FC = () => {
                 lineHeight: '160%',
               }}
             >
-              Then we move into wireframing and prototyping. If needed, we’ll
-              also conduct user research and testing to ensure that we’re
-              meeting your end users’ needs. Our rapid prototyping process
-              allows us to quickly experiment and iterate, and we’ll keep you
-              involved at every step of the way.
+              With objectives and strategy identified, we begin to design the
+              experience we want users to have and the behaviors we want them to
+              take. This means focusing the information architecture, content,
+              and user experience (UX). We package all of this in a compelling
+              visual design and work closely with our developers as they bring
+              the site to life. Rest assured that our developers use clean,
+              modern code to create a sustainable foundation for your site.
             </p>
           </Flex>
           <Flex
@@ -123,7 +142,6 @@ const Phase: React.FC = () => {
           >
             <p
               sx={{
-                mt: '-33px',
                 color: 'rgba(20, 22, 51, 0.5)',
               }}
             >
@@ -138,7 +156,7 @@ const Phase: React.FC = () => {
                 lineHeight: '140%',
               }}
             >
-              Pushing pixels to perfection
+              Optimize & Launch
             </Heading>
             <p
               sx={{
@@ -146,14 +164,20 @@ const Phase: React.FC = () => {
                 lineHeight: '160%',
               }}
             >
-              This is the part where we make your app look good. Really,
-              ridiculously good. Whether we’re sketching a custom icon or fixing
-              that last pixel, we’re committed to exceeding your (and more
-              importantly, your users’) expectations.
+              To be certain your site performs, we take extra time before
+              launching it to ensure it’s optimized to meet objectives. Google
+              bots continuously measure websites for speed, and the ones that
+              load faster typically earn a higher ranking in search results. We
+              automatically test our websites from many different places all
+              over the world to determine the average speed. It being fast in
+              San Francisco doesn't matter much if your customers are on the
+              other side of the planet. Although we can't control everything, we
+              go to great lengths to ensure that users can access your site on
+              any device and on most connections -- no matter how fast.
             </p>
           </Flex>
         </Box>
-      </Box>
+      </div>
     </div>
   );
 };
