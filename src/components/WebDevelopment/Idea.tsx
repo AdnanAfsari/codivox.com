@@ -1,11 +1,11 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
-import UserExperianceImg from '../../images/userExperianceImg';
+import IdeaImg from '../../images/IdeaImg';
 
 const Idea: React.FC = () => {
   const brandTitle =
-    'Developed by Facebook, used by big players like Uber, Instagram and Spotify.';
+    'From high-converting landing pages to complex enterprise and e-commerce apps';
   const brandSubtitle =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet dui non ex maximus varius. Fusce interdum felis at aliquet maximus. Vivamus tempor mauris ut molestie cursusm a.';
   return (
@@ -44,7 +44,7 @@ const Idea: React.FC = () => {
           mt: '25px',
         }}
       >
-        <UserExperianceImg
+        <IdeaImg
           sx={{
             width: '100%',
           }}
