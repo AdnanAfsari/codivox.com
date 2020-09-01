@@ -4,7 +4,7 @@ import React from 'react';
 import Hi from '../components/Main/Hi';
 import Hero from '../components/WebDevelopment/Hero';
 import Modernize from '../components/WebDevelopment/Modernize';
-import WebDesign from '../components/Design/webDesign';
+import Idea from '../components/WebDevelopment/Idea';
 import AppDesign from '../components/Design/appDesign';
 import Phase from '../components/Design/phase';
 
@@ -13,7 +13,7 @@ const WebDevelopment: React.FC = () => {
     <React.Fragment>
       <Hero />
       <Modernize />
-      <WebDesign />
+      <Idea />
       <AppDesign />
       <Phase />
       <div
