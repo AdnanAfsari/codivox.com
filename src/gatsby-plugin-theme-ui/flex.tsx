@@ -17,7 +17,6 @@ export default {
       },
     },
     phase: {
-      justifyContent: 'center',
       alignItems: 'center',
       flexDirection: 'column',
       borderRadius: 16,
