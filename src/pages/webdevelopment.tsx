@@ -5,7 +5,7 @@ import Hi from '../components/Main/Hi';
 import Hero from '../components/WebDevelopment/Hero';
 import Modernize from '../components/WebDevelopment/Modernize';
 import Idea from '../components/WebDevelopment/Idea';
-import AppDesign from '../components/Design/appDesign';
+import Integration from '../components/WebDevelopment/Integration';
 import Phase from '../components/Design/phase';
 
 const WebDevelopment: React.FC = () => {
@@ -14,7 +14,7 @@ const WebDevelopment: React.FC = () => {
       <Hero />
       <Modernize />
       <Idea />
-      <AppDesign />
+      <Integration />
       <Phase />
       <div
         sx={{
