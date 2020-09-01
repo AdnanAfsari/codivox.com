@@ -12,4 +12,12 @@ exports.onCreatePage = ({ page, actions }) => {
     page.context.layout = 'contact';
     createPage(page);
   }
+  if (page.path.match(/design/)) {
+    page.context.layout = 'design';
+    createPage(page);
+  }
+  if (page.path.match(/appdevelopment/)) {
+    page.context.layout = 'appdevelopment';
+    createPage(page);
+  }
 };

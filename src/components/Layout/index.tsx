@@ -3,7 +3,11 @@ import FullLayout from './fullLayout';
 import React from 'react';
 // @ts-ignore
 export default ({ children, pageContext }) => {
-  if (pageContext.layout === 'contact') {
+  if (
+    pageContext.layout === 'contact' ||
+    pageContext.layout === 'design' ||
+    pageContext.layout === 'appdevelopment'
+  ) {
     return <FullLayout>{children}</FullLayout>;
   }
   return <Layout>{children}</Layout>;
