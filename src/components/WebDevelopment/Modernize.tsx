@@ -11,7 +11,7 @@ const Modernize: React.FC = () => {
   const brandSubtitle =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet dui non ex maximus varius. Fusce interdum felis at aliquet maximus. Vivamus tempor mauris ut molestie cursusm a.';
   return (
-    <div sx={{ background: 'rgba(244, 245, 255, 0.5)', minHeight: '685px' }}>
+    <div sx={{ background: 'rgba(244, 245, 255, 0.5)', minHeight: '606px' }}>
       <Box
         sx={{
           m: '0 auto',
