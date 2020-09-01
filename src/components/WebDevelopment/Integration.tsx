@@ -1,12 +1,13 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
-import TrustedPartnerImg from '../../images/trustedPartnerImg';
+import IntegrationImg from '../../images/IntegrationImg';
 import Oval1xT from '../../images/oval1xT';
 import Oval2x from '../../images/oval2x';
 
 const Integration: React.FC = () => {
-  const brandTitle = 'We’re trusted to provide all services in our agency';
+  const brandTitle =
+    'Payment gateways, email & SMS integration, we can do it all.';
   const brandSubtitle =
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In imperdiet dui non ex maximus varius. Fusce interdum felis at aliquet maximus. Vivamus tempor mauris ut molestie cursusm a.';
   return (
@@ -91,7 +92,7 @@ const Integration: React.FC = () => {
               {brandSubtitle}
             </p>
           </Flex>
-          <TrustedPartnerImg
+          <IntegrationImg
             sx={{
               gridRow: [1, 'unset'],
               gridColumn: [1, 'unset'],
