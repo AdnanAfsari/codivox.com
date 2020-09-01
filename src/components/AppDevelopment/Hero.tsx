@@ -31,7 +31,9 @@ const Hero: React.FC = () => {
           textAlign: ['center', 'left'],
         }}
       >
-        <Heading sx={{ fontSize: ['27px', '36px'] }}>{heroTitle}</Heading>
+        <Heading sx={{ fontSize: ['27px', '36px'], mt: ['0px', '38px'] }}>
+          {heroTitle}
+        </Heading>
         <p sx={{ maxWidth: '370px', opacity: '0.85', mx: ['auto', 0] }}>
           {heroSubtitle}
         </p>
@@ -46,7 +48,6 @@ const Hero: React.FC = () => {
           gridRow: [1, 'unset'],
           gridColumn: [1, 'unset'],
           width: '100%',
-          mt: 2,
         }}
       />
     </Box>
