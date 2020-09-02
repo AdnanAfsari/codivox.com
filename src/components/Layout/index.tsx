@@ -6,7 +6,8 @@ export default ({ children, pageContext }) => {
   if (
     pageContext.layout === 'contact' ||
     pageContext.layout === 'design' ||
-    pageContext.layout === 'appdevelopment'
+    pageContext.layout === 'appdevelopment' ||
+    pageContext.layout === 'webdevelopment'
   ) {
     return <FullLayout>{children}</FullLayout>;
   }
