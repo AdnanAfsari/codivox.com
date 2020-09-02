@@ -1,7 +1,6 @@
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
-const { createProxyMiddleware } = require("http-proxy-middleware") 
 
 module.exports = {
   siteMetadata: {
@@ -9,16 +8,6 @@ module.exports = {
     description: `We’re developers and designers specialized in building quality web and mobile apps`,
     author: `@codivox`,
     siteUrl: `https://codivox.com`,
-  },developMiddleware: app => {
-    app.use(
-      "/.netlify/functions/",
-      createProxyMiddleware({
-        target: "http://localhost:9000",
-        pathRewrite: {
-          "/.netlify/functions/": "",
-        },
-      })
-    )
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
