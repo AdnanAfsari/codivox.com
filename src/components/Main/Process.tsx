@@ -4,8 +4,6 @@ import React from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
-// @ts-ignore
-import { DrawSVGPlugin } from '../DrawSVGPlugin.min';
 
 import Enquiry from '../../images/enquiry';
 import Talk from '../../images/talk';
@@ -19,7 +17,7 @@ const Process: React.FC = () => {
     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 
   React.useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin);
+    gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
     gsap.defaults({ ease: 'none' });
 
     let tl = gsap
@@ -47,18 +45,29 @@ const Process: React.FC = () => {
           end: 'bottom center',
         },
       })
-      .from('.line', { drawSVG: 0 }, 0)
-      .to('end', { motionPath: { path: '.line', alignOrigin: [0.5, 0.5] } }, 0)
+      .to(
+        '.line',
+        { motionPath: { path: '.line', align: '.line', start: 0 } },
+        0,
+      )
       .add(tl, 0);
   });
 
   return (
     <Box>
       <Box sx={{ textAlign: 'center', mt: '6rem', mb: '4rem' }}>
-        <Heading sx={{ fontSize: '38px', width: ['100%', 480], m: '0 auto' }}>
+        <Heading
+          sx={{ fontSize: '38px', width: ['100%', '100%', 480], m: '0 auto' }}
+        >
           {processTitle}
         </Heading>
-        <p sx={{ opacity: '0.85', width: ['100%', '500px'], m: '0 auto' }}>
+        <p
+          sx={{
+            opacity: '0.85',
+            width: ['100%', '100%', '500px'],
+            m: '0 auto',
+          }}
+        >
           {processSubtitle}
         </p>
       </Box>
@@ -72,11 +81,17 @@ const Process: React.FC = () => {
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: ['1fr 4fr', '4fr 2fr 4fr'],
-            gridTemplateRows: '250px',
+            gridTemplateColumns: ['1fr', '1fr', '4fr 2fr 4fr'],
+            gridTemplateRows: ['300px', '300px', '250px'],
           }}
         >
-          <Flex sx={{ flexDirection: 'column' }}>
+          <Flex
+            sx={{
+              flexDirection: 'column',
+              alignItems: ['center', 'center', 'flex-start'],
+              textAlign: ['center', 'center', 'left'],
+            }}
+          >
             <Enquiry />
             <Heading sx={{ color: 'mainDark', mt: 3 }}>1. Enquiry</Heading>
             <p sx={{ m: 0, opacity: 0.8, width: 300 }}>
@@ -84,21 +99,30 @@ const Process: React.FC = () => {
               eiusmod tempor.
             </p>
           </Flex>
-          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Box
+            sx={{ display: ['none', 'none', 'flex'], justifyContent: 'center' }}
+          >
             <LineComponent />
           </Box>
-          <Box sx={{ display: ['none', 'flex'] }}></Box>
+          <Box sx={{ display: ['none', 'none', 'flex'] }}></Box>
         </Box>
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: ['1fr 4fr', '4fr 2fr 4fr'],
-            gridTemplateRows: '250px',
+            gridTemplateColumns: ['1fr', '1fr', '4fr 2fr 4fr'],
+            gridTemplateRows: ['300px', '300px', '250px'],
           }}
         >
-          <Box sx={{ display: ['none', 'flex'] }}></Box>
-          <Box></Box>
-          <Flex sx={{ flexDirection: 'column', ml: 20 }}>
+          <Box sx={{ display: ['none', 'none', 'flex'] }}></Box>
+          <Box sx={{ display: ['none', 'none', 'flex'] }}></Box>
+          <Flex
+            sx={{
+              flexDirection: 'column',
+              ml: 20,
+              alignItems: ['center', 'center', 'flex-start'],
+              textAlign: ['center', 'center', 'left'],
+            }}
+          >
             <Talk />
             <Heading sx={{ color: 'mainDark', mt: 3 }}>2. Let's talk!</Heading>
             <p sx={{ m: 0, opacity: 0.8, width: 300 }}>
@@ -110,11 +134,17 @@ const Process: React.FC = () => {
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: ['1fr 4fr', '4fr 2fr 4fr'],
-            gridTemplateRows: '250px',
+            gridTemplateColumns: ['1fr', '1fr', '4fr 2fr 4fr'],
+            gridTemplateRows: ['300px', '300px', '250px'],
           }}
         >
-          <Flex sx={{ flexDirection: 'column' }}>
+          <Flex
+            sx={{
+              flexDirection: 'column',
+              alignItems: ['center', 'center', 'flex-start'],
+              textAlign: ['center', 'center', 'left'],
+            }}
+          >
             <Estimate />
             <Heading sx={{ color: 'mainDark', mt: 3 }}>
               3. First estimate
@@ -124,19 +154,25 @@ const Process: React.FC = () => {
               eiusmod tempor.
             </p>
           </Flex>
-          <Box></Box>
-          <Box sx={{ display: ['none', 'flex'] }}></Box>
+          <Box sx={{ display: ['none', 'none', 'flex'] }}></Box>
+          <Box sx={{ display: ['none', 'none', 'flex'] }}></Box>
         </Box>
         <Box
           sx={{
             display: 'grid',
-            gridTemplateColumns: ['1fr 4fr', '4fr 2fr 4fr'],
-            gridTemplateRows: '250px',
+            gridTemplateColumns: ['1fr', '1fr', '4fr 2fr 4fr'],
+            gridTemplateRows: ['300px', '300px', '250px'],
           }}
         >
-          <Box sx={{ display: ['none', 'flex'] }}></Box>
-          <Box></Box>
-          <Flex sx={{ flexDirection: 'column' }}>
+          <Box sx={{ display: ['none', 'none', 'flex'] }}></Box>
+          <Box sx={{ display: ['none', 'none', 'flex'] }}></Box>
+          <Flex
+            sx={{
+              flexDirection: 'column',
+              alignItems: ['center', 'center', 'flex-start'],
+              textAlign: ['center', 'center', 'left'],
+            }}
+          >
             <Team />
             <Heading sx={{ color: 'mainDark', mt: 3 }}>
               4. Meet your team
