@@ -73,7 +73,12 @@ const Hi: React.FC = () => {
           </button>
         </Flex>
       </Flex>
-      <Flex sx={{ position: 'absolute', display: ['none', 'block'] }}>
+      <Flex
+        sx={{
+          position: 'absolute',
+          display: ['none', 'none', 'none', 'block'],
+        }}
+      >
         <Box sx={{ position: 'relative', top: -400 }}>
           <span sx={{ position: 'relative', top: -150, left: -30 }}>
             <SCircle />
@@ -81,7 +86,13 @@ const Hi: React.FC = () => {
           <span sx={{ position: 'relative', top: 150, left: -70 }}>
             <ISixDots />
           </span>
-          <span sx={{ position: 'relative', bottom: -250, left: 650 }}>
+          <span
+            sx={{
+              position: 'relative',
+              bottom: -250,
+              left: [600, 600, 600, 600, 650],
+            }}
+          >
             <BCircle />
           </span>
           <span sx={{ position: 'relative', top: -50, left: 420 }}>
