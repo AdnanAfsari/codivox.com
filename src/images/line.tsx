@@ -12,11 +12,11 @@ function LineComponent(
       fill="none"
       {...props}
     >
-      <path d="M21.5 21v1047" stroke="#E7E8EB" strokeWidth={4} />
+      <path d="M21.5 21v1047" stroke="#6670FD" strokeWidth={4} />
       <path
         className="line"
         d="M21.5 21v1047"
-        stroke="#6670FD"
+        stroke="#E7E8EB"
         strokeWidth={4}
       />
       <path

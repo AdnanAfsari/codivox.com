@@ -3,6 +3,7 @@ import { Box, Flex, Heading, jsx } from 'theme-ui';
 import { Link } from 'gatsby';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import axios from 'axios';
 
 import Man from '../../images/man';
 import Conplus from '../../images/conplus';
@@ -10,9 +11,20 @@ import Clock from '../../images/clock';
 
 const ContactForm: React.FC = () => {
   const { register, handleSubmit, watch, errors } = useForm();
-  // @ts-ignore
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     console.log(data);
+    fetch('/.netlify/functions/email', {
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      mode: 'no-cors', // no-cors, *cors, same-origin
+      headers: {
+        'content-type': 'application/json',
+        accept: 'application/json',
+      },
+      body: JSON.stringify(data), // body data type must match "Content-Type" header
+    })
+      .then((result) => result.json())
+      .then((response) => console.log(response))
+      .catch((e) => console.log(e, 'is error'));
   };
 
   return (
@@ -113,7 +125,7 @@ const ContactForm: React.FC = () => {
             </label>
 
             <label>
-              <input type="radio" name="email" ref={register} />
+              <input type="radio" name="e_mail" ref={register} />
               Email
             </label>
 
