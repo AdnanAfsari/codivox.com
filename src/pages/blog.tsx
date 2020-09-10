@@ -22,6 +22,9 @@ export const blogPostsQuery = graphql`
           date
           author {
             node {
+              avatar {
+                url
+              }
               name
             }
           }

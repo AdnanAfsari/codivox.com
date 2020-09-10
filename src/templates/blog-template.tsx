@@ -54,6 +54,9 @@ export const singlePostQuery = graphql`
         date
         author {
           node {
+            avatar {
+              url
+            }
             name
           }
         }

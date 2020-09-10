@@ -13,6 +13,9 @@ export interface Post {
   featuredImage?: FeaturedImage;
   author: {
     node: {
+      avatar: {
+        url: string;
+      };
       name: string;
     };
   };

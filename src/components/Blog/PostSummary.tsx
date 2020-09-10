@@ -17,6 +17,16 @@ const PostSummary = ({ post }: PostSummaryProps) => {
     return <img alt={altText} src={sourceUrl} sx={sx} />;
   };
 
+  const renderAvatar = (url: string) => {
+    return (
+      <img
+        alt=""
+        src={url}
+        sx={{ borderRadius: '50%', width: '48px', height: '48px' }}
+      />
+    );
+  };
+
   const { slug, title, date, author, categories, featuredImage } = post;
   return (
     <Fragment>
@@ -42,9 +52,12 @@ const PostSummary = ({ post }: PostSummaryProps) => {
             <div>
               <Heading>{title}</Heading>
             </div>
-            <div>
-              {author.node.name} - {date}
-            </div>
+            <Flex>
+              {renderAvatar(author.node.avatar.url)}
+              <span sx={{ m: '20px' }}>
+                {author.node.name} - {date}
+              </span>
+            </Flex>
           </div>
           <div sx={{ flex: 1 }}>
             {renderImage(featuredImage, {
