@@ -24,7 +24,7 @@ const BlogTemplate = ({ data }: BlogTemplateProps) => {
   } = post;
   return (
     <Fragment>
-      <div sx={{ backgroundColor: 'footer', padding: '5rem' }}>
+      <div sx={{ backgroundColor: 'ghostWhite', padding: '5rem' }}>
         <PostSummary
           post={{ slug: '', title, date, author, categories, featuredImage }}
         />

@@ -4,7 +4,7 @@ import { Fragment } from 'react';
 const Intro = (props: any) => {
   return (
     <Fragment>
-      <Flex sx={{ backgroundColor: 'footer', padding: '5rem' }}>
+      <Flex sx={{ backgroundColor: 'ghostWhite', padding: '5rem' }}>
         <div sx={{ flex: 1 }}>
           <div sx={{ color: 'main' }}>Blog Page</div>
           <Heading>Codivox Blog</Heading>
