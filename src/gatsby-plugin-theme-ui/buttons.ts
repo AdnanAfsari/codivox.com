@@ -34,5 +34,15 @@ export default {
         transition: 'all 0.5s',
       },
     },
+    a: {
+      color: 'black',
+      textDecoration: 'none',
+      disabled: {
+        color: 'black',
+        textDecoration: 'none',
+        cursor: 'default',
+        pointerEvents: 'none',
+      },
+    },
   },
 };

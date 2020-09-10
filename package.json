@@ -25,6 +25,7 @@
     "gatsby-plugin-theme-ui": "^0.3.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.19",
+    "gatsby-source-graphql": "^2.7.3",
     "gatsby-transformer-sharp": "^2.5.11",
     "gsap": "^3.5.0",
     "helmet": "^4.1.0",
