@@ -25,9 +25,18 @@ const Blog = ({ data }: BlogProps) => {
           <div sx={{ flex: 1 }}>
             <SearchBar />
           </div>
-          <div sx={{ flex: 2 }}>
+          <div sx={{ flex: 2, marginLeft: '3rem' }}>
             {data.wpgraphql.posts.nodes.map((post) => (
-              <PostSummary post={post} />
+              <div
+                sx={{
+                  mb: '3rem',
+                  p: '3rem',
+                  border: (theme) => `1px solid ${theme.colors.gray[3]}`,
+                  borderRadius: '10px',
+                }}
+              >
+                <PostSummary post={post} />
+              </div>
             ))}
           </div>
         </Flex>
