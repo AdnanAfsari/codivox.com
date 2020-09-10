@@ -13,15 +13,15 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
   const tabs = [
     {
       content: 'Services',
-      href: 'services',
+      href: '#services',
     },
     {
       content: 'Work process',
-      href: 'work-process',
+      href: '#work-process',
     },
     {
       content: 'Blog',
-      href: 'blog',
+      href: '/blog',
     },
   ];
   const styles: object = {
@@ -105,6 +105,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
               <span sx={{ color: (theme) => `${theme.colors.main}` }}>.</span>
             </Heading>
           </Link>
+          {/* Mobile */}
           <Flex sx={{ alignItems: 'center', display: ['flex', 'none'] }}>
             <Menu styles={styles} right isOpen={false}>
               <ul
@@ -119,7 +120,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
                   },
                 }}
               >
-                {tabs.map((tab, i) => {
+                {tabs.map((tab) => {
                   const { href, content } = tab;
                   return (
                     <li key={href} sx={{ textAlign: 'center' }}>
@@ -130,7 +131,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
                           my: 2,
                           width: '150px',
                         }}
-                        to={`#${href}`}
+                        to={href}
                       >
                         {content}
                       </Link>
@@ -150,18 +151,16 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
               </ul>
             </Menu>
           </Flex>
+          {/* Desktop */}
           <Flex sx={{ alignItems: 'center', display: ['none', 'flex'] }}>
             <ul
               sx={{ listStyle: 'none', display: 'flex', alignItems: 'center' }}
             >
-              {tabs.map((tab, i) => {
+              {tabs.map((tab) => {
                 const { href, content } = tab;
                 return (
                   <li key={href}>
-                    <Link
-                      sx={{ variant: 'styles.headerLinks' }}
-                      to={`#${href}`}
-                    >
+                    <Link sx={{ variant: 'styles.headerLinks' }} to={href}>
                       {content}
                     </Link>
                   </li>
