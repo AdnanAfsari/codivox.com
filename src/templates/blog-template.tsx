@@ -25,7 +25,7 @@ const BlogTemplate = ({ data }: BlogTemplateProps) => {
   return (
     <Fragment>
       <PostSummary
-        post={{ slug, title, date, author, categories, featuredImage }}
+        post={{ slug: '', title, date, author, categories, featuredImage }}
       />
       <div>
         <Heading dangerouslySetInnerHTML={{ __html: excerpt }} />

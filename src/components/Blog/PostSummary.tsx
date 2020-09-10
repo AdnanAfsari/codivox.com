@@ -20,35 +20,39 @@ const PostSummary = ({ post }: PostSummaryProps) => {
   const { slug, title, date, author, categories, featuredImage } = post;
   return (
     <Fragment>
-      <Flex key={slug}>
-        <div sx={{ flex: 2 }}>
-          <Link
-            to={`/blog/${slug}`}
-            sx={{ variant: (theme) => theme.buttons.disabled }}
-          >
+      <Link
+        to={slug}
+        sx={{
+          variant: slug ? 'buttons.a' : 'buttons.a.disabled',
+        }}
+      >
+        <Flex key={slug}>
+          <div sx={{ flex: 2 }}>
             <div>
-              {categories.nodes.map((category) => {
-                <Link to={category.slug} key={category.slug}>
+              {categories.nodes.map((category) => (
+                <Link
+                  to={category.slug}
+                  key={category.slug}
+                  sx={{ textDecoration: 'none', color: 'mainDark' }}
+                >
                   {category.name}
-                </Link>;
-              })}
+                </Link>
+              ))}
             </div>
             <div>
-              <Link to={slug}>
-                <Heading>{title}</Heading>
-              </Link>
+              <Heading>{title}</Heading>
             </div>
             <div>{author.node.name}</div>
             <div>{date}</div>
-          </Link>
-        </div>
-        <div sx={{ flex: 1 }}>
-          {renderImage(featuredImage, {
-            maxWidth: '100%',
-            backgroundColor: '#555',
-          })}
-        </div>
-      </Flex>
+          </div>
+          <div sx={{ flex: 1 }}>
+            {renderImage(featuredImage, {
+              maxWidth: '100%',
+              backgroundColor: '#555',
+            })}
+          </div>
+        </Flex>
+      </Link>
     </Fragment>
   );
 };

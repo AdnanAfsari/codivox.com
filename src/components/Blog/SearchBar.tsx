@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Heading, Flex } from 'theme-ui';
+import { jsx } from 'theme-ui';
 import { Fragment } from 'react';
 
 const SearchBar = (props: any) => {
