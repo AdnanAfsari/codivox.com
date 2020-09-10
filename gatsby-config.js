@@ -10,6 +10,14 @@ module.exports = {
     siteUrl: `https://codivox.com`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-source-graphql',
+      options: {
+        typeName: 'WPGraphQL',
+        fieldName: 'wpgraphql',
+        url: 'http://codivox-blog-wp-storage.herokuapp.com/graphql',
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -42,14 +50,14 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Josefin Sans:bold', 'Lato:400,700']
-        }
-      }
+          families: ['Josefin Sans:bold', 'Lato:400,700'],
+        },
+      },
     },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-176005700-1",
+        trackingId: 'UA-176005700-1',
         head: false,
       },
     },
