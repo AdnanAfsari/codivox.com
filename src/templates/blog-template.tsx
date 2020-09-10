@@ -24,20 +24,40 @@ const BlogTemplate = ({ data }: BlogTemplateProps) => {
   } = post;
   return (
     <Fragment>
-      <div sx={{ backgroundColor: 'ghostWhite', padding: '5rem' }}>
-        <PostSummary
-          post={{ slug: '', title, date, author, categories, featuredImage }}
-        />
+      <div
+        sx={{
+          backgroundColor: 'ghostWhite',
+          paddingTop: '5rem',
+          paddingBottom: '10rem',
+        }}
+      >
+        <Box
+          sx={{
+            variant: 'styles.innerContainer',
+          }}
+        >
+          <PostSummary
+            post={{ slug: '', title, date, author, categories, featuredImage }}
+          />
+        </Box>
       </div>
       <Box
         sx={{
-          m: '0 auto',
-          maxWidth: 1110,
-          padding: `0 1.0875rem 1.45rem`,
+          variant: 'styles.innerContainer',
         }}
       >
-        <Heading dangerouslySetInnerHTML={{ __html: excerpt }} />
-        <div dangerouslySetInnerHTML={{ __html: content }} />
+        <div
+          sx={{
+            border: '1px solid lavender',
+            backgroundColor: 'white',
+            padding: '5rem',
+            borderRadius: '10px',
+            marginTop: '-5rem',
+          }}
+        >
+          <Heading dangerouslySetInnerHTML={{ __html: excerpt }} />
+          <div dangerouslySetInnerHTML={{ __html: content }} />
+        </div>
       </Box>
     </Fragment>
   );

@@ -36,5 +36,10 @@ export default {
         transformOrigin: 'bottom left',
       },
     },
+    innerContainer: {
+      m: '0 auto',
+      maxWidth: 1110,
+      padding: `0 1.0875rem 1.45rem`,
+    },
   },
 };
