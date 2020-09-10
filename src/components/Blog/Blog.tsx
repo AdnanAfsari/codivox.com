@@ -16,16 +16,12 @@ const Blog = ({ data }: BlogProps) => {
       <Intro />
       <Box
         sx={{
-          m: '0 auto',
-          maxWidth: 1110,
-          padding: `0 1.0875rem 1.45rem`,
+          variant: 'styles.innerContainer',
+          marginTop: '-5rem',
         }}
       >
-        <Flex>
-          <div sx={{ flex: 1 }}>
-            <SearchBar />
-          </div>
-          <div sx={{ flex: 2, marginLeft: '3rem' }}>
+        <div sx={{ display: ['block', 'block', 'flex'] }}>
+          <div sx={{ flex: 2, order: 1, marginLeft: [0, 0, '3rem'] }}>
             {data.wpgraphql.posts.nodes.map((post) => (
               <div
                 sx={{
@@ -33,13 +29,17 @@ const Blog = ({ data }: BlogProps) => {
                   p: '3rem',
                   border: (theme) => `1px solid ${theme.colors.gray[3]}`,
                   borderRadius: '10px',
+                  backgroundColor: 'white',
                 }}
               >
                 <PostSummary post={post} />
               </div>
             ))}
           </div>
-        </Flex>
+          <div sx={{ flex: 1, order: 0, maxWidth: '287px', mx: 'auto' }}>
+            <SearchBar />
+          </div>
+        </div>
         <div
           sx={{
             mb: 46,

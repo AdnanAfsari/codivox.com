@@ -11,7 +11,7 @@ interface PostSummaryProps {
 const PostSummary = ({ post }: PostSummaryProps) => {
   const renderImage = (image: FeaturedImage, sx = {}) => {
     if (!image) {
-      return <div sx={{ ...sx, width: '100%', height: '100%' }}></div>;
+      return <div sx={sx}></div>;
     }
     const { altText, sourceUrl } = image.node;
     return <img alt={altText} src={sourceUrl} sx={sx} />;
@@ -36,8 +36,15 @@ const PostSummary = ({ post }: PostSummaryProps) => {
           variant: slug ? 'buttons.a' : 'buttons.a.disabled',
         }}
       >
-        <Flex key={slug}>
-          <div sx={{ flex: 2 }}>
+        <div
+          key={slug}
+          sx={{
+            display: slug
+              ? ['block', 'flex', 'block', 'flex']
+              : ['block', 'flex'],
+          }}
+        >
+          <div sx={{ flex: 2, order: 0 }}>
             <div>
               {categories.nodes.map((category) => (
                 <Link
@@ -59,13 +66,15 @@ const PostSummary = ({ post }: PostSummaryProps) => {
               </span>
             </Flex>
           </div>
-          <div sx={{ flex: 1 }}>
+          <div sx={{ flex: 1, order: 1 }}>
             {renderImage(featuredImage, {
-              maxWidth: '100%',
-              backgroundColor: '#555',
+              width: '207px',
+              height: '207px',
+              backgroundColor: 'ghostWhite',
+              borderRadius: '10px',
             })}
           </div>
-        </Flex>
+        </div>
       </Link>
     </Fragment>
   );
