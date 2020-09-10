@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Heading, Flex } from 'theme-ui';
-import { Fragment, Component } from 'react';
+import { Fragment } from 'react';
 import { FeaturedImage, Post } from '../../types/blog';
 import { Link } from 'gatsby';
 
@@ -42,8 +42,9 @@ const PostSummary = ({ post }: PostSummaryProps) => {
             <div>
               <Heading>{title}</Heading>
             </div>
-            <div>{author.node.name}</div>
-            <div>{date}</div>
+            <div>
+              {author.node.name} - {date}
+            </div>
           </div>
           <div sx={{ flex: 1 }}>
             {renderImage(featuredImage, {

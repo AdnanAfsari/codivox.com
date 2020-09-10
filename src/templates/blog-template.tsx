@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Heading, Flex } from 'theme-ui';
+import { jsx, Heading, Box } from 'theme-ui';
 import { Fragment } from 'react';
 import { graphql } from 'gatsby';
 import PostSummary from '../components/Blog/PostSummary';
@@ -24,13 +24,21 @@ const BlogTemplate = ({ data }: BlogTemplateProps) => {
   } = post;
   return (
     <Fragment>
-      <PostSummary
-        post={{ slug: '', title, date, author, categories, featuredImage }}
-      />
-      <div>
+      <div sx={{ backgroundColor: 'footer', padding: '5rem' }}>
+        <PostSummary
+          post={{ slug: '', title, date, author, categories, featuredImage }}
+        />
+      </div>
+      <Box
+        sx={{
+          m: '0 auto',
+          maxWidth: 1110,
+          padding: `0 1.0875rem 1.45rem`,
+        }}
+      >
         <Heading dangerouslySetInnerHTML={{ __html: excerpt }} />
         <div dangerouslySetInnerHTML={{ __html: content }} />
-      </div>
+      </Box>
     </Fragment>
   );
 };
