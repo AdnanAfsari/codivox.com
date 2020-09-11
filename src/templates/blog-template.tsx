@@ -27,15 +27,11 @@ const BlogTemplate = ({ data }: BlogTemplateProps) => {
       <div
         sx={{
           backgroundColor: 'ghostWhite',
-          paddingTop: '5rem',
-          paddingBottom: '10rem',
+          paddingTop: '2rem',
+          paddingBottom: '7rem',
         }}
       >
-        <Box
-          sx={{
-            variant: 'styles.innerContainer',
-          }}
-        >
+        <Box sx={{ variant: 'styles.innerContainer' }}>
           <PostSummary
             post={{ slug: '', title, date, author, categories, featuredImage }}
           />

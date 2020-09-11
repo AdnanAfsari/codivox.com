@@ -1,12 +1,18 @@
 import React from 'react';
+import { withParentSize } from '@vx/responsive';
 
-function BlogIntro(
-  props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>,
-) {
+interface BlogIntroProps {
+  parentWidth: string;
+  parentHeight: string;
+}
+
+function BlogIntro({ parentWidth, parentHeight }: BlogIntroProps) {
+  const width = '560' < parentWidth ? '560' : parentWidth;
+  const height = String(0.675 * Number(width)); // ratio: 560 * 378
   return (
     <svg
-      width="560"
-      height="378"
+      width={width}
+      height={height}
       viewBox="0 0 560 378"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -663,4 +669,4 @@ function BlogIntro(
   );
 }
 
-export default BlogIntro;
+export default withParentSize(BlogIntro);
