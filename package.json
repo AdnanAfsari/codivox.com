@@ -30,7 +30,6 @@
     "gatsby-transformer-sharp": "^2.5.11",
     "gsap": "^3.5.0",
     "helmet": "^4.1.0",
-    "moment": "^2.27.0",
     "netlify-lambda": "^2.0.1",
     "node-fetch": "^2.6.0",
     "prop-types": "^15.7.2",
