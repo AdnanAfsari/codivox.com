@@ -46,13 +46,16 @@ const BlogTemplate = ({ data }: BlogTemplateProps) => {
           sx={{
             border: '1px solid lavender',
             backgroundColor: 'white',
-            padding: '5rem',
+            padding: '3rem',
             borderRadius: '10px',
             marginTop: '-5rem',
           }}
         >
           <Heading dangerouslySetInnerHTML={{ __html: excerpt }} />
-          <div dangerouslySetInnerHTML={{ __html: content }} />
+          <div
+            dangerouslySetInnerHTML={{ __html: content }}
+            sx={{ variant: 'styles.centerFigure' }}
+          />
         </div>
       </Box>
     </Fragment>

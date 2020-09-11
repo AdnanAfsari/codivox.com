@@ -37,14 +37,22 @@ const PostSummary = ({ post }: PostSummaryProps) => {
         }}
       >
         <div
-          key={slug}
           sx={{
             display: slug
               ? ['block', 'flex', 'block', 'flex']
               : ['block', 'flex'],
+            justifyContent: 'space-between',
           }}
         >
-          <div sx={{ flex: 2, order: 0 }}>
+          <div
+            sx={{
+              order: 0,
+              flex: 2,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+            }}
+          >
             <div>
               {categories.nodes.map((category) => (
                 <Link
@@ -55,9 +63,7 @@ const PostSummary = ({ post }: PostSummaryProps) => {
                   {category.name}
                 </Link>
               ))}
-            </div>
-            <div>
-              <Heading>{title}</Heading>
+              <Heading sx={{ my: '15px' }}>{title}</Heading>
             </div>
             <Flex>
               {renderAvatar(author.node.avatar.url)}
@@ -66,12 +72,19 @@ const PostSummary = ({ post }: PostSummaryProps) => {
               </span>
             </Flex>
           </div>
-          <div sx={{ flex: 1, order: 1 }}>
+          <div
+            sx={{
+              order: 1,
+              flex: 1,
+              display: 'flex',
+            }}
+          >
             {renderImage(featuredImage, {
               width: '207px',
               height: '207px',
               backgroundColor: 'ghostWhite',
               borderRadius: '10px',
+              mx: 'auto',
             })}
           </div>
         </div>
