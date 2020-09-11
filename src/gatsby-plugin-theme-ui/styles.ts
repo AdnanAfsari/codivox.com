@@ -41,7 +41,10 @@ export default {
       maxWidth: 1110,
       padding: `0 1.0875rem 1.45rem`,
     },
-    centerFigure: {
+    blogContent: {
+      '.link-more a': {
+        display: 'none',
+      },
       'figure ul li': {
         listStyle: 'none',
       },

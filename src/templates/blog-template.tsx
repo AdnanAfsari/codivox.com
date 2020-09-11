@@ -57,7 +57,7 @@ const BlogTemplate = ({ data }: BlogTemplateProps) => {
           <Heading dangerouslySetInnerHTML={{ __html: excerpt }} />
           <div
             dangerouslySetInnerHTML={{ __html: content }}
-            sx={{ variant: 'styles.centerFigure' }}
+            sx={{ variant: 'styles.blogContent' }}
           />
           <div
             sx={{
