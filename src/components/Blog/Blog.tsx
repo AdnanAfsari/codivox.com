@@ -32,7 +32,7 @@ const Blog = ({ data }: BlogProps) => {
                   backgroundColor: 'white',
                 }}
               >
-                <PostSummary post={post} />
+                <PostSummary post={post} titleSize="28px" />
               </div>
             ))}
           </div>
@@ -40,11 +40,7 @@ const Blog = ({ data }: BlogProps) => {
             <SearchBar />
           </div>
         </div>
-        <div
-          sx={{
-            mb: 46,
-          }}
-        >
+        <div>
           <Hi />
         </div>
       </Box>

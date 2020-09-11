@@ -6,19 +6,21 @@ export interface FeaturedImage {
   };
 }
 
+export interface Author {
+  node: {
+    avatar: {
+      url: string;
+    };
+    name: string;
+  };
+}
+
 export interface Post {
   slug: string;
   title: string;
   date: string;
   featuredImage?: FeaturedImage;
-  author: {
-    node: {
-      avatar: {
-        url: string;
-      };
-      name: string;
-    };
-  };
+  author: Author;
   categories: {
     nodes: {
       slug: string;

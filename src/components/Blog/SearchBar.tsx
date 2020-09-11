@@ -8,6 +8,7 @@ const SearchBar = () => {
         backgroundColor: 'white',
         border: (theme) => `1px solid ${theme.colors.gray[3]}`,
         borderRadius: '10px',
+        paddingBottom: '50px',
       }}
     >
       <input
@@ -24,7 +25,7 @@ const SearchBar = () => {
         sx={{
           '& > *': {
             listStyle: 'none',
-            py: '7px',
+            py: '10px',
           },
         }}
       >

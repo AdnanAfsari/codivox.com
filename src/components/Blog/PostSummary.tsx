@@ -1,33 +1,25 @@
 /** @jsx jsx */
-import { jsx, Heading, Flex } from 'theme-ui';
+import { jsx, Heading } from 'theme-ui';
 import { Fragment } from 'react';
-import { FeaturedImage, Post } from '../../types/blog';
+import { Post } from '../../types/blog';
 import { Link } from 'gatsby';
+import AuthorInfo from './AuthorInfo';
 
 interface PostSummaryProps {
   post: Post;
+  titleSize: string;
 }
 
-const PostSummary = ({ post }: PostSummaryProps) => {
-  const renderImage = (image: FeaturedImage, sx = {}) => {
-    if (!image) {
-      return <div sx={sx}></div>;
-    }
-    const { altText, sourceUrl } = image.node;
-    return <img alt={altText} src={sourceUrl} sx={sx} />;
+const PostSummary = ({ post, titleSize }: PostSummaryProps) => {
+  const featuredImageStyle = {
+    width: '207px',
+    height: '207px',
+    backgroundColor: 'ghostWhite',
+    borderRadius: '10px',
+    mx: 'auto',
   };
-
-  const renderAvatar = (url: string) => {
-    return (
-      <img
-        alt=""
-        src={url}
-        sx={{ borderRadius: '50%', width: '48px', height: '48px' }}
-      />
-    );
-  };
-
   const { slug, title, date, author, categories, featuredImage } = post;
+
   return (
     <Fragment>
       <Link
@@ -58,19 +50,23 @@ const PostSummary = ({ post }: PostSummaryProps) => {
                 <Link
                   to={category.slug}
                   key={category.slug}
-                  sx={{ textDecoration: 'none', color: 'mainDark' }}
+                  sx={{ textDecoration: 'none', color: 'main' }}
                 >
                   {category.name}
                 </Link>
               ))}
-              <Heading sx={{ my: '15px' }}>{title}</Heading>
+              <Heading
+                sx={{
+                  my: '15px',
+                  fontWeight: 'bold',
+                  fontSize: `${titleSize}`,
+                  lineHeight: '110%',
+                }}
+              >
+                {title}
+              </Heading>
             </div>
-            <Flex>
-              {renderAvatar(author.node.avatar.url)}
-              <span sx={{ m: '20px' }}>
-                {author.node.name} - {date}
-              </span>
-            </Flex>
+            <AuthorInfo author={author} date={date} color="fadeGray" />
           </div>
           <div
             sx={{
@@ -79,13 +75,15 @@ const PostSummary = ({ post }: PostSummaryProps) => {
               display: 'flex',
             }}
           >
-            {renderImage(featuredImage, {
-              width: '207px',
-              height: '207px',
-              backgroundColor: 'ghostWhite',
-              borderRadius: '10px',
-              mx: 'auto',
-            })}
+            {featuredImage ? (
+              <img
+                alt={featuredImage.node.altText}
+                src={featuredImage.node.sourceUrl}
+                sx={featuredImageStyle}
+              />
+            ) : (
+              <div sx={featuredImageStyle} />
+            )}
           </div>
         </div>
       </Link>

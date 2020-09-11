@@ -42,6 +42,9 @@ export default {
       padding: `0 1.0875rem 1.45rem`,
     },
     centerFigure: {
+      'figure ul li': {
+        listStyle: 'none',
+      },
       'figure ul li figure': {
         display: 'flex',
         justifyContent: 'center',
