@@ -2,12 +2,13 @@ import Layout from './layout';
 import FullLayout from './fullLayout';
 import React from 'react';
 // @ts-ignore
-export default ({ children, pageContext }) => {
+export default ({ path, children }) => {
   if (
-    pageContext.layout === 'contact' ||
-    pageContext.layout === 'design' ||
-    pageContext.layout === 'appdevelopment' ||
-    pageContext.layout === 'webdevelopment'
+    path === '/contact/' ||
+    path === '/design/' ||
+    path === '/appdevelopment/' ||
+    path === '/webdevelopment/' ||
+    path.includes('/blog/')
   ) {
     return <FullLayout>{children}</FullLayout>;
   }

@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
   return (
     <footer
       sx={{
-        background: (theme) => `${theme.colors.footer}`,
+        background: 'ghostWhite',
         minHeight: '424px',
         display: 'block',
         position: 'absolute',
