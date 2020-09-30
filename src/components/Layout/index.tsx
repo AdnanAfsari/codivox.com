@@ -6,8 +6,8 @@ export default ({ path, children }) => {
   if (
     path === '/contact/' ||
     path === '/design/' ||
-    path === '/appdevelopment/' ||
-    path === '/webdevelopment/' ||
+    path === '/app-development/' ||
+    path === '/web-development/' ||
     path.includes('/blog/')
   ) {
     return <FullLayout>{children}</FullLayout>;
