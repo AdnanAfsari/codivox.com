@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
     },
     {
       content: 'Blog',
-      href: '/blog',
+      href: 'blog',
     },
   ];
   const styles: object = {
@@ -138,7 +138,10 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
                     </li>
                   );
                 })}
-                <button
+                <a
+                  href="https://api.whatsapp.com/send?phone=923091313666"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   sx={{
                     variant: 'buttons.outlined',
                     width: '150px',
@@ -147,7 +150,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
                   }}
                 >
                   Let's Talk
-                </button>
+                </a>
               </ul>
             </Menu>
           </Flex>
@@ -160,14 +163,24 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
                 const { href, content } = tab;
                 return (
                   <li key={href}>
-                    <Link sx={{ variant: 'styles.headerLinks' }} to={href}>
+                    <Link
+                      sx={{ variant: 'styles.headerLinks' }}
+                      to={`/${href}`}
+                    >
                       {content}
                     </Link>
                   </li>
                 );
               })}
             </ul>
-            <button sx={{ variant: 'buttons.outlined' }}>Let's Talk</button>
+            <a
+              href="https://api.whatsapp.com/send?phone=923091313666"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ variant: 'buttons.outlined' }}
+            >
+              Let's Talk
+            </a>
           </Flex>
         </Flex>
       </Box>

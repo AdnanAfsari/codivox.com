@@ -2,6 +2,7 @@
 import { jsx, Box, Flex, Heading } from 'theme-ui';
 import React from 'react';
 import HeroSVG from '../../images/hero';
+import { Link } from 'gatsby';
 
 const Hero: React.FC = () => {
   const heroTitle =
@@ -35,11 +36,12 @@ const Hero: React.FC = () => {
         <p sx={{ maxWidth: '370px', opacity: '0.85', mx: ['auto', 0] }}>
           {heroSubtitle}
         </p>
-        <button
+        <Link
+          to={'contact'}
           sx={{ variant: 'buttons.prime', width: ['100%', 210], mt: [3, 0] }}
         >
           Get a free estimate
-        </button>
+        </Link>
       </Flex>
       <HeroSVG
         sx={{

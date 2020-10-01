@@ -154,13 +154,21 @@ const ContactForm: React.FC = () => {
             />
           </Box>
           <span></span>
-          <Box sx={{ width: '150%', mt: '30px', mb: '101px' }}>
+          <Box
+            sx={{
+              width: '150%',
+              mt: '30px',
+              mb: '101px',
+              display: 'flex',
+              alignItems: 'center',
+            }}
+          >
             <input
               type="submit"
               value="Send Message"
               sx={{ variant: 'buttons.prime', width: ['100%', 210] }}
             />
-            <Link to="/" sx={{ color: '#6670FD', ml: '49.37px' }}>
+            <Link to="/privacy-policy" sx={{ color: '#6670FD', ml: '49.37px' }}>
               Privacy Policy{' '}
             </Link>
           </Box>

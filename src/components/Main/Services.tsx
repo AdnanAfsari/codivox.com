@@ -10,7 +10,7 @@ const Services: React.FC = () => {
   const servicesSubtitle =
     'Here are some of the many ways that we can help you out.';
   return (
-    <Box sx={{ minHeight: ['630px', '500px'] }}>
+    <Box id="services" sx={{ minHeight: ['630px', '500px'] }}>
       <Box sx={{ textAlign: 'center' }}>
         <Heading
           sx={{ fontSize: ['26px', '38px'], width: ['100%', 480], m: '0 auto' }}

@@ -7,6 +7,10 @@ export default {
       border: `1px solid #6670FD`,
       borderRadius: 5,
       color: 'mainDark',
+      textDecoration: 'none',
+      alignItems: 'center',
+      justifyContent: 'center',
+      display: 'flex',
       ml: (theme: { space: string[] }) => `${theme.space[4]}`,
       '&:hover': {
         bg: 'mainDark',
@@ -23,6 +27,10 @@ export default {
       border: `1px solid #fff`,
       borderRadius: 5,
       color: 'background',
+      textDecoration: 'none',
+      alignItems: 'center',
+      justifyContent: 'center',
+      display: 'flex',
       fontSize: (theme: { fontSizes: any[] }) => `${theme.fontSizes[1]}`,
       fontWeight: (theme: { fontWeights: string }) =>
         `${theme.fontWeights.bold}`,
