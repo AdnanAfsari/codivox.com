@@ -25,7 +25,13 @@ const Tech: React.FC = () => {
   const techSubtitle =
     'State-of-the-art communication tools to grow your business.';
   return (
-    <div>
+    <div
+      style={{
+        maxWidth: '1110px',
+        margin: '0 auto',
+        padding: '0 1.0875rem',
+      }}
+    >
       <Box sx={{ textAlign: 'center', my: '6rem' }}>
         <Heading sx={{ fontSize: ['26px', '38px'], m: '0 auto' }}>
           {techTitle}

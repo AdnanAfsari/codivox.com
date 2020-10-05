@@ -15,7 +15,7 @@ module.exports = {
       options: {
         typeName: 'WPGraphQL',
         fieldName: 'wpgraphql',
-        url: 'https://codivox-blog.herokuapp.com/graphql',
+        url: 'https://blog.codivox.com/graphql',
       },
     },
     `gatsby-plugin-react-helmet`,

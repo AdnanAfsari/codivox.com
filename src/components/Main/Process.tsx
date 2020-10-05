@@ -54,8 +54,15 @@ const Process: React.FC = () => {
   });
 
   return (
-    <Box>
-      <Box sx={{ textAlign: 'center', mt: '6rem', mb: '4rem' }}>
+    <Box
+      id="work-process"
+      sx={{
+        background: `#f4f5ff`,
+        margin: '0 auto',
+        padding: '100px 1.0875rem',
+      }}
+    >
+      <Box sx={{ textAlign: 'center', mb: '4rem' }}>
         <Heading
           sx={{ fontSize: '38px', width: ['100%', '100%', 480], m: '0 auto' }}
         >
