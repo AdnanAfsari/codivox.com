@@ -24,7 +24,7 @@ export default {
       width: 210,
       height: 55,
       bg: 'mainDark',
-      border: `1px solid #fff`,
+      border: `1px solid #fff0`,
       borderRadius: 5,
       color: 'background',
       textDecoration: 'none',

@@ -79,14 +79,15 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
   return (
     <header
       sx={{
-        background: (theme) => `${theme.colors.background}`,
+        background: `#f4f5ff`,
         position: 'sticky',
         top: 0,
         zIndex: 10,
-        boxShadow: '0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06)',
+        boxShadow:
+          '0px 5px 8px 0 rgb(204 204 254 / 38%), 0 1px 2px 0 rgba(0,0,0,.06)',
       }}
     >
-      <Box bg="background">
+      <Box>
         <Flex
           as={'nav'}
           px={3}
