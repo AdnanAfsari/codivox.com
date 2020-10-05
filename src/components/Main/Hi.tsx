@@ -18,6 +18,9 @@ const Hi: React.FC = () => {
         height: 400,
         my: '5rem',
         borderRadius: 30,
+        maxWidth: '1110px',
+        margin: '0 auto',
+        padding: '0 1.0875rem',
       }}
     >
       <Flex
