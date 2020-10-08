@@ -5,6 +5,7 @@ import DesignSVG from '../../images/design';
 import AppDevSVG from '../../images/appDev';
 import WebDevSVG from '../../images/webdev';
 import { Link } from 'gatsby';
+import Consult from '../../images/consult';
 
 const Services: React.FC = () => {
   const servicesTitle = 'We provide the best in the Market';
@@ -31,9 +32,9 @@ const Services: React.FC = () => {
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: ['1fr', '1fr 1fr 1fr'],
-          columnGap: '60px',
-          height: 330,
+          gridTemplateColumns: ['1fr', '1fr 1fr 1fr 1fr'],
+          columnGap: '30px',
+          height: 280,
           my: '4rem',
         }}
       >
@@ -122,6 +123,35 @@ const Services: React.FC = () => {
               }}
             >
               App Development
+            </Heading>
+          </Flex>
+        </Link>
+
+        <Link
+          to={''}
+          style={{
+            textDecoration: 'none',
+          }}
+        >
+          <Flex
+            sx={{
+              variant: 'flex.card',
+              flexDirection: ['row', 'column'],
+              py: ['15px', '0px'],
+              height: '100%',
+            }}
+          >
+            <Consult />
+            <Heading
+              sx={{
+                fontSize: '20px',
+                mt: '2rem',
+                opacity: 0.8,
+                ml: ['10px', '0px'],
+                color: `#000053`,
+              }}
+            >
+              Technical Consulting
             </Heading>
           </Flex>
         </Link>

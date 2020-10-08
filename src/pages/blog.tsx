@@ -2,12 +2,19 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import BlogMain from '../components/Blog/Blog';
 import { BlogPostsProps } from '../types/blog';
+import SEO from '../components/seo';
+import { jsx } from 'theme-ui';
 
 interface BlogProps {
   data: BlogPostsProps;
 }
 const Blog = ({ data }: BlogProps) => {
-  return <BlogMain data={data} />;
+  return (
+    <>
+      <SEO title="Blog" />
+      <BlogMain data={data} />
+    </>
+  );
 };
 
 export default Blog;
