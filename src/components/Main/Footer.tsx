@@ -12,7 +12,7 @@ import Dots from '../../images/dots';
 
 const Footer: React.FC = () => {
   const footerSubtitle =
-    'We’re team of developers and designers specialized in building quality web and mobile apps';
+    'Codivox is a fully remote Digital Agency. We design and develop websites and web apps, offers MVP for startups, technical consultion and IT Outsourcing. We build blazing fast and useful digital products from scratch, from product design through documentation to project implementation, both frontend and backend.';
   const services = [
     {
       content: 'Web Application',
@@ -31,24 +31,7 @@ const Footer: React.FC = () => {
       link: '/home',
     },
   ];
-  const aboutUs = [
-    {
-      content: 'What can we do?',
-      link: '/home',
-    },
-    {
-      content: 'How we work',
-      link: '/home',
-    },
-    {
-      content: 'Careers',
-      link: '/home',
-    },
-    {
-      content: 'Contact',
-      link: '/home',
-    },
-  ];
+
   const blog = [
     {
       content: 'News',
@@ -114,10 +97,10 @@ const Footer: React.FC = () => {
           sx={{
             width: 1110,
             display: 'grid',
-            gridTemplateColumns: ['1fr', '2fr 1fr 1fr 1fr 1fr'],
+            gridTemplateColumns: ['1fr', '3fr 1fr 1fr 1fr'],
             gridTemplateRows: ['1fr'],
             // justifyItems: 'center',
-            gap: 5,
+            gap: 4,
             mt: '4em',
           }}
         >
@@ -135,11 +118,11 @@ const Footer: React.FC = () => {
             <Link to="/" sx={{ textDecoration: 'none' }}>
               <Heading sx={{ display: 'flex', alignItems: 'flex-end' }}>
                 <CodivoxWhite />
-                <span sx={{ ml: 2, color: 'text' }}>codivox</span>
+                <span sx={{ ml: 2, color: 'text' }}>Codivox</span>
                 <span sx={{ color: (theme) => `${theme.colors.main}` }}>.</span>
               </Heading>
             </Link>
-            <p sx={{ opacity: '0.85' }}>{footerSubtitle}</p>
+            <p sx={{ opacity: '0.85', fontSize: '14px' }}>{footerSubtitle}</p>
 
             <div
               sx={{
@@ -300,42 +283,6 @@ const Footer: React.FC = () => {
             }}
           >
             <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
-              About Us
-            </Heading>
-            <div
-              sx={{
-                display: 'grid',
-                gap: 2,
-              }}
-            >
-              {aboutUs.map((about) => {
-                const { content, link } = about;
-                return (
-                  <Link
-                    to={link}
-                    key={content}
-                    target="_blank"
-                    rel="noreferrer"
-                    sx={{
-                      textDecoration: 'none',
-                      color: 'text',
-                      opacity: '0.85',
-                      fontSize: '14px',
-                    }}
-                  >
-                    {content}
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-
-          <div
-            sx={{
-              display: ['none', 'block', 'block'],
-            }}
-          >
-            <Heading as={'h4'} sx={{ mt: '2rem', mb: '1rem' }}>
               Blog
             </Heading>
             <div
@@ -411,7 +358,7 @@ const Footer: React.FC = () => {
           mt: ['22px', '80px', '80px', '80px'],
         }}
       >
-        All rights reserved by © codivox {new Date().getFullYear()}
+        All rights reserved by © Codivox {new Date().getFullYear()}
       </div>
     </footer>
   );

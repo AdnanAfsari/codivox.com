@@ -8,7 +8,7 @@ import SixDots from '../../images/sixDots';
 
 const Hi: React.FC = () => {
   const hiText =
-    'Lorem ipsum dolor sit amet, at affert labitur signiferumque nec. Ea ius choro albucius appareat, ne facete officiis invidunt duo, nisl omittam sea an. Ut tale meis magna mei. Nec te impetus debitis feugait.';
+    'Ready to get to work? We’re your experts, your muscle, and your partner in building an impactful and professional product.';
   return (
     <Box
       sx={{
