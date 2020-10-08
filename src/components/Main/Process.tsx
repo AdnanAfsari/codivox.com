@@ -12,9 +12,9 @@ import Team from '../../images/team';
 import LineComponent from '../../images/line';
 
 const Process: React.FC = () => {
-  const processTitle = 'How it begins';
+  const processTitle = `That's how it works`;
   const processSubtitle =
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
+    'We are reliable, cooperative and believe in over-communication';
 
   React.useEffect(() => {
     gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
@@ -64,13 +64,21 @@ const Process: React.FC = () => {
     >
       <Box sx={{ textAlign: 'center', mb: '4rem' }}>
         <Heading
-          sx={{ fontSize: '38px', width: ['100%', '100%', 480], m: '0 auto' }}
+          sx={{
+            fontSize: '38px',
+            width: ['100%', '100%', 480],
+            m: '0 auto',
+            color: `#000053`,
+          }}
         >
           {processTitle}
         </Heading>
         <p
           sx={{
             opacity: '0.85',
+            textTransform: 'uppercase',
+            color: ' #5954ff',
+            letterSpacing: '2.5px',
             width: ['100%', '100%', '500px'],
             m: '0 auto',
           }}
@@ -100,10 +108,12 @@ const Process: React.FC = () => {
             }}
           >
             <Enquiry />
-            <Heading sx={{ color: 'mainDark', mt: 3 }}>1. Enquiry</Heading>
+            <Heading sx={{ color: 'mainDark', mt: 3 }}>
+              1. Partnership discovery
+            </Heading>
             <p sx={{ m: 0, opacity: 0.8, width: 300 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+              We learn about your project goals and objectives. We discuss each
+              milestones and tech stack before kickoff the project.
             </p>
           </Flex>
           <Box
@@ -131,10 +141,12 @@ const Process: React.FC = () => {
             }}
           >
             <Talk />
-            <Heading sx={{ color: 'mainDark', mt: 3 }}>2. Let's talk!</Heading>
+            <Heading sx={{ color: 'mainDark', mt: 3 }}>
+              2. Onboarding & Kickoff
+            </Heading>
             <p sx={{ m: 0, opacity: 0.8, width: 300 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+              We collaborate and analyse requirements for your project. Together
+              with your team, we decide on stack and architecture.
             </p>
           </Flex>
         </Box>
@@ -154,11 +166,11 @@ const Process: React.FC = () => {
           >
             <Estimate />
             <Heading sx={{ color: 'mainDark', mt: 3 }}>
-              3. First estimate
+              3. Project Execution
             </Heading>
             <p sx={{ m: 0, opacity: 0.8, width: 300 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+              We keep you updated based on daily standups, planning, executing
+              sprints, demos and deliverables.
             </p>
           </Flex>
           <Box sx={{ display: ['none', 'none', 'flex'] }}></Box>
@@ -181,12 +193,10 @@ const Process: React.FC = () => {
             }}
           >
             <Team />
-            <Heading sx={{ color: 'mainDark', mt: 3 }}>
-              4. Meet your team
-            </Heading>
+            <Heading sx={{ color: 'mainDark', mt: 3 }}>4. Deployment</Heading>
             <p sx={{ m: 0, opacity: 0.8, width: 300 }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
+              We provide a delightful working relationship. After your
+              satisfaction with result, we push it to production server.
             </p>
           </Flex>
         </Box>

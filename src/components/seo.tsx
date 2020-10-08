@@ -42,7 +42,7 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={title + ' | Codivox'}
       titleTemplate={`%s`}
       meta={[
         {

@@ -19,7 +19,7 @@ type IndexPageProps = {
 const IndexPage: React.FC<PageProps<IndexPageProps>> = ({ data }) => {
   return (
     <React.Fragment>
-      <SEO title="codivox" />
+      <SEO title="Home" />
       <Hero />
       <Services />
       <Process />
