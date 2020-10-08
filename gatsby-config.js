@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `codivox`,
-    description: `We’re developers and designers specialized in building quality web and mobile apps`,
+    title: `Codivox`,
+    description: `We are developers and designers specialized in building quality web and mobile apps. `,
     author: `@codivox`,
     siteUrl: `https://codivox.com`,
   },
@@ -31,8 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `codivox`,
-        short_name: `codivox`,
+        name: `Codivox`,
+        short_name: `Codivox`,
         start_url: `/`,
         background_color: `#6670FD`,
         theme_color: `#6670FD`,

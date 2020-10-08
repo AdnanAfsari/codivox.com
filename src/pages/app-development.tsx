@@ -7,10 +7,12 @@ import ReactNativ from '../components/AppDevelopment/ReactNativ';
 import UserExperiance from '../components/AppDevelopment/UserExperiance';
 import TrustedPartner from '../components/AppDevelopment/TrustedPartner';
 import Phase from '../components/AppDevelopment/Phase';
+import SEO from '../components/seo';
 
 const AppDevelopment: React.FC = () => {
   return (
     <React.Fragment>
+      <SEO title="App Development" />
       <Hero />
       <ReactNativ />
       <UserExperiance />

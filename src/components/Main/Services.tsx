@@ -5,11 +5,11 @@ import DesignSVG from '../../images/design';
 import AppDevSVG from '../../images/appDev';
 import WebDevSVG from '../../images/webdev';
 import { Link } from 'gatsby';
+import Consult from '../../images/consult';
 
 const Services: React.FC = () => {
-  const servicesTitle = 'We provide the best in the Market';
-  const servicesSubtitle =
-    'Here are some of the many ways that we can help you out.';
+  const servicesTitle = 'Build your idea with quality-first approach';
+  const servicesSubtitle = 'Here is what we can do together';
   return (
     <Box
       id="services"
@@ -22,18 +22,32 @@ const Services: React.FC = () => {
     >
       <Box sx={{ textAlign: 'center' }}>
         <Heading
-          sx={{ fontSize: ['26px', '38px'], width: ['100%', 480], m: '0 auto' }}
+          sx={{
+            fontSize: ['26px', '38px'],
+            width: ['100%', 480],
+            m: '0 auto',
+            color: `#000053`,
+          }}
         >
           {servicesTitle}
         </Heading>
-        <p sx={{ opacity: '0.85' }}>{servicesSubtitle}</p>
+        <p
+          style={{
+            opacity: '0.85',
+            textTransform: 'uppercase',
+            color: ' #5954ff',
+            letterSpacing: '2.5px',
+          }}
+        >
+          {servicesSubtitle}
+        </p>
       </Box>
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: ['1fr', '1fr 1fr 1fr'],
-          columnGap: '60px',
-          height: 330,
+          gridTemplateColumns: ['1fr', '1fr 1fr 1fr 1fr'],
+          columnGap: '30px',
+          height: 280,
           my: '4rem',
         }}
       >
@@ -56,7 +70,7 @@ const Services: React.FC = () => {
             <Heading
               sx={{
                 fontSize: '20px',
-                mt: '2rem',
+                mt: '1rem',
                 opacity: 0.8,
                 ml: ['10px', '0px'],
                 color: `#000053`,
@@ -64,6 +78,18 @@ const Services: React.FC = () => {
             >
               Design
             </Heading>
+            <p
+              style={{
+                textAlign: 'center',
+                marginTop: 5,
+                opacity: 0.85,
+                color: '#353376',
+                padding: '0 10px',
+              }}
+            >
+              We design your idea from sleek logo to stunning UI with huge
+              emphasis on UX
+            </p>
           </Flex>
         </Link>
 
@@ -86,7 +112,7 @@ const Services: React.FC = () => {
             <Heading
               sx={{
                 fontSize: '20px',
-                mt: '2rem',
+                mt: '1rem',
                 opacity: 0.8,
                 ml: ['10px', '0px'],
                 color: `#000053`,
@@ -94,6 +120,18 @@ const Services: React.FC = () => {
             >
               Web Development
             </Heading>
+            <p
+              style={{
+                textAlign: 'center',
+                marginTop: 5,
+                opacity: 0.85,
+                color: '#353376',
+                padding: '0 10px',
+              }}
+            >
+              We can modernize and enhance the way your website look, or
+              optimize it load faster
+            </p>
           </Flex>
         </Link>
 
@@ -115,7 +153,7 @@ const Services: React.FC = () => {
             <Heading
               sx={{
                 fontSize: '20px',
-                mt: '2rem',
+                mt: '1rem',
                 opacity: 0.8,
                 ml: ['10px', '0px'],
                 color: `#000053`,
@@ -123,6 +161,59 @@ const Services: React.FC = () => {
             >
               App Development
             </Heading>
+            <p
+              style={{
+                textAlign: 'center',
+                marginTop: 5,
+                opacity: 0.85,
+                color: '#353376',
+                padding: '0 10px',
+              }}
+            >
+              Make your MVP with cost-efficient and cross-platform code with
+              engaging UX
+            </p>
+          </Flex>
+        </Link>
+
+        <Link
+          to={''}
+          style={{
+            textDecoration: 'none',
+          }}
+        >
+          <Flex
+            sx={{
+              variant: 'flex.card',
+              flexDirection: ['row', 'column'],
+              py: ['15px', '0px'],
+              height: '100%',
+            }}
+          >
+            <Consult />
+            <Heading
+              sx={{
+                fontSize: '20px',
+                mt: '1rem',
+                opacity: 0.8,
+                ml: ['10px', '0px'],
+                color: `#000053`,
+              }}
+            >
+              Technical Consulting
+            </Heading>
+            <p
+              style={{
+                textAlign: 'center',
+                marginTop: 5,
+                opacity: 0.85,
+                color: '#353376',
+                padding: '0 10px',
+              }}
+            >
+              Need an expert knowledge? or want to validate project from
+              technical perspective
+            </p>
           </Flex>
         </Link>
       </Box>
