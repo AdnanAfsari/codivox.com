@@ -15,50 +15,30 @@ const Footer: React.FC = () => {
     'Codivox is a fully remote Digital Agency. We design and develop websites and web apps, offers MVP for startups, technical consultion and IT Outsourcing. We build blazing fast and useful digital products from scratch, from product design through documentation to project implementation, both frontend and backend.';
   const services = [
     {
-      content: 'Web Application',
-      link: '/home',
+      content: 'Design',
+      link: 'design',
     },
     {
-      content: 'Development Teams',
-      link: '/home',
+      content: 'Web Development',
+      link: 'web-development',
     },
     {
-      content: 'MVP',
-      link: '/home',
+      content: 'App Development',
+      link: 'app-development',
     },
     {
-      content: 'Development',
-      link: '/home',
+      content: 'Technical Consulting',
+      link: '/',
     },
   ];
 
   const blog = [
     {
-      content: 'News',
-      link: '/home',
-    },
-    {
       content: 'Technology',
-      link: '/home',
-    },
-    {
-      content: 'Case Study',
-      link: '/home',
+      link: '/blog',
     },
   ];
   const estimate = [
-    {
-      content: 'Testimonials',
-      link: '/home',
-    },
-    {
-      content: 'Solutions',
-      link: '/home',
-    },
-    {
-      content: 'Price',
-      link: '/home',
-    },
     {
       content: 'Contact Us',
       link: '/contact',
@@ -73,6 +53,7 @@ const Footer: React.FC = () => {
         display: 'block',
         position: 'absolute',
         width: '100%',
+        padding: '0 1.0875rem',
       }}
     >
       <div
@@ -134,9 +115,7 @@ const Footer: React.FC = () => {
               }}
             >
               <Link
-                to="/"
-                target="_blank"
-                rel="noreferrer"
+                to="/#services"
                 sx={{
                   textDecoration: 'none',
                   px: 10,
@@ -146,9 +125,7 @@ const Footer: React.FC = () => {
                 Services
               </Link>
               <Link
-                to="/"
-                target="_blank"
-                rel="noreferrer"
+                to="/blog"
                 sx={{
                   textDecoration: 'none',
                   px: 10,
@@ -158,9 +135,7 @@ const Footer: React.FC = () => {
                 Blog
               </Link>
               <Link
-                to="/"
-                target="_blank"
-                rel="noreferrer"
+                to="/contact"
                 sx={{
                   textDecoration: 'none',
                   px: 10,
@@ -261,8 +236,6 @@ const Footer: React.FC = () => {
                   <Link
                     key={content}
                     to={link}
-                    target="_blank"
-                    rel="noreferrer"
                     sx={{
                       textDecoration: 'none',
                       color: 'text',
@@ -297,8 +270,6 @@ const Footer: React.FC = () => {
                   <Link
                     to={link}
                     key={content}
-                    target="_blank"
-                    rel="noreferrer"
                     sx={{
                       textDecoration: 'none',
                       color: 'text',
@@ -333,8 +304,6 @@ const Footer: React.FC = () => {
                   <Link
                     to={link}
                     key={content}
-                    target="_blank"
-                    rel="noreferrer"
                     sx={{
                       textDecoration: 'none',
                       color: 'text',

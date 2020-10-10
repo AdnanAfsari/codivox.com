@@ -4,7 +4,7 @@ function HeroSVG(
   props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>,
 ) {
   return (
-    <svg fill="none" height={502} width={340} viewBox="0 0 533 353" {...props}>
+    <svg fill="none" height={330} width={340} viewBox="0 0 533 353" {...props}>
       <circle
         cx={224.29}
         cy={164}

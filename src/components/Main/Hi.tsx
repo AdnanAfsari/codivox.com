@@ -5,6 +5,7 @@ import SCircle from '../../images/sCircle';
 import BCircle from '../../images/bCircle';
 import ISixDots from '../../images/iSixDots';
 import SixDots from '../../images/sixDots';
+import { Link } from 'gatsby';
 
 const Hi: React.FC = () => {
   const hiText =
@@ -12,15 +13,16 @@ const Hi: React.FC = () => {
   return (
     <Box
       sx={{
-        width: '100%',
-        m: '0 auto',
         background: [null, '#6670FD'],
         height: 400,
-        my: '5rem',
         borderRadius: 30,
         maxWidth: '1110px',
-        margin: '0 auto',
-        padding: '0 1.0875rem',
+        margin: [
+          '1rem 1.0875rem',
+          '2rem 1.0875rem',
+          '3rem 1.0875rem',
+          '5rem auto',
+        ],
       }}
     >
       <Flex
@@ -47,33 +49,20 @@ const Hi: React.FC = () => {
           {hiText}
         </p>
         <Flex>
-          <button
+          <Link
+            to={'contact'}
             sx={{
+              fontWeight: 600,
               variant: 'buttons.outlined',
               background: '#fff',
-              fontWeight: 'bold',
               color: '#6670FD',
               width: 140,
               height: 50,
-              mr: 10,
-              ml: 0,
-              fontSize: '1rem',
-            }}
-          >
-            Get Estimate
-          </button>
-          <button
-            sx={{
-              variant: 'buttons.prime',
-              background: ['#6670FD', '#fff'],
-              color: ['#fff', '#6670FD'],
-              width: 140,
-              height: 50,
-              ml: 10,
+              border: '1px solid #6670FD',
             }}
           >
             Contact Us
-          </button>
+          </Link>
         </Flex>
       </Flex>
       <Flex
