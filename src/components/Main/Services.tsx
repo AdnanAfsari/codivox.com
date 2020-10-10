@@ -45,23 +45,26 @@ const Services: React.FC = () => {
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: ['1fr', '1fr 1fr 1fr 1fr'],
+          gridTemplateColumns: ['1fr', '1fr', '1fr', '1fr 1fr 1fr 1fr'],
           columnGap: '30px',
-          height: 280,
+          maxWidth: [400, 400, 400, '100%'],
+          mx: 'auto',
           my: '4rem',
         }}
       >
         <Link
           to={'design'}
-          style={{
+          sx={{
             textDecoration: 'none',
+            my: '10px',
+            height: 280,
           }}
         >
           <Flex
             sx={{
               variant: 'flex.card',
               mb: ['20px', '0px'],
-              flexDirection: ['row', 'column'],
+              flexDirection: 'column',
               py: ['15px', '0px'],
               height: '100%',
             }}
@@ -73,7 +76,7 @@ const Services: React.FC = () => {
                 mt: '1rem',
                 opacity: 0.8,
                 ml: ['10px', '0px'],
-                color: `#000053`,
+                color: `#6670FD`,
               }}
             >
               Design
@@ -85,6 +88,7 @@ const Services: React.FC = () => {
                 opacity: 0.85,
                 color: '#353376',
                 padding: '0 10px',
+                maxWidth: 250,
               }}
             >
               We design your idea from sleek logo to stunning UI with huge
@@ -95,15 +99,17 @@ const Services: React.FC = () => {
 
         <Link
           to={'web-development'}
-          style={{
+          sx={{
             textDecoration: 'none',
+            my: '10px',
+            height: 280,
           }}
         >
           <Flex
             sx={{
               variant: 'flex.card',
               mb: ['20px', '0px'],
-              flexDirection: ['row', 'column'],
+              flexDirection: 'column',
               py: ['15px', '0px'],
               height: '100%',
             }}
@@ -115,7 +121,7 @@ const Services: React.FC = () => {
                 mt: '1rem',
                 opacity: 0.8,
                 ml: ['10px', '0px'],
-                color: `#000053`,
+                color: `#6670FD`,
               }}
             >
               Web Development
@@ -127,6 +133,7 @@ const Services: React.FC = () => {
                 opacity: 0.85,
                 color: '#353376',
                 padding: '0 10px',
+                maxWidth: 250,
               }}
             >
               We can modernize and enhance the way your website look, or
@@ -137,14 +144,16 @@ const Services: React.FC = () => {
 
         <Link
           to={'app-development'}
-          style={{
+          sx={{
             textDecoration: 'none',
+            my: '10px',
+            height: 280,
           }}
         >
           <Flex
             sx={{
               variant: 'flex.card',
-              flexDirection: ['row', 'column'],
+              flexDirection: 'column',
               py: ['15px', '0px'],
               height: '100%',
             }}
@@ -156,7 +165,7 @@ const Services: React.FC = () => {
                 mt: '1rem',
                 opacity: 0.8,
                 ml: ['10px', '0px'],
-                color: `#000053`,
+                color: `#6670FD`,
               }}
             >
               App Development
@@ -168,6 +177,7 @@ const Services: React.FC = () => {
                 opacity: 0.85,
                 color: '#353376',
                 padding: '0 10px',
+                maxWidth: 250,
               }}
             >
               Make your MVP with cost-efficient and cross-platform code with
@@ -177,15 +187,17 @@ const Services: React.FC = () => {
         </Link>
 
         <Link
-          to={''}
-          style={{
+          to={'/'}
+          sx={{
             textDecoration: 'none',
+            my: '10px',
+            height: 280,
           }}
         >
           <Flex
             sx={{
               variant: 'flex.card',
-              flexDirection: ['row', 'column'],
+              flexDirection: 'column',
               py: ['15px', '0px'],
               height: '100%',
             }}
@@ -197,7 +209,7 @@ const Services: React.FC = () => {
                 mt: '1rem',
                 opacity: 0.8,
                 ml: ['10px', '0px'],
-                color: `#000053`,
+                color: `#6670FD`,
               }}
             >
               Technical Consulting
@@ -209,6 +221,7 @@ const Services: React.FC = () => {
                 opacity: 0.85,
                 color: '#353376',
                 padding: '0 10px',
+                maxWidth: 250,
               }}
             >
               Need an expert knowledge? or want to validate project from

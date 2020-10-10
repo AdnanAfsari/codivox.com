@@ -18,11 +18,11 @@ const Hero: React.FC = () => {
       <Box
         sx={{
           display: 'grid',
-          gridTemplateColumns: ['100%', '55% 45%'],
-          gridAutoFlow: ['dense', null],
+          gridTemplateColumns: ['100%', '100%', '55% 45%'],
+          gridAutoFlow: ['dense', 'dense', null],
           minHeight: '660px',
           alignItems: 'center',
-          mb: ['80px', '0px'],
+          mb: ['80px', '80px', '0px'],
           maxWidth: '1110px',
           margin: '0 auto',
           padding: '0 1.0875rem',
@@ -32,14 +32,18 @@ const Hero: React.FC = () => {
           sx={{
             display: 'grid',
             gridTemplateRows: 'auto auto auto',
-            height: ['calc( 300px )', 'calc( 400px )'],
+            height: [300, 300, 400],
             gridTemplateColumns: ['100%'],
-            gridColumn: [1, null],
-            textAlign: ['center', 'left'],
+            gridColumn: [1, 1, null],
+            textAlign: ['center', 'center', 'left'],
           }}
         >
           <Heading
-            sx={{ fontSize: ['24px', '38px'], mt: [3, 0], color: `#000053` }}
+            sx={{
+              fontSize: ['24px', '24px', '38px'],
+              mt: [3, 3, 0],
+              color: `#000053`,
+            }}
           >
             {heroTitle}
           </Heading>
@@ -47,7 +51,7 @@ const Hero: React.FC = () => {
             sx={{
               maxWidth: '370px',
               opacity: '0.85',
-              mx: ['auto', 0],
+              mx: ['auto', 'auto', 0],
               fontSize: 18,
               color: `#000053`,
             }}
@@ -56,7 +60,11 @@ const Hero: React.FC = () => {
           </p>
           <Link
             to={'contact'}
-            sx={{ variant: 'buttons.prime', width: ['100%', 210], mt: [3, 0] }}
+            sx={{
+              variant: 'buttons.prime',
+              width: ['100%', '100%', 210],
+              mt: [3, 3, 0],
+            }}
           >
             Get a free estimate
           </Link>
@@ -64,10 +72,10 @@ const Hero: React.FC = () => {
 
         <HeroSVG
           sx={{
-            gridRow: [1, 'unset'],
-            gridColumn: [1, 'unset'],
+            gridRow: [1, 1, 'unset'],
+            gridColumn: [1, 1, 'unset'],
             width: '100%',
-            mt: [2, 0],
+            mt: [2, 2, 0],
           }}
         />
       </Box>

@@ -31,7 +31,13 @@ const Tech: React.FC = () => {
         padding: '0 1.0875rem',
       }}
     >
-      <Box sx={{ textAlign: 'center', my: '6rem' }}>
+      <Box
+        sx={{
+          textAlign: 'center',
+          mt: ['4rem', '4rem', '6rem'],
+          mb: ['2rem', '2rem', '4rem'],
+        }}
+      >
         <Heading
           sx={{ fontSize: ['26px', '38px'], m: '0 auto', color: `#000053` }}
         >
@@ -41,7 +47,6 @@ const Tech: React.FC = () => {
           sx={{
             opacity: '0.85',
             m: '0 auto',
-            opacity: '0.85',
             textTransform: 'uppercase',
             color: ' #5954ff',
             letterSpacing: '2.5px',
@@ -53,18 +58,20 @@ const Tech: React.FC = () => {
 
       <Box
         sx={{
-          display: 'grid',
-          gridTemplateColumns: ['1fr', '3fr 5fr'],
+          display: ['flex', 'flex', 'grid'],
+          flexDirection: ['column', 'column', 'row'],
+          alignItems: ['center'],
+          gridTemplateColumns: ['1fr', '1fr', '3fr 5fr'],
           gridTtemplateRrows: ['1fr 1fr 1fr'],
           alignContent: 'center',
           // justifyItems: 'center',
           gap: '25px 0px',
-          padding: ['0px 0px', '0px 80px'],
+          padding: ['0px 0px', '0px 0px', '0px 80px'],
         }}
       >
         <div
           sx={{
-            textAlign: ['center', 'left'],
+            textAlign: ['center', 'center', 'left'],
           }}
         >
           <Heading
@@ -78,7 +85,9 @@ const Tech: React.FC = () => {
           >
             Frontend
           </Heading>
-          <p sx={{ fontWeight: 600 }}>
+          <p
+            sx={{ fontWeight: 600, opacity: 0.7, maxWidth: [400, 400, '100%'] }}
+          >
             Frontend tools includes Vanilla Javascript, ReactJS, GatsbyJS,
             NextJS and React Native{' '}
           </p>
@@ -86,7 +95,9 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            justifySelf: ['center', 'end'],
+            justifySelf: ['center', 'center', 'end'],
+            mt: ['-25px', '-25px', null],
+            mb: ['30px', '30px', null],
             '& > *': {
               mr: '-.5rem',
             },
@@ -102,7 +113,7 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            textAlign: ['center', 'left'],
+            textAlign: ['center', 'center', 'left'],
           }}
         >
           <Heading
@@ -116,7 +127,9 @@ const Tech: React.FC = () => {
           >
             Backend
           </Heading>
-          <p sx={{ fontWeight: 600 }}>
+          <p
+            sx={{ fontWeight: 600, opacity: 0.7, maxWidth: [400, 400, '100%'] }}
+          >
             Backend tools includes NodeJS, MongoDB, PostgreSQL, GraphQL, AWS
             (Amplify & others)
           </p>
@@ -124,7 +137,9 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            justifySelf: ['center', 'end'],
+            justifySelf: ['center', 'center', 'end'],
+            mt: ['-25px', '-25px', null],
+            mb: ['30px', '30px', null],
             '& > *': {
               mr: '-.5rem',
             },
@@ -140,7 +155,7 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            textAlign: ['center', 'left'],
+            textAlign: ['center', 'center', 'left'],
           }}
         >
           <Heading
@@ -154,7 +169,9 @@ const Tech: React.FC = () => {
           >
             API Integration
           </Heading>
-          <p sx={{ fontWeight: 600 }}>
+          <p
+            sx={{ fontWeight: 600, opacity: 0.7, maxWidth: [400, 400, '100%'] }}
+          >
             Integrate API's into your systems such as Stripe, Google Maps,
             Slack, Twilio, Sendgrid and others
           </p>
@@ -162,7 +179,9 @@ const Tech: React.FC = () => {
 
         <div
           sx={{
-            justifySelf: ['center', 'end'],
+            justifySelf: ['center', 'center', 'end'],
+            mt: ['-25px', '-25px', null],
+            mb: ['30px', '30px', null],
             '& > *': {
               mr: '-.5rem',
             },
@@ -170,7 +189,6 @@ const Tech: React.FC = () => {
         >
           <Map />
           <Stripe />
-          <Wordpress />
           <Shopify />
           <Slack />
           <Twilio />
