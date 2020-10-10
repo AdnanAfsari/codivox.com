@@ -91,7 +91,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
         <Flex
           as={'nav'}
           px={3}
-          py={[2, 1]}
+          py={[2, 2, 1]}
           sx={{
             maxWidth: 1110,
             margin: `0 auto`,
@@ -107,7 +107,9 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
             </Heading>
           </Link>
           {/* Mobile */}
-          <Flex sx={{ alignItems: 'center', display: ['flex', 'none'] }}>
+          <Flex
+            sx={{ alignItems: 'center', display: ['flex', 'flex', 'none'] }}
+          >
             <Menu styles={styles} right isOpen={false}>
               <ul
                 sx={{
@@ -156,7 +158,9 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
             </Menu>
           </Flex>
           {/* Desktop */}
-          <Flex sx={{ alignItems: 'center', display: ['none', 'flex'] }}>
+          <Flex
+            sx={{ alignItems: 'center', display: ['none', 'none', 'flex'] }}
+          >
             <ul
               sx={{ listStyle: 'none', display: 'flex', alignItems: 'center' }}
             >
