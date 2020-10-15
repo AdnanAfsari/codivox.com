@@ -7,10 +7,12 @@ import Brand from '../components/Design/Brand';
 import WebDesign from '../components/Design/webDesign';
 import AppDesign from '../components/Design/appDesign';
 import Phase from '../components/Design/phase';
+import SEO from '../components/seo';
 
 const DesignPage: React.FC = () => {
   return (
     <React.Fragment>
+      <SEO title={'Design'} />
       <Hero />
       <Brand />
       <WebDesign />

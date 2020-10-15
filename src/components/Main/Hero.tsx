@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   return (
     <div
       style={{
-        background: `linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(213 213 255) 25%, rgb(244, 245, 255) 100%)`,
+        background: `linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(228 229 255) 25%, rgb(244, 245, 255) 100%)`,
       }}
     >
       <Box
@@ -58,16 +58,18 @@ const Hero: React.FC = () => {
           >
             {heroSubtitle}
           </p>
-          <Link
-            to={'contact'}
+          <a
+            href="https://api.whatsapp.com/send?phone=923091313666"
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
               variant: 'buttons.prime',
               width: ['100%', '100%', 210],
               mt: [3, 3, 0],
             }}
           >
-            Get a free estimate
-          </Link>
+            Let's Talk
+          </a>
         </Flex>
 
         <HeroSVG
