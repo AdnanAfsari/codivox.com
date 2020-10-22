@@ -28,7 +28,6 @@ const ModalComp: React.FC = () => {
         height: '50px',
         alignItems: 'center',
         display: 'flex',
-        mb: '69px',
       }}
     >
       <div
