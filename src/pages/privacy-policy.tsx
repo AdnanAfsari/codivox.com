@@ -7,7 +7,7 @@ import PFiveDots from './../images/PFiveDots';
 const PrivacyPolicy: React.FC = () => {
   return (
     <React.Fragment>
-      <SEO title="Privacy Policy | codivox" />
+      <SEO title="Privacy Policy" />
       <div>
         <Box
           sx={{

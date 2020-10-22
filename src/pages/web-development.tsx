@@ -7,10 +7,12 @@ import Modernize from '../components/WebDevelopment/Modernize';
 import Idea from '../components/WebDevelopment/Idea';
 import Integration from '../components/WebDevelopment/Integration';
 import Phase from '../components/WebDevelopment/Phase';
+import SEO from '../components/seo';
 
 const WebDevelopment: React.FC = () => {
   return (
     <React.Fragment>
+      <SEO title={'Web Development'} />
       <Hero />
       <Modernize />
       <Idea />
